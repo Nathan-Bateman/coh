@@ -19,12 +19,17 @@ body {
 }
 
 .hammy {
-	padding-top: 1.25em;
+	padding-top: .35em;
+  font-size: 3em;
+}
+a.hammy:hover {
+    text-decoration: none;
+}
 }
 .ipwith {
 	font-size: 85%;
 	padding-top: -5px;
-    color:rgba(95, 115, 159, 0.75);;
+    color:rgba(95, 115, 159, 0.75);
 }
 .coh {
 	padding-top: .3em;
