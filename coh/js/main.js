@@ -28,15 +28,15 @@ var footerOptions = {
 					'donate':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Donate</h5></a></li>'			
 };
 var bottomPics = {
-				   'about':'<div class=' + 'col-sm-4 ' + 'bottom' +'><img src="images/about.jpg" class=' + 'img-responsive' + '></div>',
-				   'projects':'<div class=' + 'col-sm-4 ' + 'bottom' +'><img src="images/project.jpg" class=' + 'img-responsive' + '></div>',
-				   'news':'<div class=' + 'col-sm-4 ' + 'bottom' +'><img src="images/news.jpg" class=' + 'img-responsive' + '></div>'
+				   'about':'<div class="col-sm-4 bottom view"' +'><img src="images/about.jpg" class=' + 'img-responsive' + '> <div class="mask"><h2>About</h2>  <p>Read more about...</p><a href="#" class="info">Read More</a></div></div>',
+				   'projects':'<div class="col-sm-4 bottom view"' +'><img src="images/project.jpg" class=' + 'img-responsive' + '> <div class="mask"><h2>Projects</h2>  <p>Read more about...</p><a href="#" class="info">Read More</a></div></div>',
+				   'news':'<div class="col-sm-4 bottom view"' +'><img src="images/news.jpg" class=' + 'img-responsive' + '> <div class="mask"><h2>News</h2>  <p>Read more about...</p><a href="#" class="info">Read More</a></div></div>'
 };
-var bottomPicsLables = {
+/*var bottomPicsLables = {
 				   'about':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>About</h3></div>',
 				   'projects':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>Projects</h3></div>',
 				   'news':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>News</h3></div>'
-};
+};*/
 
 var postMenu = function () {
 	for (item in menuOptions) {
@@ -60,14 +60,14 @@ var postBottomPics = function () {
 
 	}
 };
-var postBottomPicsLables = function () {
+/*var postBottomPicsLables = function () {
 	for (item in bottomPicsLables) {
 		var lable = bottomPicsLables[item];
 		$bottomSectionLables.append(lable);
 
 	}
 };
-
+*/
 
 menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
@@ -87,7 +87,14 @@ var hopeViewModel = function () {
 	postMenu();
 	postFooter();
 	postBottomPics();
-	postBottomPicsLables();
 
 };
 ko.applyBindings(new hopeViewModel());
+
+
+
+
+
+
+
+
