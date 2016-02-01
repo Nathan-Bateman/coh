@@ -207,6 +207,8 @@ li .coh {
   font-family: 'roboto', sans-serif;
   font-weight: 300;
   color: #003d7a;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .center-table {
   margin: 0 auto !important;
@@ -283,5 +285,32 @@ table.center-table {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/*media breakpoints*/
+
+/*for bottom pics*/
+@media (max-width: 769px) {
+  .col-sm-12.bottompics {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .space {
+    padding-bottom:35px;
+  };
 }
+/*for subtitle under COH in header*/
+@media (max-width: 846px) {
+  .paddingoff {
+  padding-left: 2px;
+}
+}
+
+/*for COH in header*/
+@media (max-width: 431px) {
+  .font-roboto-bold {
+  padding-left: 2px;
+  font-size: xx-large;
+}
+}
+
 
