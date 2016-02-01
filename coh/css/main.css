@@ -43,6 +43,9 @@ h2.font-roboto-bold {
 a.hammy:hover {
     text-decoration: none;
 }
+a.footerItem:hover {
+  text-decoration:none;
+}
 }
 .ipwith {
 	font-size: 85%;
@@ -72,8 +75,12 @@ hr {
     margin: 0 auto;
 }
 .instagram {
-    max-width: 50%;
-    margin-top: 8px;
+    /*max-width: 50%;*/
+    height:35px;
+    margin-top: 1.5em;
+}
+.copy {
+  margin-top: 2em;
 }
 footer {
     background-color: #2A457A;
@@ -88,11 +95,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 li .coh {
-    padding-left: 2em;
-    padding-right:2em;
+    padding-left: .2em;
+    padding-right:.2em;
     color: #f2f2f2;
 }
 .ulgeneral {
@@ -232,112 +239,24 @@ table.center-table {
 }
 #wrapper {
   border: 4px solid #003D7A;
+  top:-90px;
 }
-/*Styles for hover effect on bottom pictures */
+/*Styles for bottom pictures */
 
-.view {
-    width: 350px;
-    height: 247.5px;
-    margin: 20px;
-    float: left;
-    border: 5px solid #DC7E0F;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
-    cursor: default;
-    background: #fff url(../images/bgimg.jpg) no-repeat center center;
-    padding-right:0px;
-    padding-left:0px
-}
-.view .mask, .view .content {
-    width: 350px;
-    height: 247.5px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0
-}
-.view img {
+.border-box {
+    color: white;
     display: block;
-    position: relative
-}
-.view h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    padding-right: 25px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 50px 0 0 0
-}
-.view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center;
-    margin-right:15px;
-}
-.view a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000;
-    margin-right: 15px;
-}
-.view a.info:hover {
-    box-shadow: 0 0 5px #000
+    background-color: rgba(42, 69, 122, 1);
+    padding: 5px;
+    max-width: 360px;
 }
 
-/*hover effect animation*/
-.view img { 
-    transition: all 0.2s linear;
+.bottom a {
+  text-decoration: none;
 }
-.view .mask {
-    opacity: 0;
-    background-color: rgba(0,61,122,.45);; 
-    transition: all 0.4s ease-in-out;
-}
-.view h2 {
-    transform: translateY(-100px);
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-.view p { 
-    transform: translateY(100px);
-    opacity: 0;
-  transition: all 0.2s linear;
-}
-.view a.info{
-    opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-.view:hover img { 
-  transform: scale(1.1);
-} 
-.view:hover .mask { 
-  opacity: 1;
-}
-.view:hover h2,
-.view:hover p,
-.view:hover a.info {
-    opacity: 1;
-    transform: translateY(0px);
-}
-.view:hover p {
-    transition-delay: 0.1s;
-}
-.view:hover a.info {
-    transition-delay: 0.2s;
-}
+
+
+
 /*center bottom pictures*/
 
 .col-sm-12.bottompics {
@@ -345,6 +264,8 @@ table.center-table {
     margin-left: auto;
     padding-right: 5%;
     padding-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 }
 
