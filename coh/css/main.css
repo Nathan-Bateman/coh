@@ -194,11 +194,11 @@ li .coh {
 }
 
 #mission {
-  background-color: rgba(207, 210, 144, .70);
+  background-color: rgba(226, 226, 222, 0.32);
   padding-top: 30px;
-  /*padding-bottom:30px;*/
+  margin-bottom:20px;
   position:relative;
-  border-bottom: 4px solid rgb(0, 61, 122);
+  border-bottom: 2px solid rgb(0, 61, 122);
 }
 .scripture {
   margin: 0; 
@@ -236,6 +236,7 @@ table.center-table {
 }
 .border {
   border-top: 4px solid rgba(220, 126, 15, 1);
+  border-bottom: 4px solid rgba(220, 126, 15, 1);
   
 }
 .table-bg {
@@ -248,6 +249,12 @@ table.center-table {
   border: 1px solid #003D7A;
   top:-70px;
 }
+.isaiah {
+    font-size: 14pt;
+    font-style: italic;
+    font-weight: 600;
+}
+
 /*Styles for bottom pictures */
 
 .border-box {
@@ -257,7 +264,9 @@ table.center-table {
     padding: 5px;
     max-width: 360px;
 }
-
+.bottom-title {
+  color:#FCA92F;
+}
 .bottom a {
   text-decoration: none;
 }

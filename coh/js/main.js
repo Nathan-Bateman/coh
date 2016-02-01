@@ -30,9 +30,9 @@ var footerOptions = {
 					'copyright':'<li class='+'footerItem'+'><h5 class="coh copy glyphicon glyphicon-copyright-mark"' +'>2016</h5></li>'			
 };
 var bottomPics = {
-				   'about':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/about3.jpg" class="img-responsive"><span class="border-box"><h4>News</h4>  <p>Read more about...</p><span></a></div></div>',
-				   'projects':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/project2.jpg" class="img-responsive"><span class="border-box"><h4>News</h4>  <p>Read more about...</p><span></a></div></div>',
-				   'news':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive"><span class="border-box"><h4>News</h4>  <p>Read more about...</p><span></a></div></div>'
+				   'about':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/about3.jpg" class="img-responsive"><span class="border-box"><h4 class="bottom-title">News</h4>  <p>Read more about...</p><span></a></div></div>',
+				   'projects':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/project2.jpg" class="img-responsive"><span class="border-box"><h4 class="bottom-title">News</h4>  <p>Read more about...</p><span></a></div></div>',
+				   'news':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive"><span class="border-box"><h4 class="bottom-title">News</h4>  <p>Read more about...</p><span></a></div></div>'
 };
 //<div class="col-sm-4"><div class='block'><a href="#" class="info"><img src="images/about.jpg"><span><h2>About</h2>  <p>Read more about...</p><span></a></div></div>
 /*var bottomPicsLables = {
