@@ -20,18 +20,21 @@ var menuOptions = {
 					'donate':'<li style="border-bottom:none;" class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>Donate</h5></a></li>'			
 };
 var footerOptions = {
-					'home':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Home</h5></a></li>',
+					/*'home':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Home</h5></a></li>',
 
 					'about':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>About</h5></a></li>',
 					'projects':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Projects</h5></a></li>',
-					'news':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>News</h5></a></li>',
-					'donate':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Donate</h5></a></li>'			
+					'news':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>News</h5></a></li>',*/
+					'Insta':'<li class="footerItem"'+'><a href="https://www.instagram.com/constructionofhope/"><img class="instagram" src="images/instapiclittle.png" alt="Instagram"></a></li>',
+					'COH':'<li class='+'footerItem'+'><a class="footerItem" href="index.html"><h3 class="font-roboto-light coh"' +'>Construction of Hope</h3></a></li>',
+					'copyright':'<li class='+'footerItem'+'><h5 class="coh copy glyphicon glyphicon-copyright-mark"' +'>2016</h5></li>'			
 };
 var bottomPics = {
-				   'about':'<div class="col-sm-4 bottom view"' +'><img src="images/about.jpg" class=' + 'img-responsive' + '> <div class="mask"><h2>About</h2>  <p>Read more about...</p><a href="#" class="info">Read More</a></div></div>',
-				   'projects':'<div class="col-sm-4 bottom view"' +'><img src="images/project.jpg" class=' + 'img-responsive' + '> <div class="mask"><h2>Projects</h2>  <p>Read more about...</p><a href="#" class="info">Read More</a></div></div>',
-				   'news':'<div class="col-sm-4 bottom view"' +'><img src="images/news.jpg" class=' + 'img-responsive' + '> <div class="mask"><h2>News</h2>  <p>Read more about...</p><a href="#" class="info">Read More</a></div></div>'
+				   'about':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/about3.jpg" class="img-responsive"><span class="border-box"><h4>News</h4>  <p>Read more about...</p><span></a></div></div>',
+				   'projects':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/project2.jpg" class="img-responsive"><span class="border-box"><h4>News</h4>  <p>Read more about...</p><span></a></div></div>',
+				   'news':'<div class="col-sm-4"><div class=' + '"bottom view"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive"><span class="border-box"><h4>News</h4>  <p>Read more about...</p><span></a></div></div>'
 };
+//<div class="col-sm-4"><div class='block'><a href="#" class="info"><img src="images/about.jpg"><span><h2>About</h2>  <p>Read more about...</p><span></a></div></div>
 /*var bottomPicsLables = {
 				   'about':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>About</h3></div>',
 				   'projects':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>Projects</h3></div>',
