@@ -1,5 +1,5 @@
 var menu = document.getElementById('menu');
-var html = document.querySelector('html');
+var html = document.querySelector('.html');
 var container = document.getElementById('container');
 var mask = document.getElementById('c-mask');
 var main = document.querySelector('.container-fluid');
