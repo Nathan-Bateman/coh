@@ -1,4 +1,5 @@
 var menu = document.getElementById('menu');
+var container = document.getElementById('container');
 var mask = document.getElementById('c-mask');
 var main = document.querySelector('.container-fluid');
 var drawer = document.querySelector('#drawer');
@@ -78,6 +79,7 @@ menu.addEventListener('click', function(e) {
         mask.classList.add('is-active');
         wrap.classList.add('has-active-menu');
         body.classList.add('has-active-menu');
+        container.classList.add('has-active-menu');
         e.stopPropagation();
       });
 
@@ -86,6 +88,7 @@ main.addEventListener('click', function() {
         mask.classList.remove('is-active');
         wrap.classList.remove('has-active-menu');
         body.classList.remove('has-active-menu');
+        container.classList.remove('has-active-menu');
       });
 
 var hopeViewModel = function () {
