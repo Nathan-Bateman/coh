@@ -310,7 +310,7 @@ table.center-table {
 /*for subtitle under COH in header*/
 @media (max-width: 864px) {
     h6.ipwith {
-      font-size: 8pt;
+      font-size: 7.9pt;
       padding-left: 2px;
     }
 }
