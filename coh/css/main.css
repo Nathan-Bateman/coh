@@ -326,4 +326,16 @@ table.center-table {
 
 }
 
+/*for smart phone (iphone)*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  h1.font-roboto-bold {
+  padding-left: 2px;
+  font-size: large;
+}
+
+
+}
+  
+
+
 
