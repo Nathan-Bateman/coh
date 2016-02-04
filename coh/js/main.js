@@ -1,4 +1,5 @@
 var menu = document.getElementById('menu');
+var html = document.querySelector('html');
 var container = document.getElementById('container');
 var mask = document.getElementById('c-mask');
 var main = document.querySelector('.container-fluid');
@@ -77,18 +78,17 @@ var postBottomPics = function () {
 menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
         mask.classList.add('is-active');
-        wrap.classList.add('has-active-menu');
         body.classList.add('has-active-menu');
-        container.classList.add('has-active-menu');
+        html.classList.add('has-active-menu');
         e.stopPropagation();
       });
 
 main.addEventListener('click', function() {
         drawer.classList.remove('open');
         mask.classList.remove('is-active');
-        wrap.classList.remove('has-active-menu');
         body.classList.remove('has-active-menu');
-        container.classList.remove('has-active-menu');
+        html.classList.remove('has-active-menu');
+
       });
 
 var hopeViewModel = function () {
