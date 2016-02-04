@@ -302,9 +302,7 @@ table.center-table {
 
 /*for bottom pics and subtitle*/
 @media (max-width: 769px) {
-  .paddingoff {
-  padding-left: 2px;
-}
+
   .space {
     padding-bottom:35px;
   };
@@ -312,7 +310,7 @@ table.center-table {
 /*for subtitle under COH in header*/
 @media (max-width: 864px) {
   .paddingoff {
-  padding-left: 2px;
+  padding-left: 0;
 }
 }
 
