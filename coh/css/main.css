@@ -288,8 +288,8 @@ table.center-table {
 .col-sm-12.bottompics {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 5%;
-    padding-left: 5%;
+    /*padding-right: 5%;
+    padding-left: 5%;*/
     margin-top: 30px;
     margin-bottom: 30px;
 }
