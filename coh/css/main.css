@@ -86,6 +86,11 @@ hr {
     height:35px;
     margin-top: 1.5em;
 }
+.youtube {
+    padding-right:.5em;
+    height:35px;
+    margin-top: 1.5em;
+}
 .copy {
   margin-top: 2em;
 }
@@ -162,6 +167,9 @@ li .coh {
   display: block;
   padding: 12px 24px;
   color: #fff;
+}
+a.c-menu__link {
+  text-decoration: none;
 }
 .menuItem {
     background-color: #2A457A;
