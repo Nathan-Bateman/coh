@@ -75,15 +75,15 @@ var postBottomPics = function () {
 menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
         mask.classList.add('is-active');
-        sitewrapper.classList.add('has-active-menu');
+        body.classList.add('has-active-menu');
         e.stopPropagation();
       });
 
-/*main.addEventListener('click', function() {
+main.addEventListener('click', function() {
         drawer.classList.remove('open');
         mask.classList.remove('is-active');
-        sitewrapper.classList.remove('has-active-menu');
-      });*/
+        body.classList.remove('has-active-menu');
+      });
 
 var hopeViewModel = function () {
   var self = this;
