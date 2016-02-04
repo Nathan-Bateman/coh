@@ -303,8 +303,8 @@ table.center-table {
 /*for bottom pics*/
 @media (max-width: 769px) {
   .col-sm-12.bottompics {
-    margin-left: 15%;
-    margin-right: 15%;
+    /*margin-left: 15%;
+    margin-right: 15%;*/
   }
   .space {
     padding-bottom:35px;
