@@ -300,18 +300,17 @@ table.center-table {
 
 /*media breakpoints*/
 
-/*for bottom pics*/
+/*for bottom pics and subtitle*/
 @media (max-width: 769px) {
-  .col-sm-12.bottompics {
-    /*margin-left: 15%;
-    margin-right: 15%;*/
-  }
+  .paddingoff {
+  padding-left: 2px;
+}
   .space {
     padding-bottom:35px;
   };
 }
 /*for subtitle under COH in header*/
-@media (max-width: 846px) {
+@media (max-width: 864px) {
   .paddingoff {
   padding-left: 2px;
 }
