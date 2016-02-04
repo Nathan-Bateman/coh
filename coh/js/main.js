@@ -1,5 +1,4 @@
 var menu = document.getElementById('menu');
-var html = document.querySelector('.html');
 var container = document.getElementById('container');
 var mask = document.getElementById('c-mask');
 var main = document.querySelector('.container-fluid');
@@ -79,7 +78,6 @@ menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
         mask.classList.add('is-active');
         body.classList.add('has-active-menu');
-        html.classList.add('has-active-menu');
         e.stopPropagation();
       });
 
@@ -87,7 +85,6 @@ main.addEventListener('click', function() {
         drawer.classList.remove('open');
         mask.classList.remove('is-active');
         body.classList.remove('has-active-menu');
-        html.classList.remove('has-active-menu');
 
       });
 

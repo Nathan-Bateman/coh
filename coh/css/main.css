@@ -191,7 +191,10 @@ li .coh {
   color: white;
 }
 .has-active-menu {
+  height: 100%;
   overflow: hidden;
+  width: 100%;
+  position: fixed;
 }
 
 /*non header/footer/nav styles*/
