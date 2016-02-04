@@ -82,7 +82,7 @@ hr {
     margin: 0 auto;
 }
 .instagram {
-    /*max-width: 50%;*/
+
     height:35px;
     margin-top: 1.5em;
 }
@@ -305,8 +305,9 @@ table.center-table {
 
 #links {
    margin: 0 auto;
-
-
+}
+a.info {
+  text-decoration: none;
 }
 
 /*media breakpoints*/
