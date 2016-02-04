@@ -3,6 +3,7 @@ var mask = document.getElementById('c-mask');
 var main = document.querySelector('.container-fluid');
 var drawer = document.querySelector('#drawer');
 var closeMenu = document.getElementById('closeMenu');
+var wrap = document.querySelector('.sitewrapper');
 var body = document.getElementById('#body');
 var $container = $('.container-fluid');
 var $drawer = $(document.querySelector('#drawer'));
@@ -75,6 +76,7 @@ var postBottomPics = function () {
 menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
         mask.classList.add('is-active');
+        wrap.classList.add('has-active-menu');
         body.classList.add('has-active-menu');
         e.stopPropagation();
       });
@@ -82,6 +84,7 @@ menu.addEventListener('click', function(e) {
 main.addEventListener('click', function() {
         drawer.classList.remove('open');
         mask.classList.remove('is-active');
+        wrap.classList.remove('has-active-menu');
         body.classList.remove('has-active-menu');
       });
 

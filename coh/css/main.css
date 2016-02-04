@@ -171,7 +171,7 @@ li .coh {
     border-bottom: solid 1px #050E1B;
 }
 /*Below taken from http://ianlunn.github.io/Hover/*/
-/*
+
 .hvr-fade {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -189,7 +189,7 @@ li .coh {
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: #0A2E52;
   color: white;
-}*/
+}
 .has-active-menu {
   overflow: hidden;
 }
