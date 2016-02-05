@@ -46,6 +46,7 @@ h2.font-roboto-bold {
 	padding-top: .35em;
   font-size: 3em;
   color: #003D7A;
+  background-color: rgba(0,0,0,0);
 }
 a.hammy:hover {
     text-decoration: none;
@@ -82,7 +83,7 @@ hr {
     margin: 0 auto;
 }
 .instagram {
-
+    background-color: rgba(0,0,0,0);
     height:35px;
     margin-top: 1.5em;
 }
@@ -90,10 +91,17 @@ hr {
     padding-right:.5em;
     height:35px;
     margin-top: 1.5em;
+    background-color: rgba(0,0,0,0);
 }
 .copy {
   margin-top: 2em;
 }
+a.footerItem {
+  background-color: rgba(0,0,0,0);
+}
+.info:hover > .darken { 
+    background-color: #0A2E52; 
+  }
 footer {
     background-color: #2A457A;
 }
@@ -308,6 +316,9 @@ table.center-table {
 }
 a.info {
   text-decoration: none;
+}
+a,span.darken:hover {
+  background-color: #0A2E52;
 }
 
 /*media breakpoints*/
