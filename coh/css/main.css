@@ -391,6 +391,9 @@ a.info {
   .isaiah {
     font-size: small;
   }
+  #wrapper {
+    top:-40px;
+  }
   #wrapper h2 {
     font-size: 14pt;
   }
