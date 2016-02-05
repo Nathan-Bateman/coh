@@ -380,6 +380,9 @@ a.info {
     padding-right: 10px;
     font-size: 8pt;
   }
+  .table-bg {
+    padding-bottom: 12px;
+  }
   .table-text-left-right {
     text-align: left;
     padding-left: 20px;
@@ -387,6 +390,7 @@ a.info {
   }
   .scripture {
     font-size: smaller;
+    top:-10px;
   }
   .isaiah {
     font-size: small;
