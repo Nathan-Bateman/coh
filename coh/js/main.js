@@ -12,6 +12,14 @@ var $footer = $(document.querySelector('#footerContacts'));
 var menuItem = document.getElementsByTagName('li');
 var $bottomSection = $(document.querySelector('.bottompics'));
 var $bottomSectionLables = $(document.querySelector('.lables'));
+var banner = document.querySelector('.banner');
+
+
+var randomfromarray = function (array){
+  return array[Math.floor(Math.random() * array.length)]
+};
+
+
 
 var menuOptions = {
 					'close':'<li id=' + '"closeMenu"' + 'style="border-top:none; border-bottom:none; background-color:#96BDE4" class=' +'"menuItem"'+'><a href="#COH" class="c-menu__link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>',
@@ -75,6 +83,12 @@ var postBottomPics = function () {
 };
 */
 
+var randomBanner = function (x) {
+	var bannerPics = ['banner_1.jpg','banner_2.png', 'banner_3.jpg','banner_4.jpg'];
+	var images = randomfromarray(bannerPics);
+	$( ".banner" ).append( '<img src="images/' + images +'" class="img-responsive centerImage border">' );
+};
+
 menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
         mask.classList.add('is-active');
@@ -94,6 +108,7 @@ var hopeViewModel = function () {
 	postMenu();
 	postFooter();
 	postBottomPics();
+	randomBanner();
 
 };
 ko.applyBindings(new hopeViewModel());
