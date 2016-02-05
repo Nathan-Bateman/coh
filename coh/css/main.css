@@ -187,7 +187,7 @@ a.c-menu__link {
     border-bottom: solid 1px #050E1B;
 }
 /*Below taken from http://ianlunn.github.io/Hover/*/
-
+/*
 .hvr-fade {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -205,7 +205,7 @@ a.c-menu__link {
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: #0A2E52;
   color: white;
-}
+}*/
 .has-active-menu {
   height: 100%;
   overflow: hidden;
@@ -213,7 +213,7 @@ a.c-menu__link {
   position: fixed;
 }
 
-/*non header/footer/nav styles*/
+/*center styles for table and table content*/
 
 .centerImage {
     margin: 0 auto;
@@ -314,12 +314,19 @@ table.center-table {
 #links {
    margin: 0 auto;
 }
+
+/*link behavior for for bottom pics*/
 a.info {
   text-decoration: none;
 }
-a,span.darken:hover {
-  background-color: #0A2E52;
+.bottomview a:hover > img, .bottomview a:focus > img, .bottomview a:active > img {
+    opacity: 0.85;
+    filter: alpha(opacity=85);
 }
+.bottomview a:hover span.darken, .bottomview a:focus span.darken, .bottomview a:active span.darken {
+    background-color: #0A2E52;
+}
+
 
 /*media breakpoints*/
 
