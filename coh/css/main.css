@@ -375,7 +375,19 @@ a.info {
   .copy {
     margin-top:2.2em;
   }
-
+  .table-text-left-left {
+    text-align: left;
+    padding-right: 10px;
+    font-size: 8pt;
+  }
+  .table-text-left-right {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 8pt;
+  }
+  .scripture {
+    font-size: smaller;
+  }
 
 
 }
