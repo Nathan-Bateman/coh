@@ -9,6 +9,33 @@ html, body, {
 body {
   /*overflow-x: hidden;*/
 }
+#contact {
+
+  background-color: rgba(226, 226, 222, 0.52);
+}
+.contact-format {
+  padding: 15px;
+  padding-right: 0;
+}
+h3.contact-format {
+  padding-left: 2em;
+}
+.input-height {
+  height: 50px;
+  border:0;
+  max-width: 300px;
+}
+.fields {
+  padding-left: 4.25em;
+}
+.block {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+textarea {
+  border: red;
+}
 .sitewrapper {
   position: relative;
   overflow: hidden;
