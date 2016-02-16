@@ -9,33 +9,7 @@ html, body, {
 body {
   /*overflow-x: hidden;*/
 }
-#contact {
 
-  background-color: rgba(226, 226, 222, 0.52);
-}
-.contact-format {
-  padding: 15px;
-  padding-right: 0;
-}
-h3.contact-format {
-  padding-left: 2em;
-}
-.input-height {
-  height: 50px;
-  border:0;
-  max-width: 300px;
-}
-.fields {
-  padding-left: 4.25em;
-}
-.block {
-  width: 100%;
-  float: left;
-  position: relative;
-}
-textarea {
-  border: red;
-}
 .sitewrapper {
   position: relative;
   overflow: hidden;
@@ -362,8 +336,37 @@ a.info {
 .bottomview a:hover span.darken, .bottomview a:focus span.darken, .bottomview a:active span.darken {
     background-color: #0A2E52;
 }
+/*Contact for styles*/
+#contact {
 
-
+  background-color: rgba(226, 226, 222, 0.52);
+}
+.contact-format {
+  padding: 15px;
+  padding-right: 0;
+}
+h3.contact-format {
+  padding-left: 2em;
+}
+.input-height {
+  height: 50px;
+  border:0;
+  max-width: 300px;
+}
+.button {
+  background-color: rgba(42, 69, 122, 1); 
+}
+.fields {
+  padding-left: 4.25em;
+}
+.block {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+textarea {
+  border: red;
+}
 /*media breakpoints*/
 
 /*for bottom pics and subtitle*/

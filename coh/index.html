@@ -84,11 +84,46 @@
 		</div>
 	</div>
 	<!--end of row 5-->
-	<!--Inspiration and some markup modified from Light Up the Dark LLC Belton, MO-->
+	<!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
 	<div id='contact'>
 
 		<h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
-		<form action='scripts/sendmail.php' method='post' class='contact-format'>
+	<!--Below PHP code for contact form-->	
+	<?
+	session_start();
+
+	if (isset($_POST['submit']))
+
+		{
+			if (isset($_SESSION['token']) && $_POST['token'] == $_SESSION['token'])
+				{
+					$name = check_input($_POST["name"]);
+  					$email = check_input($_POST["emailaddress"]);
+  					$message = check_input($_POST["message"]);
+  					$ForwardTo = 'nathan.bateman.jr@gmail.com';
+  					$details='Name: '.$name."\n".'Email: '.$email."\n".'Message: '.$message."\n";
+
+  					//do stuff
+  					mail($ForwardTo,"Construction of Hope Contact",$details,"From:$email");
+
+
+					}
+			}
+
+	function check_input($data)
+		{
+		    $data = trim($data);
+		    $data = stripslashes($data);
+		    $data = htmlspecialchars($data);
+		    return $data;
+			}
+	
+	$token = $_SESSION['token'] = md5(uniqid(mt_rand(), true));
+	?>
+
+	<!--Markup for Contact form-->
+		<form action='index.php' method='post' class='contact-format'>
+
 		<div class="form-group row">
 					
 				<div class='fields col-sm-4'>
@@ -100,12 +135,14 @@
       <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
     </p>
     <br>
-    <p>
-      <button type="submit" class="btn btn-primary">Send</button>
-    </p>
+    
 		</div>
 	<div class='col-sm-5'>
 		<textarea class='center' cols='53' rows='10' name='message' placeholder="What's on your mind?"></textarea>
+		<p><input type="hidden" name="token" value="<?=$token;?>"></p>
+		<p>
+      <button type="submit" name='submit' class="btn btn-primary button">Send</button>
+    </p>
 	</div>
 	<div class='col-sm-3'>
 		<h4>Phone</h4>
