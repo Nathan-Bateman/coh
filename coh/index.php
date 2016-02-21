@@ -116,7 +116,7 @@ session_start();
       <div id='COH' class='row'>
         <div class="col-sm-12">
       <div class='col-sm-6 padding-right-off pull-left'>
-        <h1 class='text-left font-roboto-bold'>Construction of Hope </h1>
+        <h3 class='text-left cohfont'>Construction of Hope </h3>
       </div>
   <!--end of 1st col 6 div-->
   <div id='hammy' class='col-sm-2 pull-right'>
@@ -242,6 +242,7 @@ session_start();
 </body>
 <script src='js/knockout-3.3.0.js'></script>
 <script src='js/jQuery.js'></script>
+<script src='js/bootstrap.min.js'></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--<script src='js/bootstrap.js'></script>-->
