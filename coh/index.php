@@ -143,9 +143,10 @@ session_start();
     <!--end col 12 div-->
   </div>  
   <!--end 2nd row-->
-  <div class='row'>
+  <div id='bannerplace' class='row'>
     <div class='col-sm-12 banner'>
 <h2 class="keyline"><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><p></p><button type="button" class="btn btn-primary font-roboto-light">See the Work</button></span></h2>
+<div class='after border'></div>
     </div>
   </div>
   <!--end of row 3-->

@@ -87,6 +87,7 @@ var randomBanner = function (x) {
 	var bannerPics = ['images/banner_1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
 	var images = randomfromarray(bannerPics);
 	$( ".banner" ).append( '<img src="' + images +'" class="img-responsive centerImage border stackorder">' );
+	//$( ".banner" ).css({'background-image': 'url(' + images + ')'});
 };
 
 menu.addEventListener('click', function(e) {
