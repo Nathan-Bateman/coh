@@ -145,7 +145,7 @@ session_start();
   <!--end 2nd row-->
   <div class='row'>
     <div class='col-sm-12 banner'>
-      <!--<img src="images/banner_2.png" class='img-responsive centerImage border'>-->
+<h2 class="keyline"><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><p></p><button type="button" class="btn btn-primary font-roboto-light">See the Work</button></span></h2>
     </div>
   </div>
   <!--end of row 3-->

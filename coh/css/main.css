@@ -55,7 +55,36 @@ h1.font-coh {
 };
 
 /*banner styles*/
-
+.stackorder {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  background: rgba(20,20,20, .5);
+}
+.centerbannertext {
+  margin:0 auto;
+}
+.keyline {
+   position: absolute; 
+   top: 75px; 
+   width: 100%;
+   font-family: 'cohfont';
+   font-size: 20pt;
+   color: white; 
+   letter-spacing: -1px; 
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7); 
+   padding: 10px 50px;
+}
+span.font-roboto-light {
+  color:white;
+}
+br.keyline {
+  padding-top: 5px;
+}
+button.font-roboto-light {
+  color:white;
+}
 /*header/footer styles*/
 
 .lifesong {
