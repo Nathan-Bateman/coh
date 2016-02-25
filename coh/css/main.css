@@ -20,6 +20,13 @@ html, body, {
   text-transform: uppercase;
   font-size: 18pt;
 }
+.cohfont-abbr {
+  font-family: 'cohfont';
+  color:#003D7A;
+  text-transform: uppercase;
+  font-size: 18pt;
+  margin-top:-10px;
+}
 .sitewrapper {
   position: relative;
   overflow: hidden;
@@ -148,8 +155,11 @@ button.font-roboto-light {
   color: #003D7A;
   background-color: rgba(0,0,0,0);
 }
+
 a.hammy:hover {
     text-decoration: none;
+    cursor: pointer; 
+    cursor: hand;
 }
 a.footerItem:hover {
   text-decoration:none;
@@ -499,6 +509,15 @@ textarea {
     width:100%;
   }
 }
+/*for text over banner photo*/
+@media (max-width: 600px) {
+  .center-fly {
+    padding-top: 1em;
+  }
+  .center-fly h2 {
+    font-size: 18pt;
+  }
+}
 /*for subtitle under COH in header 860*/
 @media (max-width: 864px) {
     h6.ipwith {
@@ -543,6 +562,9 @@ textarea {
   .copy {
     margin-top:0;
   }
+  .center-fly h2 {
+    font-size: 13pt;
+  }
 
 }
 @media (min-width: 300px) and (max-width: 322px){
@@ -554,7 +576,7 @@ textarea {
 
 
 /*for smart phone (iphone)*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 210px) and (max-width: 480px) {
 
   h3.cohfont {
   padding-top: .9em;
@@ -573,6 +595,7 @@ textarea {
   }
   .table-bg {
     padding-bottom: 12px;
+    min-width: 225px;
   }
   .table-text-left-right {
     text-align: left;

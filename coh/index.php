@@ -116,12 +116,12 @@ session_start();
       <div id='COH' class='row'>
         <div class="col-sm-12">
       <div class='col-sm-6 padding-right-off pull-left'>
-        <h3 class='text-left cohfont'>Construction of Hope </h3>
+        <h3 data-bind="if: regscreen" class='text-left cohfont'>Construction of Hope </h3>
+        <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
       </div>
   <!--end of 1st col 6 div-->
   <div id='hammy' class='col-sm-2 pull-right'>
     <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
-      
     </a>
           
       </div>

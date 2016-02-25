@@ -13,6 +13,7 @@ var menuItem = document.getElementsByTagName('li');
 var $bottomSection = $(document.querySelector('.bottompics'));
 var $bottomSectionLables = $(document.querySelector('.lables'));
 var banner = document.querySelector('.banner');
+var clientWidth = document.documentElement.clientWidth;
 
 
 var randomfromarray = function (array){
@@ -100,6 +101,17 @@ main.addEventListener('click', function() {
 var hopeViewModel = function () {
   var self = this;
 
+  	self.show = ko.observable(false);
+	self.documentReady = ko.observable(false);
+	self.regscreen = ko.observable(true);
+
+	var screenSizeCheck = function() {
+		if (clientWidth <= 315) {
+			console.log (clientWidth);
+			self.regscreen(false);
+		};
+	};
+
   	var onloadAnimation = function() { $( document ).ready(function() {
         console.log( "document loaded" );
         self.documentReady(true);
@@ -108,14 +120,12 @@ var hopeViewModel = function () {
 
     		});
 	};
+	screenSizeCheck();
 	onloadAnimation();
 	postMenu();
 	postFooter();
 	postBottomPics();
 	randomBanner();
-	self.show = ko.observable(false);
-	self.documentReady = ko.observable(false);
-	
 
 };
 ko.applyBindings(new hopeViewModel());
