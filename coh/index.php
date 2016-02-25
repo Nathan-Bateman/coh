@@ -194,37 +194,41 @@ session_start();
     <div class="form-group row">
           
         <div class='fields col-sm-4'>
-    <p>
-      <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
-    </p>
-    <br>
-    <p>
-      <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
-    </p>
-    <br>
-    
-    </div>
-  <div class='col-sm-5'>
-    <textarea class='center' cols='53' rows='10' name='message' placeholder="What's on your mind?"></textarea>
-    <p><input type="hidden" name="token" value="<?php echo $newToken; ?>"></p>
-    <p>
-      <button type="submit" name='submit' class="btn btn-primary button">Send</button>
-    </p>
-  </div>
-  <div class='col-sm-3'>
-    <h4>Phone</h4>
-    <p>
-      USA - (555)-121-5555<br>
-      THA - (555)-121-5555<br>
-      KHB - (555)-121-5555
-    </p>
-    <h4>Location</h4>
-    <p>
-      34509 BassFish Road<br>
-      Topwater Jig, MO<br>
-      44567
-    </p>
-  </div>
+            <p>
+                <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
+            </p>
+                <br>
+            <p>
+                <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
+            </p>
+                <br>
+          </div>
+        <div class='col-sm-4 text-submit'>
+              <textarea class='center' cols='53' rows='10' name='message' placeholder="What's on your mind?"></textarea>
+            <p>
+                <input type="hidden" name="token" value="<?php echo $newToken; ?>"></p>
+            <p>
+                <button type="submit" name='submit' class="btn btn-primary button send">Send</button>
+            </p>
+          </div>
+        <div class='col-sm-4 phone-address'>
+              <h4>Phone</h4>
+            <p>
+                USA - (555)-121-5555
+                <br>
+                THA - (555)-121-5555
+                <br>
+                KHB - (555)-121-5555
+            </p>
+              <h4>Location</h4>
+            <p>
+                34509 BassFish Road
+                <br>
+                Topwater Jig, MO
+                <br>
+                44567
+            </p>
+        </div>
   
     </div>
 

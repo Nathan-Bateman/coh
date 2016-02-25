@@ -18,7 +18,7 @@ html, body, {
   font-family: 'cohfont';
   color:#003D7A;
   text-transform: uppercase;
-  height: 20pt;
+  font-size: 18pt;
 }
 .sitewrapper {
   position: relative;
@@ -451,20 +451,31 @@ h3.contact-format {
   background-color: rgba(42, 69, 122, 1); 
 }
 .fields {
-  padding-left: 4.25em;
+  padding:10px;
+}
+.text-submit {
+  padding:10px;
+}
+.phone-address {
+  padding: 10px;
+}
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
 }
 .block {
   width: 100%;
   float: left;
   position: relative;
 }
-textarea {
-  border: red;
-}
+
 /*media breakpoints*/
 
-/*for bottom pics and subtitle*/
-@media (max-width: 769px) {
+/*for bottom pics and subtitle 720*/
+@media (max-width: 780px) {
 
   .space {
       padding-bottom:35px;
@@ -472,9 +483,23 @@ textarea {
   .col-sm-12.bottompics {
 
     padding-left: 25%;
+  }
+.input-height {
+  padding:10px;
+  max-width: none;
+  width:100%;
+  }
+  .form-group {
+    padding-right:15px;
+  }
+  .phone-address {
+    text-align: center;
+  }
+  .send {
+    width:100%;
+  }
 }
-}
-/*for subtitle under COH in header*/
+/*for subtitle under COH in header 860*/
 @media (max-width: 864px) {
     h6.ipwith {
       font-size: 7.7pt;
@@ -482,33 +507,65 @@ textarea {
     }
 }
 
-/*for COH in header*/
-@media (max-width: 460px) {
+/*for COH in header 460*/
+@media (max-width: 320px) {
   h3.cohfont {
-  /*padding-left: 2px;*/
-      font-size: 15pt;
+      font-size: 10pt;
 }
 .hammy {
-    padding-top: .45em;
-    font-size: 2.5em;
+    padding-top: .7em;
+    font-size: 1.5em;
 }
 
 }
-
-/*for smart phone (iphone)*/
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
-  h3.coh {
-  padding-top: 1em;
-  font-size: 12pt;
+/*for footer*/
+@media (max-width: 299px){
+  .copy {
+    margin-top:0;
   }
-  .footerItem {
+  .fields {
+    padding-left: -4.25em;
+    width:100%;
+  }
+  textarea {
+    width:100%;
+  }
+
+}
+@media (min-width: 210px) and (max-width: 375px){
+.footerItem {
     font-size: 12pt;
 
   }
-  .copy {
-    margin-top:2.2em;
+  h3.coh {
+    text-align: center;
   }
+  .copy {
+    margin-top:0;
+  }
+
+}
+@media (min-width: 300px) and (max-width: 322px){
+  .copy {
+    margin-top:2em;
+  }
+
+}
+
+
+/*for smart phone (iphone)*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+  h3.cohfont {
+  padding-top: .9em;
+  font-size: 12pt;
+  }
+
+.hammy {
+    padding-top: 1.3em;
+    font-size: 1.8em;
+}
+ 
   .table-text-left-left {
     text-align: left;
     padding-right: 10px;
