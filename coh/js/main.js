@@ -74,20 +74,13 @@ var postBottomPics = function () {
 
 	}
 };
-/*var postBottomPicsLables = function () {
-	for (item in bottomPicsLables) {
-		var lable = bottomPicsLables[item];
-		$bottomSectionLables.append(lable);
 
-	}
-};
-*/
+
 
 var randomBanner = function (x) {
 	var bannerPics = ['images/banner_1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
 	var images = randomfromarray(bannerPics);
 	$( ".banner" ).append( '<img src="' + images +'" class="img-responsive centerImage border stackorder">' );
-	//$( ".banner" ).css({'background-image': 'url(' + images + ')'});
 };
 
 menu.addEventListener('click', function(e) {
@@ -106,10 +99,23 @@ main.addEventListener('click', function() {
 
 var hopeViewModel = function () {
   var self = this;
+
+  	var onloadAnimation = function() { $( document ).ready(function() {
+        console.log( "document loaded" );
+        self.documentReady(true);
+        setTimeout(function(){ self.show(true) }, 400);
+        setTimeout(function(){document.querySelector('.btn-main-coh').classList.add('glow')}, 2600);
+
+    		});
+	};
+	onloadAnimation();
 	postMenu();
 	postFooter();
 	postBottomPics();
 	randomBanner();
+	self.show = ko.observable(false);
+	self.documentReady = ko.observable(false);
+	
 
 };
 ko.applyBindings(new hopeViewModel());

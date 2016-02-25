@@ -72,7 +72,7 @@ session_start();
         <p>Someone will get back to you within 24 hrs.<br><br> Blessings!<br><br>Construction of Hope Team </p>
       </div>
       <div class="modal-footer">
-<form action="http://coh.kadoshkcweb.com" style="text-align:left">
+<form action="index.php" style="text-align:left">
     <button type="submit" class="btn btn-primary">Back to site</button>
 </form>
 
@@ -145,8 +145,11 @@ session_start();
   <!--end 2nd row-->
   <div id='bannerplace' class='row'>
     <div class='col-sm-12 banner'>
-<h2 class="keyline"><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><p></p><button type="button" class="btn btn-primary font-roboto-light">See the Work</button></span></h2>
-<div class='after border'></div>
+      <div data-bind="if: documentReady, visible: show" class='center-fly'>
+        <h2><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><p></p><button type="button" class="btn btn-primary font-roboto-light btn-main-coh">See the Work</button></span></h2>
+      </div>
+      <div class='after border'>
+      </div>
     </div>
   </div>
   <!--end of row 3-->

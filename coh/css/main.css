@@ -7,14 +7,13 @@ src: url('cohfont.eot'); /* IE9 Compat Modes */
 src: url('cohfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
 url('cohfont.woff') format('woff'), /* Modern Browsers */
 url('cohfont.ttf') format('truetype'), /* Safari, Android, iOS */
-url('cohfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+url('cohfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 html, body, {
 	width: 100%;
 	height: 100%;
 }
-body {
-  /*overflow-x: hidden;*/
-}
+
 .cohfont {
   font-family: 'cohfont';
   color:#003D7A;
@@ -57,7 +56,7 @@ h1.font-coh {
 /*banner styles*/
 .stackorder {
   z-index: -1;
-  /*position: relative;*/
+  position: relative;
   width: 100%;
 }
 
@@ -68,27 +67,70 @@ h1.font-coh {
     display: block;
     background: rgba(0, 0, 0, .6);
   }
-.centerbannertext {
-  margin:0 auto;
-}
-.keyline {
+
+.center-fly {
    position: absolute;
+   padding-top: 3em;
+   padding-left:1em;
    z-index:3;
-   top: 75px; 
    width: 100%;
    font-family: 'cohfont';
    font-size: 20pt;
    color: white; 
-   letter-spacing: -1px; 
-   padding: 10px 50px;
+   letter-spacing: -1px;
+   animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */ 
 }
-h2 .banner .keyline {
-  margin:0 auto;
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Glow effect from http://zurb.com/playground/radioactive-buttons*/
+  @-webkit-keyframes glowPulse {
+  from { background-color: #337ab7; -webkit-box-shadow: 0 0 9px rgba(212, 231, 8, 0.5) }
+  50% { background-color: #337ab7; -webkit-box-shadow: 0 0 18px rgba(212, 231, 8, 0.5) }
+  to { background-color: #337ab7; -webkit-box-shadow: 0 0 9px rgba(212, 231, 8, .5) }
+}
+  .glow {
+  -webkit-animation-name: glowPulse;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+}
+
 span.font-roboto-light {
   color:white;
 }
-br.keyline {
+br.center-fly {
   padding-top: 5px;
 }
 button.font-roboto-light {
@@ -389,6 +431,9 @@ a.info {
 #contact {
 
   background-color: rgba(226, 226, 222, 0.52);
+}
+form {
+  margin-bottom: -1em;
 }
 .contact-format {
   padding: 15px;
