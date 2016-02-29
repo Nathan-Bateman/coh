@@ -13,13 +13,14 @@ html, body, {
 	width: 100%;
 	height: 100%;
 }
-
+/*formatting for COH font in header*/
 .cohfont {
   font-family: 'cohfont';
   color:#003D7A;
   text-transform: uppercase;
   font-size: 18pt;
 }
+/*formatting ofr COH font on small device < 315px*/
 .cohfont-abbr {
   font-family: 'cohfont';
   color:#003D7A;
@@ -27,11 +28,13 @@ html, body, {
   font-size: 18pt;
   margin-top:-10px;
 }
+/*div to wrap all markup for overlat when menu selected*/
 .sitewrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
+/*formatting for roboto fonts*/
 .font-roboto-bold {
     font-family: 'roboto', sans-serif;
     font-weight: 400;
@@ -52,6 +55,7 @@ h2.font-roboto-bold {
 h1.font-coh {
     font-family: ultraregular;
 }
+/*container div formatting to prevent weird horizontal scrolling*/
 .container-fluid {
 	width: 100%;
 	height:100%;
@@ -74,7 +78,7 @@ h1.font-coh {
     display: block;
     background: rgba(0, 0, 0, .6);
   }
-
+/*fly in animation*/
 .center-fly {
    position: absolute;
    padding-top: 3em;
@@ -148,7 +152,7 @@ button.font-roboto-light {
 .lifesong {
 
 }
-
+/*hamburger menu styles*/
 .hammy {
 	padding-top: .35em;
   font-size: 3em;
@@ -164,22 +168,13 @@ a.hammy:hover {
 a.footerItem:hover {
   text-decoration:none;
 }
-}
+/*in partnership with styles in header*/
 .ipwith {
 	font-size: 85%;
 	padding-top: -5px;
     color:rgba(95, 115, 159, 0.75);
 }
-.coh {
-	padding-top: .3em;
-    color: #1A305A;
-}
-hr {
-    margin-top: 4px;
-    border-top: 4px solid #003d7a;
-    width: 98%;
-
-}
+/*tweaking header padding*/
 .padding-left-off {
 	padding-left: 5px;
 }
@@ -189,9 +184,11 @@ hr {
 .upsome {
 	margin-top: -.65em;
 }
+/*style to center anything*/
 .center {
     margin: 0 auto;
 }
+/*icon styles for footer*/
 .instagram {
     background-color: rgba(0,0,0,0);
     height:35px;
@@ -203,8 +200,14 @@ hr {
     margin-top: 1.5em;
     background-color: rgba(0,0,0,0);
 }
+/*copyright styles*/
 .copy {
   margin-top: 2em;
+}
+/*tweaking footer for responsiveness*/
+.coh {
+  padding-top: .3em;
+    color: #1A305A;
 }
 a.footerItem {
   background-color: rgba(0,0,0,0);
@@ -215,17 +218,13 @@ a.footerItem {
 footer {
     background-color: #2A457A;
 }
-.lifesong{
-    padding-top: 20px;
-    padding-right:15px;
-}
+
 .flex-box {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /*padding: 10px;*/
 }
 li .coh {
     padding-left: .2em;
@@ -323,7 +322,7 @@ a.c-menu__link {
   position: fixed;
 }
 
-/*center styles for table and table content*/
+/*center styles for table and table content - only for home page*/
 
 .centerImage {
     margin: 0 auto;
@@ -395,7 +394,7 @@ table.center-table {
     font-weight: 600;
 }
 
-/*Styles for bottom pictures */
+/*Styles for bottom pictures - only for home page*/
 
 .border-box {
     color: white;
@@ -413,7 +412,7 @@ table.center-table {
 
 
 
-/*center bottom pictures*/
+/*center bottom pictures - only for home page*/
 
 .col-sm-12.bottompics {
     margin-right: auto;
@@ -426,7 +425,7 @@ table.center-table {
    margin: 0 auto;
 }
 
-/*link behavior for for bottom pics*/
+/*link behavior for for bottom pics -  only for home page*/
 a.info {
   text-decoration: none;
 }
@@ -502,11 +501,14 @@ textarea {
   .form-group {
     padding-right:15px;
   }
-  .phone-address {
-    text-align: center;
-  }
   .send {
     width:100%;
+  }
+}
+
+@media (max-width: 767px){
+  .phone-address {
+    text-align: center;
   }
 }
 /*for text over banner photo*/
