@@ -19,6 +19,15 @@ html, body, {
   color:#003D7A;
   text-transform: uppercase;
   font-size: 18pt;
+
+}
+h3.cohfont a, a:active, a:visited {
+  color:#003D7A;
+  text-decoration: none;
+}
+h3.cohfont-abbr a, a:active, a:visited {
+  color:#003D7A;
+  text-decoration: none;
 }
 /*formatting ofr COH font on small device < 315px*/
 .cohfont-abbr {
@@ -197,6 +206,7 @@ a.footerItem:hover {
 /*style to center anything*/
 .center {
     margin: 0 auto;
+    float:none;
 }
 /*icon styles for footer*/
 .instagram {
@@ -394,6 +404,19 @@ table.center-table {
   min-width: 375px;
   padding-bottom: 22px;
 }
+/*content for all other pages*/
+.content-bg {
+  background-color: white;
+  max-width: 72%;
+  min-width: 375px;
+  padding-bottom: 22px;
+}
+.format-options {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+}
 #wrapper {
   border: 1px solid #003D7A;
   top:-70px;
@@ -529,6 +552,12 @@ textarea {
   .center-fly h2 {
     font-size: 18pt;
   }
+  .center-fly-other {
+    padding-top: 1em;
+  }
+  .center-fly-other h2 {
+    font-size: 18pt;
+  }
 }
 /*for subtitle under COH in header 860*/
 @media (max-width: 864px) {
@@ -575,6 +604,9 @@ textarea {
     margin-top:0;
   }
   .center-fly h2 {
+    font-size: 13pt;
+  }
+  .center-fly-other h2 {
     font-size: 13pt;
   }
 
