@@ -13,7 +13,7 @@ var menuItem = document.getElementsByTagName('li');
 var $bottomSection = $(document.querySelector('.bottompics'));
 var $bottomSectionLables = $(document.querySelector('.lables'));
 var banner = document.querySelector('.banner');
-var clientWidth = document.documentElement.clientWidth;
+var clientWidth = $(window).width();
 
 
 var randomfromarray = function (array){
@@ -105,29 +105,41 @@ var hopeViewModel = function () {
 	self.documentReady = ko.observable(false);
 	self.regscreen = ko.observable(true);
 
-	var screenSizeCheck = function() {
-		if (clientWidth <= 315) {
-			console.log (clientWidth);
-			self.regscreen(false);
-		};
+	var checkSize = function (width) {
+		if (width <= 315) {
+			self.regscreen(false)
+		} else {
+			self.regscreen(true)
+		}
 	};
 
+	var resize = function () { $(document).ready(function(){
+		var winWidth = $(window).width();
+  		 checkSize(winWidth);
+	}); $(window).resize(function() {
+  		var winWidth = $(window).width();
+  		 checkSize(winWidth);
+		});
+		};
+
+//delays the timing of the initial animation on the page
   	var onloadAnimation = function() { $( document ).ready(function() {
         console.log( "document loaded" );
         self.documentReady(true);
-        setTimeout(function(){ self.show(true) }, 400);
-        setTimeout(function(){document.querySelector('.btn-main-coh').classList.add('glow')}, 2600);
+        setTimeout(function(){ self.show(true) }, 1200);
+        setTimeout(function(){document.querySelector('.btn-main-coh').classList.add('glow')}, 2900);
 
     		});
 	};
-	screenSizeCheck();
+	resize();
 	onloadAnimation();
 	postMenu();
 	postFooter();
 	postBottomPics();
 	randomBanner();
+	
 
-};
+	};
 ko.applyBindings(new hopeViewModel());
 
 
