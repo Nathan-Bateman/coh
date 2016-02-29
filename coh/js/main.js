@@ -24,8 +24,8 @@ var randomfromarray = function (array){
 
 var menuOptions = {
 					'close':'<li id=' + '"closeMenu"' + 'style="border-top:none; border-bottom:none; background-color:#96BDE4" class=' +'"menuItem"'+'><a href="#COH" class="c-menu__link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>',
-					'home':'<li style="border-top:none;" class="menuItem hvr-fade"'+'><a href="https://www.google.com/" class="c-menu__link"><h5 class='+'coh' +'>Home</h5></a></li>',
-					'about':'<li class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>About</h5></a></li>',
+					'home':'<li style="border-top:none;" class="menuItem hvr-fade"'+'><a href="index.php" class="c-menu__link"><h5 class='+'coh' +'>Home</h5></a></li>',
+					'about':'<li class="menuItem hvr-fade"'+'><a href="about.php" class="c-menu__link"><h5 class='+'coh' +'>About</h5></a></li>',
 					'projects':'<li class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>Projects</h5></a></li>',
 					'news':'<li class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>News</h5></a></li>',
 					'donate':'<li style="border-bottom:none;" class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>Donate</h5></a></li>'			
@@ -46,12 +46,6 @@ var bottomPics = {
 				   'projects':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/project2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">Projects</h4>  <p class="text-center"> BKK Thailand  |  PNH Cambodia </p><span></a></div></div>',
 				   'news':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">News</h4>  <p class="text-center"> Updates  |  Media </p><span></a></div></div>'
 };
-//<div class="col-sm-4"><div class='block'><a href="#" class="info"><img src="images/about.jpg"><span><h2>About</h2>  <p>Read more about...</p><span></a></div></div>
-/*var bottomPicsLables = {
-				   'about':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>About</h3></div>',
-				   'projects':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>Projects</h3></div>',
-				   'news':'<div class=' + 'col-sm-4 ' + 'bottomLable' +'><h3 class=' + 'text-center' + '>News</h3></div>'
-};*/
 
 var postMenu = function () {
 	for (item in menuOptions) {
@@ -126,9 +120,12 @@ var hopeViewModel = function () {
   	var onloadAnimation = function() { $( document ).ready(function() {
         console.log( "document loaded" );
         self.documentReady(true);
+        if (window.location.pathname === '/index.php') {
         setTimeout(function(){ self.show(true) }, 1200);
         setTimeout(function(){document.querySelector('.btn-main-coh').classList.add('glow')}, 2900);
-
+        		} else {
+        			self.show(true);
+        		};
     		});
 	};
 	resize();
