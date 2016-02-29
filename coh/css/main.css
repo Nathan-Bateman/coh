@@ -78,7 +78,7 @@ h1.font-coh {
     display: block;
     background: rgba(0, 0, 0, .6);
   }
-/*fly in animation*/
+/*fly in animation for home page only*/
 .center-fly {
    position: absolute;
    padding-top: 3em;
@@ -137,7 +137,17 @@ h1.font-coh {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-iteration-count: 1;
 }
-
+.center-fly-other {
+   position: absolute;
+   padding-top: 3em;
+   padding-left:1em;
+   z-index:3;
+   width: 100%;
+   font-family: 'cohfont';
+   font-size: 20pt;
+   color: white; 
+   letter-spacing: -1px;
+ }
 span.font-roboto-light {
   color:white;
 }
