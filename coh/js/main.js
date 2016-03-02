@@ -14,6 +14,7 @@ var $bottomSection = $(document.querySelector('.bottompics'));
 var $bottomSectionLables = $(document.querySelector('.lables'));
 var banner = document.querySelector('.banner');
 var clientWidth = $(window).width();
+var $title = $( "title" ).text();
 
 
 var randomfromarray = function (array){
@@ -47,6 +48,12 @@ var bottomPics = {
 				   'news':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">News</h4>  <p class="text-center"> Updates  |  Media </p><span></a></div></div>'
 };
 
+var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p>- Li Hou -</p></div>',
+				'<div class="center-content text-center"><p>"If I fear to hold another to the highest goal because it is so much easier to avoid doing so, then I know nothing of Calvary love"<p></p>- Amy Carmichael -</p></div>',
+				'<div class="center-content text-center"><p>"Are the things of God, the honor of his name, the welfare of his church, the conversion of sinners, and the profit of your own soul, your chief aim?"<p></p>- George Muller -</p></div>'
+
+				]
+
 var postMenu = function () {
 	for (item in menuOptions) {
 		var listElement = menuOptions[item];
@@ -63,10 +70,15 @@ var postFooter = function () {
 	}
 };
 var postBottomPics = function () {
-	for (item in bottomPics) {
-		var pic = bottomPics[item];
-		$bottomSection.append(pic);
-
+	var quote = randomfromarray(quotes);
+	
+	if($title === 'COH') {
+		for (item in bottomPics) {
+			var pic = bottomPics[item];
+			$bottomSection.append(pic);
+		}
+	}else {
+		$bottomSection.append(quote);
 	}
 };
 

@@ -438,8 +438,14 @@ p.center-content {
   font-family: 'roboto',sans-serif;
   font-weight: 300;
 }
-span.center-content {
-  font-size: 17pt;
+div.center-content {
+  margin:0 auto;
+  font-size: 15pt;
+  font-style: italic;
+  color:#003d7a;
+  font-family: 'roboto',sans-serif;
+  font-weight: 300;
+  max-width: 400px;
 }
 hr {
 
@@ -493,7 +499,7 @@ a.info {
 .bottomview a:hover span.darken, .bottomview a:focus span.darken, .bottomview a:active span.darken {
     background-color: #0A2E52;
 }
-/*Contact for styles*/
+/*Contact form styles*/
 #contact {
 
   background-color: rgba(226, 226, 222, 0.52);

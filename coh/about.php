@@ -99,7 +99,7 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COH</title>
+  <title>COHAbout</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -163,7 +163,7 @@ session_start();
         <hr>
         <div data-bind="if: oneActive" class='center'>
             <p class='center-content'>
-              <span style="font-weight:bold;">History: </span>Construction of Hope began in 2012 in Thailand with the desire to share God’s love with migrant construction workers from Cambodia. This desire has developed into partnerships with indigenous churches in Thailand and Cambodia to provide education, discipleship, and holistic care for children and to support families through biblical teaching and sustainable business opportunities. 
+              <span style="font-weight:bold;">History: </span>Construction of Hope began in 2012 in Thailand with the desire to share God’s love with migrant construction workers from Cambodia. This desire developed into partnerships with indigenous churches in Thailand and Cambodia to provide education, discipleship, and holistic care for children and to support families through biblical teaching and sustainable business opportunities. 
             </p>
               <br>
               <br>
