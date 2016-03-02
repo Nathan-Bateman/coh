@@ -157,9 +157,11 @@ session_start();
       <div id='wrapper' class="col-sm-12 center content-bg">
         <h1 class='text-center font-roboto-bold'>ABOUT</h1>
         <span class='format-options'>
-      <h2 class='text-center font-roboto-bold'>Info</h2>
-        <h2 class='text-center font-roboto-bold'>Folks</h2>
+      <h2 data-bind="click:changeOne, style: { textDecoration: oneActive() ? 'underline' : 'none',fontWeight: oneActive() ? 'bold' : ''  }" class='text-center font-roboto-light'>Info</h2>
+        <h2 data-bind="click:changeTwo, style: { textDecoration: twoActive() ? 'underline' : 'none',fontWeight: twoActive() ? 'bold' : ''   }" class='text-center font-roboto-light'>Folks</h2>
         </span>
+        <p data-bind="if: oneActive" class='center'>some text for information 1</p>
+        <p data-bind="if: twoActive" class='center'>some text for information 2</p>
   
 </div>
 <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>

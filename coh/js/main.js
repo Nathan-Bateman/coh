@@ -42,7 +42,7 @@ var footerOptions = {
 					'copyright':'<li class='+'footerItem'+'><h5 class="coh copy glyphicon glyphicon-copyright-mark"' +'>2016</h5></li>'			
 };
 var bottomPics = {
-				   'about':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="https://www.google.com/" class="info"><img src="images/about3.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">About</h4>  <p class="text-center"> Mission  |  Folks </p><span></a></div></div>',
+				   'about':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="about.php" class="info"><img src="images/about3.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">About</h4>  <p class="text-center"> Mission  |  Folks </p><span></a></div></div>',
 				   'projects':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/project2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">Projects</h4>  <p class="text-center"> BKK Thailand  |  PNH Cambodia </p><span></a></div></div>',
 				   'news':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">News</h4>  <p class="text-center"> Updates  |  Media </p><span></a></div></div>'
 };
@@ -98,7 +98,22 @@ var hopeViewModel = function () {
   	self.show = ko.observable(false);
 	self.documentReady = ko.observable(false);
 	self.regscreen = ko.observable(true);
-
+	self.oneActive = ko.observable(true);
+	self.twoActive = ko.observable(false);
+	self.threeActive = ko.observable(false);
+	self.changeOne = function () {
+		self.oneActive(true);
+		self.twoActive(false);
+		self.threeActive(false);
+		
+	};
+	self.changeTwo = function () {
+		self.oneActive(false);
+		self.twoActive(true);
+		self.threeActive(false);
+		
+	};
+//check the size of the viewport continuously to call alternate header if too small
 	var checkSize = function (width) {
 		if (width <= 315) {
 			self.regscreen(false)

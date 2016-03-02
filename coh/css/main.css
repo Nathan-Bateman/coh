@@ -58,7 +58,7 @@ h3.cohfont-abbr a, a:active, a:visited {
     font-family: 'roboto', sans-serif;
     font-weight: 300;
   }
-h2.font-roboto-bold {
+h2.font-roboto-bold.mission {
     text-decoration: underline;
 }
 h1.font-coh {
@@ -140,6 +140,11 @@ h1.font-coh {
   from { background-color: #337ab7; -webkit-box-shadow: 0 0 9px rgba(212, 231, 8, 0.5) }
   50% { background-color: #337ab7; -webkit-box-shadow: 0 0 18px rgba(212, 231, 8, 0.5) }
   to { background-color: #337ab7; -webkit-box-shadow: 0 0 9px rgba(212, 231, 8, .5) }
+}
+  @-moz-keyframes glowPulse {
+  from { background-color: #337ab7; -moz-box-shadow: 0 0 9px rgba(212, 231, 8, 0.5) }
+  50% { background-color: #337ab7; -moz-box-shadow: 0 0 18px rgba(212, 231, 8, 0.5) }
+  to { background-color: #337ab7; -moz-box-shadow: 0 0 9px rgba(212, 231, 8, .5) }
 }
   .glow {
   -webkit-animation-name: glowPulse;
