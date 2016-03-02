@@ -156,7 +156,7 @@ session_start();
   
     <div id='mission' class='row'>
       <div id='wrapper' class="table-responsive col-sm-12 center-table table-bg">
-        <h2 class='text-center font-roboto-bold mission'>OUR MISSION</h2>
+        <h2 class='text-center font-roboto-bold page-title'>OUR MISSION</h2>
       <h4 class='text-center font-roboto-bold'>Equipping disadvantaged families to succeed through:</h4>
   <table class="table center-table">
   <tr>

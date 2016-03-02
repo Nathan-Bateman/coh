@@ -154,14 +154,27 @@ session_start();
   </div>
   <!--end of row 3-->
       <div id='mission' class='row'>
-      <div id='wrapper' class="col-sm-12 center content-bg">
-        <h1 class='text-center font-roboto-bold'>ABOUT</h1>
-        <span class='format-options'>
-      <h2 data-bind="click:changeOne, style: { textDecoration: oneActive() ? 'underline' : 'none',fontWeight: oneActive() ? 'bold' : ''  }" class='text-center font-roboto-light'>Info</h2>
-        <h2 data-bind="click:changeTwo, style: { textDecoration: twoActive() ? 'underline' : 'none',fontWeight: twoActive() ? 'bold' : ''   }" class='text-center font-roboto-light'>Folks</h2>
-        </span>
-        <p data-bind="if: oneActive" class='center'>some text for information 1</p>
-        <p data-bind="if: twoActive" class='center'>some text for information 2</p>
+        <div id='wrapper' class="col-sm-12 center content-bg">
+          <h2 class='text-center font-roboto-bold page-title'>ABOUT</h2>
+            <span class='format-options'>
+              <h3 data-bind="click:changeOne, style: { textDecoration: oneActive() ? 'underline' : 'none'}" class='text-center font-roboto' style="cursor:pointer;">Info</h3>
+              <h3 data-bind="click:changeTwo, style: { textDecoration: twoActive() ? 'underline' : 'none'}" class='text-center font-roboto' style="cursor:pointer;">Folks</h3>
+            </span>
+        <hr>
+        <div data-bind="if: oneActive" class='center'>
+            <p class='center-content'>
+              <span style="font-weight:bold;">History: </span>Construction of Hope began in 2012 in Thailand with the desire to share God’s love with migrant construction workers from Cambodia. This desire has developed into partnerships with indigenous churches in Thailand and Cambodia to provide education, discipleship, and holistic care for children and to support families through biblical teaching and sustainable business opportunities. 
+            </p>
+              <br>
+              <br>
+            <p class='center-content'>
+              <span style="font-weight:bold;">Mission: </span>Empowered by Christ’s love, we partner with indigenous leaders in Thailand and Cambodia to share the Gospel, disciple, and develop sustainable opportunities for disadvantaged men, women, and children.
+            </p>
+
+      </div>
+      <div data-bind="if: twoActive" class='center'>
+        <p class='center-content'>Servants photos and description here</p>
+        </div>
   
 </div>
 <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>

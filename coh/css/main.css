@@ -49,6 +49,10 @@ h3.cohfont-abbr a, a:active, a:visited {
     font-weight: 400;
     color: #003d7a;
   }
+  .font-roboto {
+    font-family: 'roboto', sans-serif;
+    color:#003d7a;
+  }
 .font-roboto-light {
     font-family: 'roboto', sans-serif;
     font-weight: 300;
@@ -58,8 +62,9 @@ h3.cohfont-abbr a, a:active, a:visited {
     font-family: 'roboto', sans-serif;
     font-weight: 300;
   }
-h2.font-roboto-bold.mission {
-    text-decoration: underline;
+h2.font-roboto-bold.page-title {
+    text-decoration: none;
+    font-weight: 700;
 }
 h1.font-coh {
     font-family: ultraregular;
@@ -426,6 +431,20 @@ table.center-table {
   border: 1px solid #003D7A;
   top:-70px;
 }
+p.center-content {
+  margin:0 30 0 30;
+  font-size: 15pt;
+  color:#003d7a;
+  font-family: 'roboto',sans-serif;
+  font-weight: 300;
+}
+span.center-content {
+  font-size: 17pt;
+}
+hr {
+
+  border-top: 1px solid rgba(0, 61, 122, 0.27);
+}
 .isaiah {
     font-size: 14pt;
     font-style: italic;
@@ -601,6 +620,14 @@ textarea {
 .footerItem {
     font-size: 12pt;
 
+  }
+  .content-bg {
+    min-width: 0;
+    font-size: 10pt;
+  }
+  p.center-content {
+    margin:0;
+    font-size: 13;
   }
   h3.coh {
     text-align: center;
