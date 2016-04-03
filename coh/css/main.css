@@ -410,14 +410,14 @@ table.center-table {
 }
 .table-bg {
   background-color: white;
-  max-width: 52%;
+  max-width: 45%;
   min-width: 375px;
   padding-bottom: 22px;
 }
 /*content for all other pages*/
 .content-bg {
   background-color: white;
-  max-width: 72%;
+  max-width: 70%;
   min-width: 375px;
   padding-bottom: 22px;
 }
@@ -482,6 +482,7 @@ hr {
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
+
 }
 
 #links {
@@ -543,7 +544,12 @@ textarea {
   float: left;
   position: relative;
 }
+/*Project Page Styles*/
 
+.images-pp, .images-bkk {
+  text-align: center;
+  margin-bottom: 25px;
+}
 /*media breakpoints*/
 
 /*for bottom pics and subtitle 720*/
@@ -582,11 +588,8 @@ textarea {
   .center-fly h2 {
     font-size: 18pt;
   }
-  .center-fly-other {
-    padding-top: 1em;
-  }
   .center-fly-other h2 {
-    font-size: 18pt;
+    font-size: 15pt;
   }
 }
 /*for subtitle under COH in header 860*/
@@ -622,14 +625,17 @@ textarea {
   }
 
 }
-@media (min-width: 210px) and (max-width: 375px){
+@media (min-width: 100px) and (max-width: 375px){
 .footerItem {
     font-size: 12pt;
 
   }
+  #drawer {
+  width: 100%;
+}
   .content-bg {
-    min-width: 0;
-    font-size: 10pt;
+    min-width: 75%;
+    font-size: 8pt;
   }
   p.center-content {
     margin:0;
@@ -644,8 +650,15 @@ textarea {
   .center-fly h2 {
     font-size: 13pt;
   }
-  .center-fly-other h2 {
-    font-size: 13pt;
+  .center-fly-other {
+    padding-top: 20px;
+    padding-left: 5px;
+    h2 {
+      font-size: 13pt;
+    }
+  }
+  .bottompics div p {
+      font-size: 10pt;
   }
 
 }
@@ -658,7 +671,7 @@ textarea {
 
 
 /*for smart phone (iphone)*/
-@media (min-width: 210px) and (max-width: 480px) {
+@media (min-width: 100px) and (max-width: 480px) {
 
   h3.cohfont {
   padding-top: .9em;

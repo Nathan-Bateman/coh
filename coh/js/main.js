@@ -27,7 +27,7 @@ var menuOptions = {
 					'close':'<li id=' + '"closeMenu"' + 'style="border-top:none; border-bottom:none; background-color:#96BDE4" class=' +'"menuItem"'+'><a href="#COH" class="c-menu__link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>',
 					'home':'<li style="border-top:none;" class="menuItem hvr-fade"'+'><a href="index.php" class="c-menu__link"><h5 class='+'coh' +'>Home</h5></a></li>',
 					'about':'<li class="menuItem hvr-fade"'+'><a href="about.php" class="c-menu__link"><h5 class='+'coh' +'>About</h5></a></li>',
-					'projects':'<li class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>Projects</h5></a></li>',
+					'projects':'<li class="menuItem hvr-fade"'+'><a href="projects.php" class="c-menu__link"><h5 class='+'coh' +'>Projects</h5></a></li>',
 					'news':'<li class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>News</h5></a></li>',
 					'donate':'<li style="border-bottom:none;" class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>Donate</h5></a></li>'			
 };
@@ -44,13 +44,13 @@ var footerOptions = {
 };
 var bottomPics = {
 				   'about':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="about.php" class="info"><img src="images/about3.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">About</h4>  <p class="text-center"> Mission  |  Folks </p><span></a></div></div>',
-				   'projects':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/project2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">Projects</h4>  <p class="text-center"> BKK Thailand  |  PNH Cambodia </p><span></a></div></div>',
+				   'projects':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="projects.php" class="info"><img src="images/project2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">Projects</h4>  <p class="text-center"> BKK Thailand  |  PNH Cambodia </p><span></a></div></div>',
 				   'news':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="#" class="info"><img src="images/news2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">News</h4>  <p class="text-center"> Updates  |  Media </p><span></a></div></div>'
 };
 
-var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p>- Li Hou -</p></div>',
-				'<div class="center-content text-center"><p>"If I fear to hold another to the highest goal because it is so much easier to avoid doing so, then I know nothing of Calvary love"<p></p>- Amy Carmichael -</p></div>',
-				'<div class="center-content text-center"><p>"Are the things of God, the honor of his name, the welfare of his church, the conversion of sinners, and the profit of your own soul, your chief aim?"<p></p>- George Muller -</p></div>'
+var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p><p>- Li Hou -</p></div>',
+				'<div class="center-content text-center"><p>"If I fear to hold another to the highest goal because it is so much easier to avoid doing so, then I know nothing of Calvary love"<p></p><p>- Amy Carmichael -</p></div>',
+				'<div class="center-content text-center"><p>"Are the things of God, the honor of his name, the welfare of his church, the conversion of sinners, and the profit of your own soul, your chief aim?"<p></p><p>- George Muller -</p></div>'
 
 				]
 
@@ -78,11 +78,22 @@ var postBottomPics = function () {
 			$bottomSection.append(pic);
 		}
 	}else {
-		$bottomSection.append(quote);
+		 $bottomSection.append(quote);
 	}
 };
 
-
+var projectModal = $('#ministry').on('show.bs.modal', function (event) {
+  var imgClicked = $(event.relatedTarget); // Button that triggered the modal
+  var imgFiletoLoad = imgClicked.data('img'); // Extract info from data-* attributes
+  var captionToLoad = imgClicked.data('caption');
+  var titleToLoad = imgClicked.data('title');
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this);
+  modal.find('.modal-title').text(titleToLoad);
+  modal.find('.modal-body p').text(captionToLoad);
+  modal.find('.modal-body img').attr("src",imgFiletoLoad);
+});
 
 var randomBanner = function (x) {
 	var bannerPics = ['images/banner_1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
