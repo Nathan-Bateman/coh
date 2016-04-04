@@ -166,19 +166,19 @@ session_start();
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Locating and Connecting" data-img="http://placehold.it/500x250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Locating and Connecting</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Forming Relationships" data-img="http://placehold.it/500x250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Forming relationships</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Developing Partnerships" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Developing Partnerships</h4>
                   </span>
                 </div>
@@ -188,19 +188,19 @@ session_start();
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Showing God's Love" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Showing God's Love</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Relocating to Cambodia" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Relocating to Cambodia</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Khmer Missionary" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Khmer Missionary</h4>
                   </span>
                 </div>
@@ -212,19 +212,19 @@ session_start();
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Children Living at the Church</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Sustainable Business</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
                   <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img src="http://placehold.it/195x250">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Outreach to Local Children</h4>
                   </span>
                 </div>
@@ -297,20 +297,20 @@ session_start();
 
       </div>
       <!--end container-->
-        <div class="modal fade" id="ministry" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
+        <div class="modal fade modal-projects" id="ministry" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title" id="mi"></h4>
+                <div class="modal-parent">
+                  <span><h4 class="modal-title" id="mi"></h4></span>
+                  <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
+                </div>
               </div>
               <div class="modal-body">
-                <img src="images/lifesong.png">
+                <img class='img-responsive' src="images/lifesong.png">
                 <p></p>
               </div>
               <div class="modal-footer">
-                <a href="http://nathan-bateman.github.io/project5/">
-                <button type="button" class="btn btn-default leftbutton" role="button">View Project</button></a>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
