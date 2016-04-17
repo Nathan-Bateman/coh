@@ -95,7 +95,9 @@ h1.font-coh {
 /*fly in animation for home page only*/
 .center-fly {
    position: absolute;
-   padding-top: 3em;
+   top: 50%;
+   transform: translateY(-50%);
+   max-width: 477px;
    padding-left:1em;
    z-index:3;
    width: 100%;
@@ -158,7 +160,9 @@ h1.font-coh {
 }
 .center-fly-other {
    position: absolute;
-   padding-top: 3em;
+   top: 50%;
+   transform: translateY(-50%);
+   max-width: 350px;
    padding-left:1em;
    z-index:3;
    width: 100%;
@@ -167,11 +171,14 @@ h1.font-coh {
    color: white; 
    letter-spacing: -1px;
  }
+
 span.font-roboto-light {
   color:white;
 }
-br.center-fly {
-  padding-top: 5px;
+.center-fly button {
+  border-radius: 0;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 button.font-roboto-light {
   color:white;
@@ -362,7 +369,7 @@ a.c-menu__link {
 #mission {
   background-color: rgba(226, 226, 222, 0.52);
   padding-top: 30px;
-  margin-bottom:20px;
+  /*margin-bottom:20px;*/
   position:relative;
   border-bottom: 2px solid rgb(0, 61, 122);
 }
@@ -500,6 +507,36 @@ a.info {
 .bottomview a:hover span.darken, .bottomview a:focus span.darken, .bottomview a:active span.darken {
     background-color: #0A2E52;
 }
+/*Dontate div styles*/
+#donate-section {
+  background-color:rgba(42, 69, 122, 1);
+}
+.donate-wrap {
+  margin: 50px 0 50px 0;
+    display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#donate-section button {
+  text-align: center;
+  background-color:#DC7E0F;
+  color: #FFF;
+  font-weight: 700;
+  padding: 10px;
+  width: 33.33%;
+  min-width: 100px;
+  max-width: 400px;
+  border: none;
+  border-radius: 0;
+  font-size: 20px;
+}
+#donate-section button:hover {
+  /*color:rgba(42, 69, 122, 1);*/
+  color:#000;
+/*  background-color:rgba(252,169,47,.8);*/
+}
 /*Contact form styles*/
 #contact {
 
@@ -514,6 +551,7 @@ form {
 }
 h3.contact-format {
   padding-left: 2em;
+  margin-top:15px;
 }
 .input-height {
   height: 50px;
@@ -521,7 +559,8 @@ h3.contact-format {
   max-width: 300px;
 }
 .button {
-  background-color: rgba(42, 69, 122, 1); 
+  background-color: rgba(42, 69, 122, 1);
+  border-radius: 0; 
 }
 .fields {
   padding:10px;
@@ -544,12 +583,29 @@ textarea {
   float: left;
   position: relative;
 }
+/*About Page Styles*/
+.folks-wrapper .row {
+  margin-bottom: 40px;
+}
+.folks {
+  text-align: center;
+}
+.folks img {
+  margin: 0 auto;
+}
+.folks h4, .folks h5 {
+  color: #2A457A;
+}
+.folks h4 span {
+  top: 4;
+  color: #2A457A;
+}
 /*Project Page Styles*/
 
 .images-pp, .images-bkk {
   text-align: center;
 }
-.images-pp, .images-bkk h4 {
+.images-pp h4, .images-bkk h4 {
   margin-bottom: 60px;
 }
 .images-pp img, .images-bkk img {
@@ -580,6 +636,12 @@ textarea {
 }
 .modal-footer {
   background-color: #2A457A;
+}
+.modal-footer h5 {
+    font-family: 'cohfont';
+    color: #FFF;
+    text-transform: uppercase;
+    float: left;
 }
 /*media breakpoints*/
 
@@ -614,13 +676,18 @@ textarea {
 /*for text over banner photo*/
 @media (max-width: 600px) {
   .center-fly {
-    padding-top: 1em;
+    transform: translateY(-70%);
+  }
+  .center-fly button {
+    margin-top: 10px;
+    border-radius: 0;
   }
   .center-fly h2 {
     font-size: 18pt;
   }
   .center-fly-other h2 {
     font-size: 15pt;
+    max-width: 400px;
   }
 }
 /*for subtitle under COH in header 860*/
@@ -678,15 +745,27 @@ textarea {
   .copy {
     margin-top:0;
   }
+  .center-fly {
+    padding-left: 5px;
+  }
   .center-fly h2 {
-    font-size: 13pt;
+    font-size: 16px;
+  }
+  .center-fly button {
+    width: 20%;
+    min-width: 100px;
+    max-width: 150px;
+    padding: 1%;
+    margin-bottom: 4px;
+    margin-top: 4px;
   }
   .center-fly-other {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     padding-left: 5px;
-    h2 {
-      font-size: 13pt;
-    }
+  }
+  .center-fly-other h2 {
+    font-size: 16px;
+    max-width: 140px;
   }
   .bottompics div p {
       font-size: 10pt;
@@ -743,6 +822,9 @@ textarea {
   }
   #wrapper h4 {
     font size: medium;
+  }
+  .center-fly {
+    transform: translateY(-55%);
   }
 
 

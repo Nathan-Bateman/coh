@@ -146,7 +146,7 @@ session_start();
     <div id='bannerplace' class='row'>
       <div class='col-sm-12 banner'>
         <div data-bind="if: documentReady, visible: show" class='center-fly-other'>
-          <h2><span class="font-roboto-light"> Striving for</span><p></p><span> Service</span><span class="font-roboto-light"> to please the Father</span></h2>
+          <h2><span class="font-roboto-light"> Striving for</span><span> Service</span><span class="font-roboto-light"> to please the Father</span></h2>
         </div>
         <div class='after border'>
         </div>
@@ -237,6 +237,12 @@ session_start();
         </h2>
     </div>  
     <!--end of row 4-->
+         <!-- donate section -->
+  <div id='donate-section' class='row'>
+    <div class='col-sm-12 donate-wrap'>
+      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+    </div>
+  </div>
     <div id='links' class='row'>
       <div class='col-sm-12 bottompics'>
       </div>
@@ -311,6 +317,7 @@ session_start();
                 <p></p>
               </div>
               <div class="modal-footer">
+                <h5>Construction of Hope</h5>
               </div>
             </div>
           </div>
