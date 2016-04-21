@@ -413,7 +413,6 @@ table.center-table {
   border-top: 4px solid rgba(220, 126, 15, 1);
   border-bottom: 4px solid rgba(220, 126, 15, 1);
   max-height: 474px;
-  
 }
 .table-bg {
   background-color: white;
@@ -507,6 +506,22 @@ a.info {
 .bottomview a:hover span.darken, .bottomview a:focus span.darken, .bottomview a:active span.darken {
     background-color: #0A2E52;
 }
+/*News Page Styles*/
+.border_news {
+  border-top: 4px solid rgba(42, 69, 122, 1);
+  border-bottom: 4px solid rgba(220, 126, 15, 1);
+}
+.feed {
+  margin: 15px;
+}
+.feed .feed-image {
+  padding-left: 50px;
+  border-right: 1px solid #000;
+}
+.feed h2 {
+  margin: 0;
+
+}
 /*Dontate div styles*/
 #donate-section {
   background-color:rgba(42, 69, 122, 1);
@@ -525,16 +540,17 @@ a.info {
   color: #FFF;
   font-weight: 700;
   padding: 10px;
-  width: 33.33%;
+  width: 20%;
   min-width: 100px;
   max-width: 400px;
   border: none;
   border-radius: 0;
   font-size: 20px;
+  border: solid 2px #FFF;
 }
 #donate-section button:hover {
   /*color:rgba(42, 69, 122, 1);*/
-  color:#000;
+  color:#5D3608;
 /*  background-color:rgba(252,169,47,.8);*/
 }
 /*Contact form styles*/

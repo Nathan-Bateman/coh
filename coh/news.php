@@ -143,103 +143,18 @@ session_start();
     <!--end col 12 div-->
   </div>  
   <!--end 2nd row-->
-  <div id='bannerplace' class='row'>
-    <div class='col-sm-12 banner'>
-      <div data-bind="if: documentReady, visible: show" class='center-fly-other'>
-        <h2><span class="font-roboto-light"> God-Centered</span><span> Indigenous</span><span class="font-roboto-light"> Missions</span></h2>
+  <div id='news' class='row border_news'>
+    <div class='col-sm-12 feed'>
+      <div class='col-sm-8 feed-image'>
+          <h2 class='font-roboto'>News</h2>
       </div>
-      <div class='after border'>
+      <div class='col-sm-4 updates'>
+          <h2 class='font-roboto'>Monthly Updates</h2>
       </div>
     </div>
   </div>
   <!--end of row 3-->
-      <div id='mission' class='row'>
-        <div id='wrapper' class="col-sm-12 center content-bg">
-          <h2 class='text-center font-roboto-bold page-title'>ABOUT</h2>
-            <span class='format-options'>
-              <h3 data-bind="click:changeOne, style: { textDecoration: oneActive() ? 'underline' : 'none'}" class='text-center font-roboto' style="cursor:pointer;">Info</h3>
-              <h3 data-bind="click:changeTwo, style: { textDecoration: twoActive() ? 'underline' : 'none'}" class='text-center font-roboto' style="cursor:pointer;">Folks</h3>
-            </span>
-        <hr>
-        <div data-bind="if: oneActive" class='center'>
-            <p class='center-content'>
-              <span style="font-weight:bold;">History: </span>Construction of Hope began in 2012 in Thailand with the desire to share God’s love with migrant construction workers from Cambodia. This desire developed into partnerships with indigenous churches in Thailand and Cambodia to provide education, discipleship, and holistic care for children and to support families through biblical teaching and sustainable business opportunities. 
-            </p>
-              <br>
-              <br>
-            <p class='center-content'>
-              <span style="font-weight:bold;">Mission: </span>Empowered by Christ’s love, we partner with indigenous leaders in Thailand and Cambodia to share the Gospel, disciple, and develop sustainable opportunities for disadvantaged men, women, and children.
-            </p>
 
-      </div>
-      <div data-bind="if: twoActive" class='center folks-wrapper'>
-        <div class='row'>
-          <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Sin Somnang <span class="glyphicon glyphicon-envelope"></span></h4>
-            <h5>Indigenous Pastor - Cambodia
-            </h5>
-            </div>
-            <div class='col-sm-6'>
-            <p>Pastor Somnang Sin is the Senior Pastor of Fellowship Church of Pochentong. He has served in that capacity since 2003. Pastor Somnang has a Bachelor's Degree in Khmer Literature from the Royal University of Phnom Penh and a Master of Religious Education from Asia Biblical Theological Seminary of Cornerstone University. He was born and raised in Phnom Penh. He became a Christian in 1995 and God has placed a real burden on his heart for the poor, needy and uneducated in his community. He believes that educating his people, with a biblical foundation, is the key to rebuilding Cambodia. He has a wife, Lean Chanthy, and a son, Seng Josiah.
-            </p>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Pastor Vino <span class="glyphicon glyphicon-envelope"></span></h4>
-            <h5>Indigenous Pastor - Thailand
-            </h5>
-            </div>
-            <div class='col-sm-6'>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Jason Glass <span class="glyphicon glyphicon-envelope"></span></h4>
-            <h5>Country Director
-            </h5>
-            </div>
-            <div class='col-sm-6'>
-            <p>Jason Glass was born and raised in North Carolina, graduated from Liberty University with a degree in education in 2008, and immediately began teaching in Bangkok, Thailand. With the vision of one day being part of starting a school, Jason completed a graduate program online through Liberty University and earned a Master’s degree in Educational Administration while teaching English at a small Thai school to grades kindergarten through grade six, before moving to International Community School to teach middle school Science. After teaching Science for four years, Jason is currently teaching middle school PE and Bible. While Jason’s desire for working overseas in missions stems from his childhood, his burden for migrant construction workers was formed after a prayer in the summer of 2012 for the Lord to give vision for his future led him to a construction site full of children near his home. Jason currently resides in Bangna, Bangkok with his wife, Christy, and daughter, Malia. 
-            </p>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Tony Randall <span class="glyphicon glyphicon-envelope"></span></h4>
-            <h5>North American Liason
-            </h5>
-            </div>
-            <div class='col-sm-6'>
-            <p>Tony Randall was born and raised on the west coast of the United States. He has an undergrad degree in Business Administration from Western Baptist College (Corban University) and a Master's in Teaching from Willamette University. Tony is an ordained minister through Commission Ministers Network.  Education is a second career for Tony; he worked for a software development company prior to becoming a teacher. After teaching for 5 years in public schools, he was called into Christian education.  That call brought he and his family (wife Angela and 2 kids Alathea and Azariah) to Bangkok, Thailand. Tony worked at International Community School as a high school math/computer teacher for four years. His family grew by one while living oversees, for his third child (Zechariah) was born in Bangkok. Tony has recently been called back to the US and is currently working as a 7th Grade Teacher at Native American Christian Academy in Arizona.
-            </p>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Jason Son <span class="glyphicon glyphicon-envelope"></span></h4>
-            <h5>Board Member
-            </h5>
-            </div>
-            <div class='col-sm-6'>
-            <p>Jason Son fully committed his life to Christ while studying at the University of Calgary. He completed a degree in Mathematics and went on to get another degree in teaching. Over a series of mission trips to Thailand, Jason felt the Lord prompting him to reside there full-time. In July of 2011 he moved to Bangkok to work as a High School Math teacher at International Community School.
-            </p>
-          </div>
-        </div>
-      </div>
-  
-</div>
-<h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
-</h2>
-</div>  
-  <!--end of row 4-->
      <!-- donate section -->
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>

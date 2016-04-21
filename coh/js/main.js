@@ -48,7 +48,7 @@ var bottomPics = {
 				   'news':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="news.php" class="info"><img src="images/news2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">News</h4>  <p class="text-center"> Updates  |  Media </p><span></a></div></div>'
 };
 
-var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p><p>- Li Hou -</p></div>',
+var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p><p>- Li Huah -</p></div>',
 				'<div class="center-content text-center"><p>"If I fear to hold another to the highest goal because it is so much easier to avoid doing so, then I know nothing of Calvary love"<p></p><p>- Amy Carmichael -</p></div>',
 				'<div class="center-content text-center"><p>"Are the things of God, the honor of his name, the welfare of his church, the conversion of sinners, and the profit of your own soul, your chief aim?"<p></p><p>- George Muller -</p></div>'
 
@@ -167,6 +167,29 @@ var hopeViewModel = function () {
         		};
     		});
 	};
+
+	var instagram = function () {
+		$.ajax({
+          url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1965235043.f3e333b.e898493cfa6143dda4098fa3192302b9',
+          dataType: 'jsonp',
+          success: function (response) {
+	          	var insta = response.data;
+	          	console.log(insta.length);
+	          	for (var i = 0; i < insta.length; i++) {
+	          
+	          		var instaImage = insta[i].images.low_resolution.url;
+	          		console.log(instaImage);
+	          		var instaLink = insta[i].link;
+	          		console.log(instaLink);
+	          		var instaCaption = insta[i].caption.text;
+	          		console.log(instaCaption);
+				}
+          	//console.log(insta);
+
+          }
+		});
+	};
+	instagram();
 	resize();
 	onloadAnimation();
 	postMenu();

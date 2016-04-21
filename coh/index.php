@@ -176,19 +176,21 @@ session_start();
 <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
 </h2>
 </div>
-    
+      <!-- donate section -->
+  <div id='donate-section' class='row'>
+    <div class='col-sm-12 donate-wrap'>
+      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+    </div>
+  </div>
   <!--end of row 4-->
   <div id='links' class='row'>
     <div class='col-sm-12 bottompics'>
     </div>
   </div>
   <!--end of row 5-->
-  <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
-  <div id='donate-section' class='row'>
-    <div class='col-sm-12 donate-wrap'>
-      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
-    </div>
-  </div><div id='contact'>
+
+    <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
+  <div id='contact'>
 
     <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
 
