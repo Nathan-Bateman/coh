@@ -13,6 +13,9 @@ html, body, {
 	width: 100%;
 	height: 100%;
 }
+button:focus {
+  outline: 0 !important;
+}
 /*formatting for COH font in header*/
 .cohfont {
   font-family: 'cohfont';
@@ -92,10 +95,20 @@ h1.font-coh {
     display: block;
     background: rgba(0, 0, 0, .6);
   }
+  .banner {
+    min-height: 150px;
+    border-top: 4px solid rgba(220, 126, 15, 1);
+    border-bottom: 4px solid rgba(220, 126, 15, 1);
+  }
 /*fly in animation for home page only*/
 .center-fly {
    position: absolute;
    top: 50%;
+   left: 0;
+   right: 0;
+   margin: auto;
+   padding: 0 !important;
+   text-align: center;
    transform: translateY(-50%);
    max-width: 477px;
    padding-left:1em;
@@ -176,10 +189,12 @@ span.font-roboto-light {
   color:white;
 }
 .center-fly button {
-  border-radius: 0;
+  border-radius: 5px;
   margin-top: 10px;
-  margin-left: 5px;
+  /*margin-left: 5px;*/
+  outline: none;
 }
+
 button.font-roboto-light {
   color:white;
 }
@@ -410,9 +425,9 @@ table.center-table {
     font-size: 12pt;
 }
 .border {
-  border-top: 4px solid rgba(220, 126, 15, 1);
-  border-bottom: 4px solid rgba(220, 126, 15, 1);
-  max-height: 474px;
+ /* border-top: 4px solid rgba(220, 126, 15, 1);
+  border-bottom: 4px solid rgba(220, 126, 15, 1);*/
+  /*max-height: 474px;*/
 }
 .table-bg {
   background-color: white;
@@ -514,13 +529,18 @@ a.info {
 .feed {
   margin: 15px;
 }
-.feed .feed-image {
-  padding-left: 50px;
+.feed .insta-column {
   border-right: 1px solid #000;
+  padding-right: 50px;
 }
-.feed h2 {
-  margin: 0;
-
+article {
+    margin-bottom: 20px;
+  }
+article section {
+  margin-bottom: 10px
+}
+article section:last-child {
+  font-size: 16px;
 }
 /*Dontate div styles*/
 #donate-section {
@@ -544,13 +564,14 @@ a.info {
   min-width: 100px;
   max-width: 400px;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
   font-size: 20px;
   border: solid 2px #FFF;
 }
 #donate-section button:hover {
   /*color:rgba(42, 69, 122, 1);*/
   color:#5D3608;
+  outline: none;
 /*  background-color:rgba(252,169,47,.8);*/
 }
 /*Contact form styles*/
@@ -576,7 +597,7 @@ h3.contact-format {
 }
 .button {
   background-color: rgba(42, 69, 122, 1);
-  border-radius: 0; 
+  border-radius: 5px; 
 }
 .fields {
   padding:10px;
@@ -693,10 +714,13 @@ textarea {
 @media (max-width: 600px) {
   .center-fly {
     transform: translateY(-70%);
+    max-width: 400px;
   }
   .center-fly button {
     margin-top: 10px;
-    border-radius: 0;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
   }
   .center-fly h2 {
     font-size: 18pt;
@@ -704,6 +728,11 @@ textarea {
   .center-fly-other h2 {
     font-size: 15pt;
     max-width: 400px;
+  }
+  #donate-section button {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
   }
 }
 /*for subtitle under COH in header 860*/
@@ -763,6 +792,7 @@ textarea {
   }
   .center-fly {
     padding-left: 5px;
+    max-width: 300px
   }
   .center-fly h2 {
     font-size: 16px;
@@ -774,6 +804,7 @@ textarea {
     padding: 1%;
     margin-bottom: 4px;
     margin-top: 4px;
+    border-radius: 5px;
   }
   .center-fly-other {
     /*padding-top: 20px;*/
@@ -786,6 +817,12 @@ textarea {
   .bottompics div p {
       font-size: 10pt;
   }
+  .feed h2 {
+  margin: 0;
+  font-size: 16px;
+  }
+
+}
 
 }
 @media (min-width: 300px) and (max-width: 322px){

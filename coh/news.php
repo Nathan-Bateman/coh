@@ -145,8 +145,10 @@ session_start();
   <!--end 2nd row-->
   <div id='news' class='row border_news'>
     <div class='col-sm-12 feed'>
-      <div class='col-sm-8 feed-image'>
-          <h2 class='font-roboto'>News</h2>
+      <div class='col-sm-8 insta-column'>
+          <h2 class='font-roboto feed-image'>News</h2>
+          <div class='post'></div>
+
       </div>
       <div class='col-sm-4 updates'>
           <h2 class='font-roboto'>Monthly Updates</h2>

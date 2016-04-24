@@ -97,7 +97,7 @@ var projectModal = $('#ministry').on('show.bs.modal', function (event) {
 
 var randomBanner = function (x) {
 	// var bannerPics = ['images/banner_1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
-	var bannerPics = ['http://placehold.it/1800x450'];
+	var bannerPics = ['http://placehold.it/1800x650'];
 	var images = randomfromarray(bannerPics);
 	$( ".banner" ).append( '<img src="' + images +'" class="img-responsive centerImage border stackorder">' );
 };
@@ -169,22 +169,37 @@ var hopeViewModel = function () {
 	};
 
 	var instagram = function () {
+		var $post = $('.post');
 		$.ajax({
           url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1965235043.f3e333b.e898493cfa6143dda4098fa3192302b9',
           dataType: 'jsonp',
           success: function (response) {
 	          	var insta = response.data;
-	          	console.log(insta.length);
+	          	// console.log(insta.length);
 	          	for (var i = 0; i < insta.length; i++) {
-	          
-	          		var instaImage = insta[i].images.low_resolution.url;
-	          		console.log(instaImage);
+	          		
+	          		var instaTitle = insta[i].tags[1];
 	          		var instaLink = insta[i].link;
-	          		console.log(instaLink);
+	          		var titleMarkup = '<section><h3><a href="' + instaLink + '">' +'#' + instaTitle + '</a></h3>';
+	          		
+	          		var instaImage = insta[i].images.standard_resolution.url;
+	          		var imageMarkup = '<img src="' + instaImage + '" class="img-responsive"></section>';
+
+	          		// var instaShareFollow =
+	          		
 	          		var instaCaption = insta[i].caption.text;
-	          		console.log(instaCaption);
+	          		var captionMarkup = '<section class="font-roboto"><p>' + instaCaption + '</p></section>';
+
+	          		var article = '<article>';
+	          			article += titleMarkup;
+	          			article += imageMarkup;
+	          			article += captionMarkup;
+	          			article += '</article>';
+	          		$post.append (article);
+	          		 console.log (insta);
+
 				}
-          	//console.log(insta);
+          	
 
           }
 		});
