@@ -99,7 +99,7 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COH</title>
+  <title>COHAbout</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -116,8 +116,8 @@ session_start();
       <div id='COH' class='row'>
         <div class="col-sm-12">
       <div class='col-sm-6 padding-right-off pull-left'>
-        <h3 data-bind="if: regscreen" class='text-left cohfont'>Construction of Hope </h3>
-        <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+        <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
+        <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'><a href="index.php">COH</a> </h3>
       </div>
   <!--end of 1st col 6 div-->
   <div id='hammy' class='col-sm-2 pull-right'>
@@ -143,53 +143,31 @@ session_start();
     <!--end col 12 div-->
   </div>  
   <!--end 2nd row-->
-  <div id='bannerplace' class='row'>
-    <div class='col-sm-12 banner'>
-      <div data-bind="if: documentReady, visible: show" class='center-fly'>
-        <h2><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><a href='news.php'><button type="button" class="btn btn-primary font-roboto-light btn-main-coh">See the Work</button></a></span></h2>
+  <div id='news' class='row border_news'>
+      <div class='col-sm-12 insta-column'>
+          <h2 class='font-roboto feed-image'>Monthly-Updates Archive</h2>
+          <p><a href='news.php'>Back to news</a></p>
+          <div>
+            <ul class='monthly-updates-archive'>
+            </ul>
+          </div>
       </div>
-      <div class='after border'>
-      </div>
-    </div>
   </div>
   <!--end of row 3-->
-  
-    <div id='mission' class='row'>
-      <div id='wrapper' class="table-responsive col-sm-12 center-table table-bg">
-        <h2 class='text-center font-roboto-bold page-title'>OUR MISSION</h2>
-      <h4 class='text-center font-roboto-bold'>Equipping disadvantaged families to succeed through:</h4>
-  <table class="table center-table">
-  <tr>
-    <td class='table-text-left-left font-roboto-light'>Biblical Evangelism</td>
-    <td class='table-text-left-right font-roboto-light'>Indigenous Leadership</td>
-  </tr>
-  <tr>
-    <td class='table-text-left-left font-roboto-light'>Christian Education</td>
-    <td class='table-text-left-right font-roboto-light'>Sustainable Business</td>
-  </tr>
-  <tr>
-    <td class='table-text-left-left font-roboto-light'>Messiah's Love</td>
-    <td class='table-text-left-right font-roboto-light'>Discipleship</td>
-  </tr>
-  </table>
-</div>
-<h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
-</h2>
-</div>
-      <!-- donate section -->
+
+     <!-- donate section -->
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
       <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
     </div>
   </div>
-  <!--end of row 4-->
   <div id='links' class='row'>
     <div class='col-sm-12 bottompics'>
     </div>
   </div>
   <!--end of row 5-->
 
-    <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
+  <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
   <div id='contact'>
 
     <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>

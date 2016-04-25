@@ -542,6 +542,57 @@ article section {
 article section:last-child {
   font-size: 16px;
 }
+.monthly-updates-archive, .monthly-updates-recent {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+.updates hr {
+  margin-left: 0px;
+  max-width: 325px;
+}
+.updates a {
+  color: #DC7E0F;
+}
+.updates h5 {
+  margin-left: 10%;
+  color: rgba(42, 69, 122, 1);
+}
+.updates h5 a {
+  color: rgba(42, 69, 122, 1);
+}
+.updates a:hover{
+  text-decoration: none;
+  color: rgba(42, 69, 122, 1);
+}
+.updates a:focus{
+  text-decoration: none;
+}
+.updates #sidebar-cta {
+  max-width: 325px;
+  background-color: rgba(42, 69, 122, 1);
+}
+.updates #sidebar-cta h3 {
+  color: #FFF;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.updates #sidebar-cta form {
+  padding: 15px;
+}
+.updates #sidebar-cta input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.updates #sidebar-cta button {
+  width: 100%;
+  background-color: #DC7E0F;
+  padding:15px;
+  max-width: 300px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
 /*Dontate div styles*/
 #donate-section {
   background-color:rgba(42, 69, 122, 1);

@@ -145,14 +145,31 @@ session_start();
   <!--end 2nd row-->
   <div id='news' class='row border_news'>
     <div class='col-sm-12 feed'>
-      <div class='col-sm-8 insta-column'>
-          <h2 class='font-roboto feed-image'>News</h2>
-          <div class='post'></div>
-
-      </div>
-      <div class='col-sm-4 updates'>
-          <h2 class='font-roboto'>Monthly Updates</h2>
-      </div>
+        <div class='col-sm-8 insta-column'>
+            <h2 class='font-roboto feed-image'>News</h2>
+            <div class='post'></div>
+        </div>
+        <div class='col-sm-4 updates'>
+            <h2 class='font-roboto'>Monthly Newsletters</h2>
+            <ul class='monthly-updates-recent'></ul>
+            <h5><a href='news-archive.php'>See Archives . . .</a></h5>
+            <hr>
+          <div id='sidebar-cta'>
+          <!--Markup for Contact form-->
+            <form action='index.php' method='post'>
+              <div class="form-group row">  
+                <div class='col-sm-12'>
+                  <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
+          
+                        <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
+                        <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
+                        <input type="hidden" name="token" value="<?php echo $newToken; ?>">
+                        <button type="submit" name='submit' class="btn btn-primary button send">SUBSCRIBE</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
     </div>
   </div>
   <!--end of row 3-->
