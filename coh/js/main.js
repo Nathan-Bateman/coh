@@ -21,174 +21,6 @@ var randomfromarray = function (array){
   return array[Math.floor(Math.random() * array.length)]
 };
 
-//object with array of news letter objects
-	var newsLetters = {
-    "issues": [
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "January/February",
-            "year": 2016
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "December",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "October - November",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "September",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "August",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "April",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "March",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "January - February",
-            "year": 2015
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "December",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "September - October",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "August",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "June - July",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "March - May",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "February",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "January",
-            "year": 2014
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "December",
-            "year": 2013
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "November",
-            "year": 2013
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "October",
-            "year": 2013
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "September",
-            "year": 2013
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "August",
-            "year": 2013
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "July",
-            "year": 2013
-        },
-        {
-            "title": "Neighborhood Map",
-            "link": "https://drive.google.com/file/d/0B8CCkvdFSll6LWw5REFPTF9qNDg",
-            "month": "June",
-            "year": 2013
-        }]
-
-    };
-var monthlyUpdates = function () {
-	var d = new Date();
-	var n = d.getFullYear();
-	var posts = newsLetters.issues;
-	var $postRecent = $('.monthly-updates-recent');
-	var $postArchive = $('.monthly-updates-archive');
-	var yearHeading = [];
-	for (var i = 0; i < posts.length; i++) {
-	 	var newsItem = posts[i];
-	 	var newsLink = newsItem.link;
-	 	var newsMonth = newsItem.month;
-	 	var newsYear = newsItem.year;
-	 	var postMarkUp = '<li><a href="' + newsLink + '">' + newsMonth + ' - ' + newsYear + '</a></li>';
-	 	//var headingExists = (posts.indexOf(newsItem) > 3) ? ((yearHeading.indexOf(newsYear) === -1) ? (yearHeading.push(newsYear)$postArchive.append(newsYear)) : (null)) : (null);
-	 	if (posts.indexOf(newsItem) > 3) {
-	 		if (yearHeading.indexOf(newsYear) === -1) {
-	 			$postArchive.append('<h3>' + newsYear + '</h3><ul class="' + newsYear + '"></ul>');
-	 			yearHeading.push(newsYear);
-	 		} else {
-	 			var newsYearClass = '.' + newsYear.toString();
-	 			$(newsYearClass).append(postMarkUp);
-
-	 		}
-	 		//var archiveYear = (yearHeading.indexOf(newsYear) === -1) ? (yearHeading.push(newsYear)) : (null);
-	 		// $postArchive.append(postMarkUp);	
-	 	} else {
-	 		$postRecent.append('<h4>' + postMarkUp + '</h4>');
-	 	}
-	};
-}
-monthlyUpdates();
 //object with menu markup
 var menuOptions = {
 					'close':'<li id=' + '"closeMenu"' + 'style="border-top:none; border-bottom:none; background-color:#96BDE4" class=' +'"menuItem"'+'><a href="#COH" class="c-menu__link"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>',
@@ -344,18 +176,46 @@ var hopeViewModel = function () {
 	          	var insta = response.data;
 	          	// console.log(insta.length);
 	          	for (var i = 0; i < insta.length; i++) {
-	          		
+	          		var rawDate = new Date(insta[i].created_time * 1000);
+	          		var rawMonth = rawDate.getMonth();
+	          		var month = new Array();
+						month[0] = "January";
+						month[1] = "February";
+						month[2] = "March";
+						month[3] = "April";
+						month[4] = "May";
+						month[5] = "June";
+						month[6] = "July";
+						month[7] = "August";
+						month[8] = "September";
+						month[9] = "October";
+						month[10] = "November";
+						month[11] = "December";
+					var monthName = month[rawDate.getMonth()]
+	          		var year = rawDate.getFullYear();
+	          		var day = rawDate.getDate();
+	          		var dateMarkup = '<p>' + monthName +' ' + day + ', ' + year + '</p>';
+	          		//console.log(instaDate);
 	          		var instaTitle = insta[i].tags[1];
 	          		var instaLink = insta[i].link;
-	          		var titleMarkup = '<section><h3><a href="' + instaLink + '">' +'#' + instaTitle + '</a></h3>';
+	          		var titleMarkup = '<section><h4><a href="' + instaLink + '">' +'#' + instaTitle + '</a></h4>' + dateMarkup;
 	          		
 	          		var instaImage = insta[i].images.standard_resolution.url;
 	          		var imageMarkup = '<img src="' + instaImage + '" class="img-responsive"></section>';
-
-	          		// var instaShareFollow =
 	          		
-	          		var instaCaption = insta[i].caption.text;
-	          		var captionMarkup = '<section class="font-roboto"><p>' + instaCaption + '</p></section>';
+	          		var instaCaptionRaw = insta[i].caption.text;
+	          		var reEx = /(?:^|[ ])#([a-zA-Z]+)/gm;
+	          		var instaCaption = instaCaptionRaw.replace(reEx, '');
+
+					//console.log(instaCaption);
+
+	          		var captionMarkup = '<section class="font-roboto">';
+	          			captionMarkup +='<ul class="social-wrap">';
+	          			captionMarkup +='<li><img src="images/glyphicons-social-31-facebook.png"></li>';
+	          			captionMarkup +='<li><a href="https://twitter.com/share?url=' + instaLink + '"><img src="images/glyphicons-social-32-twitter.png"></a></li>';
+	          			captionMarkup +='<li><a href="https://twitter.com/share?url=' + instaLink + '"><img src="images/glyphicons-social-3-google-plus.png"></a></li>';
+	          			captionMarkup +='<li><img src="images/glyphicons-social-14-e-mail-envelope.png"></li></ul>';
+	          			captionMarkup += '<p>' + instaCaption + '</p></section>';
 
 	          		var article = '<article>';
 	          			article += titleMarkup;
@@ -363,15 +223,16 @@ var hopeViewModel = function () {
 	          			article += captionMarkup;
 	          			article += '</article>';
 	          		$post.append (article);
-	          		 //console.log (insta);
+	          		 
 
 				}
           
-
+console.log (insta);
           }, 	error: function (){
             $post.append("<Oh no! There's been an issue loading the page! Try refreshing.");
           }
 		});
+
 	};
 
 

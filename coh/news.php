@@ -87,7 +87,12 @@ session_start();
     }
 
 ?>
-
+<?php
+//$feed = file_get_contents("https://api.instagram.com/v1/users/self/media/recent/?access_token=1965235043.f3e333b.e898493cfa6143dda4098fa3192302b9");
+//$feed = @json_decode($feed, true);
+//$created_on = $feed['data'][0]['created_time'];
+//echo date('M j, Y', $created_on);
+?>
 <!doctype html>
 <html lang='en'>
 <head>
@@ -146,36 +151,37 @@ session_start();
   <div id='news' class='row border_news'>
     <div class='col-sm-12 feed'>
         <div class='col-sm-8 insta-column'>
-            <h2 class='font-roboto feed-image'>News</h2>
-            <div class='post'></div>
-        </div>
+            <h2 class='font-roboto feed-image'>Latest Updates</h2>
+            <div class='post'></div></div>
+        <!-- div closed insta-column -->
         <div class='col-sm-4 updates'>
             <h2 class='font-roboto'>Monthly Newsletters</h2>
             <ul class='monthly-updates-recent'></ul>
-            <h5><a href='news-archive.php'>See Archives . . .</a></h5>
+            <p class='archives'><a href='news-archive.php'>Archives . . .</a></p>
             <hr>
-          <div id='sidebar-cta'>
-          <!--Markup for Contact form-->
-            <form action='index.php' method='post'>
-              <div class="form-group row">  
-                <div class='col-sm-12'>
-                  <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
-          
-                        <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
-                        <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
-                        <input type="hidden" name="token" value="<?php echo $newToken; ?>">
-                        <button type="submit" name='submit' class="btn btn-primary button send">SUBSCRIBE</button>
-                </div>
-              </div>
-            </form>
-          </div>
+            <div id='sidebar-cta'>
+                <form action='index.php' method='post'>
+                  <div class="row">  
+                    <div class='col-sm-12'>
+                      <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
+              
+                            <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
+                            <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
+                            <input type="hidden" name="token" value="<?php echo $newToken; ?>">
+                            <button type="submit" name='submit' class="btn btn-primary button send">SUBSCRIBE</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
         </div>
+    <!-- close the feed div -->
     </div>
+  <!-- close the news div -->
   </div>
   <!--end of row 3-->
 
      <!-- donate section -->
-  <div id='donate-section' class='row'>
+  <div id='donate-section-news' class='row'>
     <div class='col-sm-12 donate-wrap'>
       <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
     </div>
@@ -185,59 +191,6 @@ session_start();
     </div>
   </div>
   <!--end of row 5-->
-
-  <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
-  <div id='contact'>
-
-    <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
-
-  <!--Markup for Contact form-->
-    <form action='index.php' method='post' class='contact-format'>
-
-    <div class="form-group row">
-          
-        <div class='fields col-sm-4'>
-            <p>
-                <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
-            </p>
-                <br>
-            <p>
-                <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
-            </p>
-                <br>
-          </div>
-        <div class='col-sm-4 text-submit'>
-              <textarea class='center' cols='53' rows='10' name='message' placeholder="What's on your mind?"></textarea>
-            <p>
-                <input type="hidden" name="token" value="<?php echo $newToken; ?>"></p>
-            <p>
-                <button type="submit" name='submit' class="btn btn-primary button send">Send</button>
-            </p>
-          </div>
-        <div class='col-sm-4 phone-address'>
-              <h4>Phone</h4>
-            <p>
-                USA - (555)-121-5555
-                <br>
-                THA - (555)-121-5555
-                <br>
-                KHB - (555)-121-5555
-            </p>
-              <h4>Location</h4>
-            <p>
-                34509 BassFish Road
-                <br>
-                Topwater Jig, MO
-                <br>
-                44567
-            </p>
-        </div>
-  
-    </div>
-
-  </form>
-  </div>
-  <!--end of row 6-->
 
   <footer id='footer' class="row">
   <ul id="footerContacts" class="flex-box ulgeneral">
@@ -258,6 +211,24 @@ session_start();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--<script src='js/bootstrap.js'></script>-->
 <script src='js/main.js'></script>
+<script src='js/news.js'></script>
+<script>window.twttr = (function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src= "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+</script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
 </html>

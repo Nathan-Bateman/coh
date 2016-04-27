@@ -524,41 +524,63 @@ a.info {
 /*News Page Styles*/
 .border_news {
   border-top: 4px solid rgba(42, 69, 122, 1);
-  border-bottom: 4px solid rgba(220, 126, 15, 1);
+  /*border-bottom: 4px solid rgba(220, 126, 15, 1);*/
 }
 .feed {
   margin: 15px;
 }
 .feed .insta-column {
   border-right: 1px solid #000;
-  padding-right: 50px;
 }
 article {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
+article  section {
+  max-width: 630px;
+}
 article section {
   margin-bottom: 10px
 }
 article section:last-child {
   font-size: 16px;
+  float:none;
 }
-.monthly-updates-archive, .monthly-updates-recent {
+article section:last-child .social-wrap {
+  padding: 0;
+  text-align: left;
+}
+article section:last-child .social-wrap li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 5px;
+}
+article section h4 {
+  float: left;
+  clear: left;
+  margin: 0;
+}
+article section:first-child p {
+  float: right;
+  clear: right;
+}
+.monthly-updates-archive {
   list-style-type: none;
   margin-bottom: 25px;
+}
+.monthly-updates-recent {
+  list-style-type: none;
 }
 .updates hr {
   margin-left: 0px;
   max-width: 325px;
 }
-.updates a {
-  color: #DC7E0F;
-}
-.updates h5 {
-  margin-left: 10%;
+.updates ul a {
   color: rgba(42, 69, 122, 1);
 }
-.updates h5 a {
+.updates .archives {
+  text-align: center;
   color: rgba(42, 69, 122, 1);
+  font-weight: 600;
 }
 .updates a:hover{
   text-decoration: none;
@@ -597,9 +619,13 @@ article section:last-child {
 #donate-section {
   background-color:rgba(42, 69, 122, 1);
 }
+#donate-section-news {
+  background-color: #FFF;
+  border-bottom: 1px solid #000;
+}
 .donate-wrap {
   margin: 50px 0 50px 0;
-    display: -webkit-flex;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -619,11 +645,28 @@ article section:last-child {
   font-size: 20px;
   border: solid 2px #FFF;
 }
+#donate-section-news button {
+  text-align: center;
+  background-color:#FFF;
+  color: rgba(42, 69, 122, 1);
+  font-weight: 700;
+  padding: 10px;
+  width: 20%;
+  min-width: 100px;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  border: solid 2px rgba(42, 69, 122, 1);
+}
 #donate-section button:hover {
   /*color:rgba(42, 69, 122, 1);*/
   color:#5D3608;
   outline: none;
 /*  background-color:rgba(252,169,47,.8);*/
+}
+#donate-section-news button:hover {
+  background-color: rgba(132, 135, 142, 0.6);
 }
 /*Contact form styles*/
 #contact {
@@ -760,6 +803,30 @@ textarea {
   .phone-address {
     text-align: center;
   }
+  .feed .insta-column {
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+  .monthly-updates-recent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .updates #sidebar-cta {
+    max-width: none;
+  }
+  .updates #sidebar-cta button {
+    max-width: none;
+  }
+  .updates hr {
+    display: none;
+  }
+  .updates h2 {
+    text-align: center;
+  }
+  .updates .archives {
+    margin-bottom: 25px;
+  }
 }
 /*for text over banner photo*/
 @media (max-width: 600px) {
@@ -780,7 +847,7 @@ textarea {
     font-size: 15pt;
     max-width: 400px;
   }
-  #donate-section button {
+  #donate-section button, #donate-section-news button {
     border-radius: 5px;
     padding: 5px;
     font-size: 13px;
@@ -872,7 +939,18 @@ textarea {
   margin: 0;
   font-size: 16px;
   }
-
+  .feed h4 {
+    font-size: 14px;
+  }
+  .feed p {
+    font-size: 12px;
+  }
+  .updates h2 {
+    margin: 10px 0 10px; 
+  }
+   #news .insta-column h2 {
+    margin: 10px 0 10px;
+   }
 }
 
 }
@@ -930,8 +1008,15 @@ textarea {
   .center-fly {
     transform: translateY(-55%);
   }
-
-
+  article section:first-child p {
+    float: left;
+    clear: left;
+    padding-top: 5px;
+  }
+  .monthly-updates-recent {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
   
 
