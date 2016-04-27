@@ -210,11 +210,12 @@ var hopeViewModel = function () {
 					//console.log(instaCaption);
 
 	          		var captionMarkup = '<section class="font-roboto">';
+	          			captionMarkup +='<span><p class="cohfont-small">COH</p>';
 	          			captionMarkup +='<ul class="social-wrap">';
-	          			captionMarkup +='<li><img src="images/glyphicons-social-31-facebook.png"></li>';
+	          			captionMarkup +='<li><a href="https://www.facebook.com/sharer/sharer.php?u=' + instaLink + '"><img src="images/glyphicons-social-31-facebook.png"></a></li>';
 	          			captionMarkup +='<li><a href="https://twitter.com/share?url=' + instaLink + '"><img src="images/glyphicons-social-32-twitter.png"></a></li>';
-	          			captionMarkup +='<li><a href="https://twitter.com/share?url=' + instaLink + '"><img src="images/glyphicons-social-3-google-plus.png"></a></li>';
-	          			captionMarkup +='<li><img src="images/glyphicons-social-14-e-mail-envelope.png"></li></ul>';
+	          			captionMarkup +='<li><a href="https://plus.google.com/share?url=' + instaLink + '"><img src="images/glyphicons-social-3-google-plus.png"></a></li>';
+	          			captionMarkup +='<li><a href="mailto:?to=&subject=Construction%20of%20Hope&body=' + instaLink + '"><img src="images/glyphicons-social-14-e-mail-envelope.png"></a></li></ul></span>';
 	          			captionMarkup += '<p>' + instaCaption + '</p></section>';
 
 	          		var article = '<article>';
