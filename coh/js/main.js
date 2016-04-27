@@ -36,10 +36,9 @@ var footerOptions = {
 					'about':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>About</h5></a></li>',
 					'projects':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Projects</h5></a></li>',
 					'news':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>News</h5></a></li>',*/
-					'Ytube':'<li class="footerItem"'+'><a class="footerItem" href="https://www.youtube.com/channel/UC8nhHT1xudHfwUHnRHivSmA"><img class="youtube" src="images/youtube.png" alt="Youtube"></a></li>',
-					'Insta':'<li class="footerItem"'+'><a class="footerItem" href="https://www.instagram.com/constructionofhope/"><img class="instagram" src="images/instapiclittle.png" alt="Instagram"></a></li>',
-					'COH':'<li class='+'footerItem'+'><a class="footerItem" href="index.html"><h3 class="font-roboto-light coh"' +'>Construction of Hope</h3></a></li>',
-					'copyright':'<li class='+'footerItem'+'><h5 class="coh copy glyphicon glyphicon-copyright-mark"' +'>2016</h5></li>'			
+					// 'Ytube':'<li class="footerItem"'+'><a class="footerItem" href="https://www.youtube.com/channel/UC8nhHT1xudHfwUHnRHivSmA"><img class="youtube" src="images/youtube.png" alt="Youtube"></a></li>',
+					// 'Insta':'<li class="footerItem"'+'><a class="footerItem" href="https://www.instagram.com/constructionofhope/"><img class="instagram" src="images/instapiclittle.png" alt="Instagram"></a></li>',
+					'COH':'<li class='+'footerItem'+'><a class="footerItem" href="index.html"><h3 class="font-roboto-light coh"' +'>Construction of Hope <span>&copy 2016</span></h3></a></li>'			
 };
 var bottomPics = {
 				   'about':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="about.php" class="info"><img src="images/about3.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">About</h4>  <p class="text-center"> Mission  |  Folks </p><span></a></div></div>',
@@ -63,10 +62,14 @@ var postMenu = function () {
 //  $( this ).toggleClass( "c-mask" );
 //});
 var postFooter = function () {
+	var yTubeInstaG ='<div><a class="footerItem" href="https://www.youtube.com/channel/UC8nhHT1xudHfwUHnRHivSmA"><img class="youtube" src="images/youtube.png" alt="Youtube"></a>';
+		yTubeInstaG +='<a class="footerItem" href="https://www.instagram.com/constructionofhope/"><img class="instagram" src="images/instapiclittle.png" alt="Instagram"></a></div>';
 	for (item in footerOptions) {
 		var listElement = footerOptions[item];
 		$footer.append(listElement);
 	}
+	$('footer').append(yTubeInstaG);
+
 };
 var postBottomPics = function () {
 	var quote = randomfromarray(quotes);

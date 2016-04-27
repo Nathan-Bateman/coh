@@ -176,7 +176,7 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Sin Somnang <span class="glyphicon glyphicon-envelope"></span></h4>
+            <h4>Sin Somnang <a href="mailto:somnangs@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Indigenous Pastor - Cambodia
             </h5>
             </div>
@@ -188,7 +188,7 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Pastor Vino <span class="glyphicon glyphicon-envelope"></span></h4>
+            <h4>Pastor Vino <a href="mailto:pastorv@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Indigenous Pastor - Thailand
             </h5>
             </div>
@@ -200,7 +200,7 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Jason Glass <span class="glyphicon glyphicon-envelope"></span></h4>
+            <h4>Jason Glass <a href="mailto:jasong@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Country Director
             </h5>
             </div>
@@ -212,7 +212,7 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Tony Randall <span class="glyphicon glyphicon-envelope"></span></h4>
+            <h4>Tony Randall <a href="mailto:tonyr@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>North American Liason
             </h5>
             </div>
@@ -224,7 +224,7 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="http://placehold.it/195x250">
-            <h4>Jason Son <span class="glyphicon glyphicon-envelope"></span></h4>
+            <h4>Jason Son <a href="mailto:jasons@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Board Member
             </h5>
             </div>

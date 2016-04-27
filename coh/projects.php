@@ -308,7 +308,7 @@ session_start();
             <div class="modal-content">
               <div class="modal-header">
                 <div class="modal-parent">
-                  <span><h4 class="modal-title" id="mi"></h4></span>
+                  <span><h5>Construction of Hope</h5></span>
                   <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
                 </div>
               </div>
@@ -317,7 +317,7 @@ session_start();
                 <p></p>
               </div>
               <div class="modal-footer">
-                <h5>Construction of Hope</h5>
+                <h4 class="modal-title" id="mi"></h4>
               </div>
             </div>
           </div>
