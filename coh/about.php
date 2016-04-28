@@ -112,36 +112,39 @@ session_start();
       
       <nav id='drawer' class='comeout'>
       </nav>
- 
+ <div class='header-wrapper'>
       <div id='COH' class='row'>
+        
         <div class="col-sm-12">
-      <div class='col-sm-6 padding-right-off pull-left'>
-        <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
-        <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'><a href="index.php">COH</a> </h3>
-      </div>
+          <div class='col-sm-6 padding-right-off pull-left'>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope </h3>
+            <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+          </div>
   <!--end of 1st col 6 div-->
-  <div id='hammy' class='col-sm-2 pull-right'>
-    <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
-    </a>
-          
-      </div>
+          <div id='hammy' class='col-sm-2 pull-right'>
+            <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
+            </a>    
+          </div>
     <!--end of 2nd col 6 div-->
       </div>
       <!--end of col 12 div-->
+
     </div>
     <!--end of 1st row-->
   <div id='IPWITH' class='row'>
-    <div class='col-sm-12'> 
-
-  <div class='col-sm-2 padding-right-off pull-left upsome'>
-        <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
+      <div class='col-sm-12'> 
+        <div class='col-sm-2 padding-right-off pull-left upsome'>
+          <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
+        </div>
+        <div class='col-sm-10 pull-left padding-left-off upsome'>
+          <img src="images/lifesong.png" class='pull-left img-responsive'>
+        </div>    
       </div>
-  <div class='col-sm-10 pull-left padding-left-off upsome'>
-    <img src="images/lifesong.png" class='pull-left img-responsive'>
-  </div>    
-    </div>
     <!--end col 12 div-->
   </div>  
+  <!--end 2nd row-->
+  </div>
+    <!-- End of header wrapper -->  
   <!--end 2nd row-->
   <div id='bannerplace' class='row'>
     <div class='col-sm-12 banner'>
@@ -154,6 +157,7 @@ session_start();
   </div>
   <!--end of row 3-->
       <div id='mission' class='row'>
+        <div class='mission-wrapper'>
         <div id='wrapper' class="col-sm-12 center content-bg">
           <h2 class='text-center font-roboto-bold page-title'>ABOUT</h2>
             <span class='format-options'>
@@ -161,7 +165,7 @@ session_start();
               <h3 data-bind="click:changeTwo, css:{ formatOptionsToggle: twoActive()}" class='text-center font-roboto' style="cursor:pointer;">Folks</h3>
             </span>
         <hr>
-        <div data-bind="if: oneActive,fadeVisible: oneActive" class='center'>
+        <div data-bind="if: oneActive,fadeVisible: oneActive" class='center info-wrapper'>
             <p class='center-content'>
               <span style="font-weight:bold;">History: </span>Construction of Hope began in 2012 in Thailand with the desire to share God’s love with migrant construction workers from Cambodia. This desire developed into partnerships with indigenous churches in Thailand and Cambodia to provide education, discipleship, and holistic care for children and to support families through biblical teaching and sustainable business opportunities. 
             </p>
@@ -235,9 +239,10 @@ session_start();
         </div>
       </div>
   
-</div>
-<h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
-</h2>
+      </div>
+      <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
+      </h2>
+  </div>
 </div> 
 <!-- donate section -->
   <div id='donate-section' class='row'>
@@ -253,7 +258,7 @@ session_start();
   <!--end of row 5-->
   <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
   <div id='contact'>
-
+    <div class='contact-wrapper'>
     <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
 
   <!--Markup for Contact form-->
@@ -301,6 +306,7 @@ session_start();
     </div>
 
   </form>
+  </div>
   </div>
   <!--end of row 6-->
 

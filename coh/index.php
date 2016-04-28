@@ -112,37 +112,39 @@ session_start();
       
       <nav id='drawer' class='comeout'>
       </nav>
- 
+ <div class='header-wrapper'>
       <div id='COH' class='row'>
+        
         <div class="col-sm-12">
-      <div class='col-sm-6 padding-right-off pull-left'>
-        <h3 data-bind="if: regscreen" class='text-left cohfont'>Construction of Hope </h3>
-        <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
-      </div>
+          <div class='col-sm-6 padding-right-off pull-left'>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'>Construction of Hope </h3>
+            <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+          </div>
   <!--end of 1st col 6 div-->
-  <div id='hammy' class='col-sm-2 pull-right'>
-    <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
-    </a>
-          
-      </div>
+          <div id='hammy' class='col-sm-2 pull-right'>
+            <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
+            </a>    
+          </div>
     <!--end of 2nd col 6 div-->
       </div>
       <!--end of col 12 div-->
+
     </div>
     <!--end of 1st row-->
   <div id='IPWITH' class='row'>
-    <div class='col-sm-12'> 
-
-  <div class='col-sm-2 padding-right-off pull-left upsome'>
-        <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
+      <div class='col-sm-12'> 
+        <div class='col-sm-2 padding-right-off pull-left upsome'>
+          <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
+        </div>
+        <div class='col-sm-10 pull-left padding-left-off upsome'>
+          <img src="images/lifesong.png" class='pull-left img-responsive'>
+        </div>    
       </div>
-  <div class='col-sm-10 pull-left padding-left-off upsome'>
-    <img src="images/lifesong.png" class='pull-left img-responsive'>
-  </div>    
-    </div>
     <!--end col 12 div-->
   </div>  
   <!--end 2nd row-->
+  </div>
+    <!-- End of header wrapper -->
   <div id='bannerplace' class='row'>
     <div class='col-sm-12 banner'>
       <div data-bind="if: documentReady, visible: show" class='center-fly'>
@@ -155,27 +157,29 @@ session_start();
   <!--end of row 3-->
   
     <div id='mission' class='row'>
+      <div class='mission-wrapper'>
       <div id='wrapper' class="table-responsive col-sm-12 center-table table-bg">
         <h2 class='text-center font-roboto-bold page-title'>OUR MISSION</h2>
-      <h4 class='text-center font-roboto-bold'>Equipping disadvantaged families to succeed through:</h4>
-  <table class="table center-table">
-  <tr>
-    <td class='table-text-left-left font-roboto-light'>Biblical Evangelism</td>
-    <td class='table-text-left-right font-roboto-light'>Indigenous Leadership</td>
-  </tr>
-  <tr>
-    <td class='table-text-left-left font-roboto-light'>Christian Education</td>
-    <td class='table-text-left-right font-roboto-light'>Sustainable Business</td>
-  </tr>
-  <tr>
-    <td class='table-text-left-left font-roboto-light'>Messiah's Love</td>
-    <td class='table-text-left-right font-roboto-light'>Discipleship</td>
-  </tr>
-  </table>
-</div>
-<h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
-</h2>
-</div>
+        <h4 class='text-center font-roboto-bold'>Equipping disadvantaged families to succeed through:</h4>
+          <table class="table center-table">
+          <tr>
+            <td class='table-text-left-left font-roboto-light'>Biblical Evangelism</td>
+            <td class='table-text-left-right font-roboto-light'>Indigenous Leadership</td>
+          </tr>
+          <tr>
+            <td class='table-text-left-left font-roboto-light'>Christian Education</td>
+            <td class='table-text-left-right font-roboto-light'>Sustainable Business</td>
+          </tr>
+          <tr>
+            <td class='table-text-left-left font-roboto-light'>Messiah's Love</td>
+            <td class='table-text-left-right font-roboto-light'>Discipleship</td>
+          </tr>
+          </table>
+      </div>
+        <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
+        </h2>
+     </div>   
+    </div>
       <!-- donate section -->
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
@@ -184,14 +188,16 @@ session_start();
   </div>
   <!--end of row 4-->
   <div id='links' class='row'>
-    <div class='col-sm-12 bottompics'>
-    </div>
+    <div class='front-page-bottom-pics-wrapper'>
+      <div class='col-sm-12 bottompics'>
+      </div>
+     </div> 
   </div>
   <!--end of row 5-->
 
     <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
   <div id='contact'>
-
+    <div class='contact-wrapper'>
     <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
 
   <!--Markup for Contact form-->
@@ -239,6 +245,7 @@ session_start();
     </div>
 
   </form>
+    </div>
   </div>
   <!--end of row 6-->
 

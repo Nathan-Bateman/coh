@@ -13,6 +13,26 @@ html, body, {
 	width: 100%;
 	height: 100%;
 }
+.header-wrapper {
+  max-width: 1300px;
+  margin:0 auto;
+}
+.contact-wrapper {
+  max-width: 1300px;
+  margin:0 auto;
+}
+.front-page-bottom-pics-wrapper {
+  max-width: 1300px;
+  margin:0 auto;
+}
+.mission-wrapper {
+  max-width: 1300px;
+  margin:0 auto;
+}
+.news-wrapper {
+  max-width: 1300px;
+  margin:0 auto;
+}
 button:focus {
   outline: 0 !important;
 }
@@ -172,17 +192,22 @@ h1.font-coh {
   -webkit-animation-iteration-count: 1;
 }
 .center-fly-other {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   max-width: 350px;
-   padding-left:1em;
-   z-index:3;
-   width: 100%;
-   font-family: 'cohfont';
-   font-size: 20pt;
-   color: white; 
-   letter-spacing: -1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 !important;
+  text-align: center;
+  transform: translateY(-50%);
+  max-width: 477px;
+  padding-left: 1em;
+  z-index: 3;
+  width: 100%;
+  font-family: 'cohfont';
+  font-size: 20pt;
+  color: white;
+  letter-spacing: -1px;
  }
 
 span.font-roboto-light {
@@ -453,15 +478,16 @@ table.center-table {
 }
 .table-bg {
   background-color: white;
-  max-width: 45%;
+  max-width: 625px;
   min-width: 375px;
   padding-bottom: 22px;
 }
 /*content for all other pages*/
 .content-bg {
   background-color: white;
-  max-width: 70%;
+  width: 80%;
   min-width: 375px;
+  max-width: 1000px;
   padding-bottom: 22px;
 }
 .format-options {
@@ -514,6 +540,7 @@ hr {
     font-size: 14pt;
     font-style: italic;
     font-weight: 600;
+    line-height: 2.4;
 }
 
 /*Styles for bottom pictures - only for home page*/
@@ -697,7 +724,7 @@ article section:first-child p {
   padding: 10px;
   width: 20%;
   min-width: 100px;
-  max-width: 400px;
+  max-width: 300px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
@@ -774,20 +801,22 @@ textarea {
 }
 /*About Page Styles*/
 .folks-wrapper .row {
-  margin-bottom: 40px;
+  padding-bottom: 50px;
+  width: 85%;
+  margin:0 auto;
 }
-.folks {
-  text-align: center;
-}
-.folks img {
-  margin: 0 auto;
-}
+
 .folks h4, .folks h5 {
   color: #2A457A;
+  text-align: center;
+  max-width: 195px;
 }
 .folks h4 span {
   top: 4;
   color: #2A457A;
+}
+.info-wrapper {
+  width:85%;
 }
 /*Project Page Styles*/
 
@@ -890,6 +919,19 @@ textarea {
   }
   .updates .archives {
     margin-bottom: 25px;
+  }
+  .folks h4, .folks h5 {
+    margin:0 auto;
+    padding: 3px;
+  }
+  .folks img {
+    margin:0 auto;
+  }
+  .folks {
+    padding-bottom: 15px;
+  }
+  .folks-wrapper .row div:last-child p {
+    text-align: center;
   }
 }
 /*for text over banner photo*/

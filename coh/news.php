@@ -118,66 +118,69 @@ session_start();
       
       <nav id='drawer' class='comeout'>
       </nav>
- 
+ <div class='header-wrapper'>
       <div id='COH' class='row'>
+        
         <div class="col-sm-12">
-      <div class='col-sm-6 padding-right-off pull-left'>
-        <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
-        <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'><a href="index.php">COH</a> </h3>
-      </div>
+          <div class='col-sm-6 padding-right-off pull-left'>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope </h3>
+            <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+          </div>
   <!--end of 1st col 6 div-->
-  <div id='hammy' class='col-sm-2 pull-right'>
-    <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
-    </a>
-          
-      </div>
+          <div id='hammy' class='col-sm-2 pull-right'>
+            <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
+            </a>    
+          </div>
     <!--end of 2nd col 6 div-->
       </div>
       <!--end of col 12 div-->
+
     </div>
     <!--end of 1st row-->
   <div id='IPWITH' class='row'>
-    <div class='col-sm-12'> 
-
-  <div class='col-sm-2 padding-right-off pull-left upsome'>
-        <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
+      <div class='col-sm-12'> 
+        <div class='col-sm-2 padding-right-off pull-left upsome'>
+          <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
+        </div>
+        <div class='col-sm-10 pull-left padding-left-off upsome'>
+          <img src="images/lifesong.png" class='pull-left img-responsive'>
+        </div>    
       </div>
-  <div class='col-sm-10 pull-left padding-left-off upsome'>
-    <img src="images/lifesong.png" class='pull-left img-responsive'>
-  </div>    
-    </div>
     <!--end col 12 div-->
   </div>  
   <!--end 2nd row-->
+  </div>
   <div id='news' class='row border_news'>
+    <div class='news-wrapper'>
     <div class='col-sm-12 feed'>
         <div class='col-sm-8 insta-column'>
             <h2 class='font-roboto feed-image'>Latest Updates</h2>
             <div class='post'></div></div>
         <!-- div closed insta-column -->
-        <div class='col-sm-4 updates'>
-            <h2 class='font-roboto'>Monthly Newsletters</h2>
-            <ul class='monthly-updates-recent'></ul>
-            <p class='archives'><a href='news-archive.php'>Archives . . .</a></p>
-            <hr>
-            <div id='sidebar-cta'>
-                <form action='index.php' method='post'>
-                  <div class="row">  
-                    <div class='col-sm-12'>
-                      <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
-              
-                            <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
-                            <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
-                            <input type="hidden" name="token" value="<?php echo $newToken; ?>">
-                            <button type="submit" name='submit' class="btn btn-primary button send">SUBSCRIBE</button>
-                    </div>
+            <div class='col-sm-4 updates'>
+                <h2 class='font-roboto'>Monthly Newsletters</h2>
+                <ul class='monthly-updates-recent'></ul>
+                <p class='archives'><a href='news-archive.php'>Archives . . .</a></p>
+                <hr>
+                  <div id='sidebar-cta'>
+                      <form action='index.php' method='post'>
+                        <div class="row">  
+                          <div class='col-sm-12'>
+                            <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
+                    
+                                  <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
+                                  <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
+                                  <input type="hidden" name="token" value="<?php echo $newToken; ?>">
+                                  <button type="submit" name='submit' class="btn btn-primary button send">SUBSCRIBE</button>
+                          </div>
+                        </div>
+                      </form>
                   </div>
-                </form>
             </div>
-        </div>
     <!-- close the feed div -->
-    </div>
+       </div>
   <!-- close the news div -->
+  </div>
   </div>
   <!--end of row 3-->
 

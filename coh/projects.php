@@ -112,36 +112,39 @@ session_start();
         
         <nav id='drawer' class='comeout'>
         </nav>
-   
-        <div id='COH' class='row'>
-          <div class="col-sm-12">
-        <div class='col-sm-6 padding-right-off pull-left'>
-          <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
-          <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'><a href="index.php">COH</a> </h3>
-        </div>
-    <!--end of 1st col 6 div-->
-    <div id='hammy' class='col-sm-2 pull-right'>
-      <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
-      </a>
-            
-        </div>
-      <!--end of 2nd col 6 div-->
-        </div>
-        <!--end of col 12 div-->
+ <div class='header-wrapper'>
+      <div id='COH' class='row'>
+        
+        <div class="col-sm-12">
+          <div class='col-sm-6 padding-right-off pull-left'>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope </h3>
+            <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+          </div>
+  <!--end of 1st col 6 div-->
+          <div id='hammy' class='col-sm-2 pull-right'>
+            <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
+            </a>    
+          </div>
+    <!--end of 2nd col 6 div-->
       </div>
-      <!--end of 1st row-->
-    <div id='IPWITH' class='row'>
-      <div class='col-sm-12'> 
+      <!--end of col 12 div-->
 
-    <div class='col-sm-2 padding-right-off pull-left upsome'>
+    </div>
+    <!--end of 1st row-->
+  <div id='IPWITH' class='row'>
+      <div class='col-sm-12'> 
+        <div class='col-sm-2 padding-right-off pull-left upsome'>
           <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
         </div>
-    <div class='col-sm-10 pull-left padding-left-off upsome'>
-      <img src="images/lifesong.png" class='pull-left img-responsive'>
-    </div>    
+        <div class='col-sm-10 pull-left padding-left-off upsome'>
+          <img src="images/lifesong.png" class='pull-left img-responsive'>
+        </div>    
       </div>
-      <!--end col 12 div-->
-    </div>  
+    <!--end col 12 div-->
+  </div>  
+  <!--end 2nd row-->
+  </div>
+    <!-- End of header wrapper --> 
     <!--end 2nd row-->
     <div id='bannerplace' class='row'>
       <div class='col-sm-12 banner'>
@@ -154,6 +157,7 @@ session_start();
     </div>
     <!--end of row 3-->
     <div id='mission' class='row'>
+      <div class='mission-wrapper'>
         <div id='wrapper' class="col-sm-12 center content-bg">
           <h2 class='text-center font-roboto-bold page-title'>PROJECTS</h2>
           <span class='format-options'>
@@ -235,6 +239,7 @@ session_start();
         <h2 class="text-center scripture">
           <span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
         </h2>
+      </div>
     </div>  
     <!--end of row 4-->
          <!-- donate section -->
@@ -250,6 +255,7 @@ session_start();
     <!--end of row 5-->
     <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
     <div id='contact'>
+      <div class='contact-wrapper'>
       <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
       <!--Markup for Contact form-->
         <form action='index.php' method='post' class='contact-format'>
@@ -292,6 +298,7 @@ session_start();
             </div>
           </div>
         </form>
+      </div>
     </div>
     <!--end of row 6-->
 
