@@ -1,4 +1,5 @@
 var menu = document.getElementById('menu');
+var $bigMenu = $(document.querySelector('.main-menu-big'));
 var container = document.getElementById('container');
 var mask = document.getElementById('c-mask');
 var main = document.querySelector('.container-fluid');
@@ -56,6 +57,10 @@ var postMenu = function () {
 	for (item in menuOptions) {
 		var listElement = menuOptions[item];
 		$drawer.append(listElement);
+		if (item != 'home' && item != 'close') {
+			$bigMenu.append(listElement);
+		};
+		
 	}
 };
 //var $toggleOverlay = $(drawer).click(function() {
@@ -127,7 +132,7 @@ var hopeViewModel = function () {
 	self.oneActive = ko.observable(true);
 	self.twoActive = ko.observable(false);
 	self.threeActive = ko.observable(false);
-	
+
 	self.changeOne = function () {
 		self.oneActive(true);
 		self.twoActive(false);
@@ -138,6 +143,12 @@ var hopeViewModel = function () {
 		self.oneActive(false);
 		self.twoActive(true);
 		self.threeActive(false);
+		
+	};
+	self.changeThree = function () {
+		self.oneActive(false);
+		self.twoActive(false);
+		self.threeActive(true);
 		
 	};
 	ko.bindingHandlers.fadeVisible = {

@@ -125,6 +125,10 @@ session_start();
             <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
             </a>    
           </div>
+          <div id='big-menu' class='col-sm-6 pull-right'>
+            <ul class='main-menu-big'>
+            </ul>
+          </div>
     <!--end of 2nd col 6 div-->
       </div>
       <!--end of col 12 div-->

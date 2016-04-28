@@ -92,6 +92,36 @@ h2.font-roboto-bold.page-title {
 h1.font-coh {
     font-family: ultraregular;
 }
+/*Menu styles*/
+#hammy {
+  display: none;
+}
+#big-menu .main-menu-big {
+  display: block;
+  padding:0;
+  margin:0;
+  float:right;
+}
+#big-menu .main-menu-big li {
+  display: inline-block;
+  background-color: none;
+  background-color: #FFF;
+  border: none;
+  padding: 18px 24px 0;
+}
+#big-menu .main-menu-big li:last-child {
+  padding-right: 12px;
+}
+#big-menu .main-menu-big li a{
+  padding: 0;
+}
+#big-menu .main-menu-big a h5:hover{
+  color: #657490;
+}
+#big-menu .main-menu-big h5 {
+  color:#1A305A;
+  padding:0;
+}
 /*container div formatting to prevent weird horizontal scrolling*/
 .container-fluid {
 	width: 100%;
@@ -499,17 +529,17 @@ table.center-table {
 }
 .format-options h3 {
     border-radius: 42px;
-    border: 2px solid #000000;
+    border: 2px solid #003D7A;
     text-align: center;
     padding: 5px 10px;
     background-color: #fff;
     letter-spacing: 2px;
-    color: #000;
+    color: #003D7A;
     min-width: 175px;
 }
 .formatOptionsToggle {
   color:#FFF !important;
-  border-color: #003D7A !important;
+  border: 2px solid #003D7A !important;
   background-color: #003D7A !important;
 }
 #wrapper {
@@ -932,6 +962,12 @@ textarea {
   }
   .folks-wrapper .row div:last-child p {
     text-align: center;
+  }
+  #hammy {
+    display: block;
+  }
+  #big-menu {
+    display: none;
   }
 }
 /*for text over banner photo*/

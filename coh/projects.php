@@ -117,13 +117,17 @@ session_start();
         
         <div class="col-sm-12">
           <div class='col-sm-6 padding-right-off pull-left'>
-            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope </h3>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
             <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
           </div>
   <!--end of 1st col 6 div-->
           <div id='hammy' class='col-sm-2 pull-right'>
             <a id='menu' class="hammy glyphicon glyphicon-menu-hamburger pull-right">
             </a>    
+          </div>
+          <div id='big-menu' class='col-sm-6 pull-right'>
+            <ul class='main-menu-big'>
+            </ul>
           </div>
     <!--end of 2nd col 6 div-->
       </div>
@@ -163,6 +167,7 @@ session_start();
           <span class='format-options'>
             <h3 data-bind="click:changeOne, css:{ formatOptionsToggle: oneActive()}" class='text-center font-roboto' style="cursor:pointer;">Bangkok</h3>
             <h3 data-bind="click:changeTwo, css:{ formatOptionsToggle: twoActive()}" class='text-center font-roboto' style="cursor:pointer;">Phnom Penh</h3>
+            <h3 data-bind="click:changeThree, css:{ formatOptionsToggle: threeActive()}" class='text-center font-roboto' style="cursor:pointer;">Takeo</h3>
           </span>
           <hr>
      <div data-bind="if: oneActive,fadeVisible: oneActive" class='center'>
@@ -230,6 +235,30 @@ session_start();
                   <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
                     <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Outreach to Local Children</h4>
+                  </span>
+                </div>
+              </div>
+            </div> 
+          </div>
+        <div data-bind="if: threeActive,fadeVisible: threeActive" class='center'>
+            <div class='row'>
+              <div class='col-sm-12 images-pp'>
+                <div class='col-sm-4'>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
+                    <h4>Takeo Projects</h4>
+                  </span>
+                </div>
+                <div class='col-sm-4'>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
+                    <h4>Takeo Projects</h4>
+                  </span>
+                </div>
+                <div class='col-sm-4'>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
+                    <img class='img-responsive' src="http://placehold.it/195x250">
+                    <h4>Takeo Projects</h4>
                   </span>
                 </div>
               </div>
