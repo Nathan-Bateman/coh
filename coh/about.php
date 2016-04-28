@@ -157,11 +157,11 @@ session_start();
         <div id='wrapper' class="col-sm-12 center content-bg">
           <h2 class='text-center font-roboto-bold page-title'>ABOUT</h2>
             <span class='format-options'>
-              <h3 data-bind="click:changeOne, style: { textDecoration: oneActive() ? 'underline' : 'none'}" class='text-center font-roboto' style="cursor:pointer;">Info</h3>
-              <h3 data-bind="click:changeTwo, style: { textDecoration: twoActive() ? 'underline' : 'none'}" class='text-center font-roboto' style="cursor:pointer;">Folks</h3>
+              <h3 data-bind="click:changeOne, css:{ formatOptionsToggle: oneActive()}" class='text-center font-roboto' style="cursor:pointer;">Info</h3>
+              <h3 data-bind="click:changeTwo, css:{ formatOptionsToggle: twoActive()}" class='text-center font-roboto' style="cursor:pointer;">Folks</h3>
             </span>
         <hr>
-        <div data-bind="if: oneActive" class='center'>
+        <div data-bind="if: oneActive,fadeVisible: oneActive" class='center'>
             <p class='center-content'>
               <span style="font-weight:bold;">History: </span>Construction of Hope began in 2012 in Thailand with the desire to share God’s love with migrant construction workers from Cambodia. This desire developed into partnerships with indigenous churches in Thailand and Cambodia to provide education, discipleship, and holistic care for children and to support families through biblical teaching and sustainable business opportunities. 
             </p>
@@ -172,7 +172,7 @@ session_start();
             </p>
 
       </div>
-      <div data-bind="if: twoActive" class='center folks-wrapper'>
+      <div data-bind="if: twoActive,fadeVisible: twoActive" class='center folks-wrapper'>
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="http://placehold.it/195x250">

@@ -467,8 +467,24 @@ table.center-table {
 .format-options {
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
   flex-grow: 1;
   justify-content: space-around;
+}
+.format-options h3 {
+    border-radius: 42px;
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    letter-spacing: 2px;
+    color: #000;
+    min-width: 175px;
+}
+.formatOptionsToggle {
+  color:#FFF !important;
+  border-color: #003D7A !important;
+  background-color: #003D7A !important;
 }
 #wrapper {
   border: 1px solid #003D7A;
@@ -633,6 +649,7 @@ article section:first-child p {
 .updates #sidebar-cta {
   max-width: 325px;
   background-color: rgba(42, 69, 122, 1);
+  margin-right: 15px;
 }
 .updates #sidebar-cta h3 {
   color: #FFF;
@@ -860,6 +877,7 @@ textarea {
   }
   .updates #sidebar-cta {
     max-width: none;
+    margin-right: 0;
   }
   .updates #sidebar-cta button {
     max-width: none;
