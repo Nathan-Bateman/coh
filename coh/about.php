@@ -251,7 +251,9 @@ session_start();
 <!-- donate section -->
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
+      <div class='donate-wrap'>
       <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+    </div>
     </div>
   </div> 
   <!--end of row 4-->

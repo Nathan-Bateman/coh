@@ -87,7 +87,12 @@ session_start();
     }
 
 ?>
-
+<?php
+//$feed = file_get_contents("https://api.instagram.com/v1/users/self/media/recent/?access_token=1965235043.f3e333b.e898493cfa6143dda4098fa3192302b9");
+//$feed = @json_decode($feed, true);
+//$created_on = $feed['data'][0]['created_time'];
+//echo date('M j, Y', $created_on);
+?>
 <!doctype html>
 <html lang='en'>
 <head>
@@ -99,13 +104,14 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COH</title>
+  <title>COHAbout</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
   $newToken = generateFormToken('form1');  
 ?>
 <body id="#body">
+
   <!--container div required by bootstrap-->
   <div class='sitewrapper'>
     <div id='container' class="container-fluid">
@@ -117,7 +123,7 @@ session_start();
         
         <div class="col-sm-12">
           <div class='col-sm-6 padding-right-off pull-left'>
-            <h3 data-bind="if: regscreen" class='text-left cohfont'>Construction of Hope </h3>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope </a></h3>
             <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
           </div>
   <!--end of 1st col 6 div-->
@@ -148,115 +154,103 @@ session_start();
   </div>  
   <!--end 2nd row-->
   </div>
-    <!-- End of header wrapper -->
-  <div id='bannerplace' class='row'>
-    <div class='col-sm-12 banner'>
-      <div data-bind="if: documentReady, visible: show" class='center-fly'>
-        <h2><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><a href='news.php'><button type="button" class="btn btn-primary font-roboto-light btn-main-coh">See the Work</button></a></span></h2>
-      </div>
-      <div class='after border'>
+  <div id='donate-page' class='border_news'>
+    <div class='row'>
+      <div class='col-sm-12 donate-heading'>
+        <h1 class='font-roboto-bold'>Giving to Construction of Hope</h1>
+        <p>Construction of Hope Ministries is a sponsored ministry project 
+          of <a href="http://www.lifesongfororphans.org/">Lifesong for Orphans</a>, a registered 501(c)(3) organization in the US. 
+          Any gift given through Lifesong is tax deductible in the US.
+        </p>
+        <p>100% of all donations given to Lifesong Cambodia - 
+           Construction of Hope Ministries will be used to run Cambodian outreach ministry projects. 
+           Lifesong and/or Construction of Hope Ministries does not take an administration fee from donors.  
+           The only fees taken are the processing fees charged by Paypal and any bank related fees for the international transfer. 
+           Click the link below to see the monthly expense/project reports for the ministry.
+        </p>
+        <h4><a href='https://drive.google.com/folderview?id=0B8CCkvdFSll6UkcyckNIcDJ3aVU&usp=sharing'>
+              Financial Reports</a></h4>
       </div>
     </div>
+    <div class='row donate-onetime'>
+      <div class='col-sm-12 sponsor-wrap donate-cta'>
+            <h2 class='font-roboto-bold'>One-time Gifts</h2>
+            <div class='sponsor-wrap'>
+            <button type="button" class="btn btn-primary font-roboto-light btn-donate">Give Online</button>
+            <p>*Select Cambodia-Construction of Hope under “Orphan Care Gift Preference: Country”</p>
+            </div>
+          <h3 class='font-roboto-bold'>Send a Check to:</h3>
+          <p>Lifesong For Orphans<br>
+             PO Box 40<br>
+             Gridley, IL 61744
+          </p>
+          <p>*Make sure to include Lifesong Cambodia or Construction of Hope in the Memo.
+          </p>
+      </div>
+    </div><div class='row donate-recurring'>
+      <div class='col-sm-12 donate-recurring-online'>
+        <h2 class='font-roboto-bold'>Recurring Gifts</h2>
+        <div class='sponsor-wrap'>
+          <button type="button" class="btn btn-primary font-roboto-light btn-donate">Monthly Gift Online</button>
+        </div>
+      </div>
+      <div class='col-sm-12 donate-recurring-eft'>
+        <h3 class='font-roboto-bold'>Electronic Monthly Transfer</h3>
+        <p>Contact Drake Philyaw:</p>
+        <ul>
+          <li><a href="drake@lifesongfororphans.org">drake@lifesongfororphans.org</a></li>
+          <li>309.747.4509</li>
+        </ul>
+      </div>
+    </div> 
+    <div class='row'>
+      <div class='col-sm-12 donate-ct-sponsorship'>
+        <div class='col-sm-6 donate-ct'>
+          <h2 class='font-roboto-bold'>Cambodia/Thailand Gifts</h2>
+            <h3 class='font-roboto-bold'>Thailand</h3>
+              <p>Contact Jason Glass</p>
+              <p><a href="mailto:jasong@constructionofhope.org">jasong@constructionofhope.org</a></p>
+              <p>International transfers to the church are performed once or twice a month for our Thailand-based donors. 
+                Donations given in Thailand are not tax deductible at this time. 
+                We hope to offer tax deductible status to our Thailand based donors soon.</p>
+            <h3 class='font-roboto-bold'>Cambodia</h3>
+              <p>Contact Pastor Somnang</p>
+              <p><a href="mailto:somnangs@constructionofhope.org">somnangs@constructionofhope.org</a></p>
+              <p>Fellowship Church of Pochentong<br>
+                 No.331, St. 2011<br>
+                 Sangkat Kakab, Khan Dangkor<br>
+                 Phnom Penh, Cambodia<br>
+                 (855) 92589018</p>
+              <p>Let them know you would like to contribute to Construction of Hope Ministries.</p>
+        </div>
+        <div class='col-sm-6 donate-sponsorship'>
+          <h2 class='font-roboto-bold'>Child Sponsorship</h2>
+          <p>Construction of Hope is happy to be under the covering of Lifesong for Orphans. 
+             Thus, all gifts going towards child sponsorship must be specified as such through the lifesong giving process. 
+             Simply insert the name of the child you would like to sponsor in the memo field and your gift will be used to 
+             support that child. Follow the link below to learn more</p>
+            <h4><a href='#sponsor'>
+              Sponsor a Child</a></h4>
+        </div>
+      </div>
+    </div>
+  <!--end #donate-page-->
   </div>
-  <!--end of row 3-->
-  
-    <div id='mission' class='row'>
-      <div class='mission-wrapper'>
-      <div id='wrapper' class="table-responsive col-sm-12 center-table table-bg">
-        <h2 class='text-center font-roboto-bold page-title'>OUR MISSION</h2>
-        <h4 class='text-center font-roboto-bold'>Equipping disadvantaged families to succeed through:</h4>
-          <table class="table center-table">
-          <tr>
-            <td class='table-text-left-left font-roboto-light'>Biblical Evangelism</td>
-            <td class='table-text-left-right font-roboto-light'>Indigenous Leadership</td>
-          </tr>
-          <tr>
-            <td class='table-text-left-left font-roboto-light'>Messiah's Love</td>
-            <td class='table-text-left-right font-roboto-light'>Discipleship</td>
-          </tr>
-          <tr>
-            <td class='table-text-left-left font-roboto-light'>Christian Education</td>
-            <td class='table-text-left-right font-roboto-light'>Sustainable Business</td>
-          </tr>
-          </table>
-          <!-- <div class='sponsor-wrap'>
-            <button type="button" class="btn btn-primary font-roboto-light btn-donate">Sponsor a Child</button>
-          </div> -->
-      </div>
-        <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
-        </h2>
-     </div>   
-    </div>
-      <!-- donate section -->
-  <div id='donate-section' class='row'>
-    <div class='col-sm-12'>
+  <!--end #donate-page-->
+
+         <!-- donate section -->
+<!--   <div id='donate-section' class='row'>
+    <div class='col-sm-12 donate-wrap'>
       <div class='donate-wrap'>
       <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
-      </div>
+    </div>
     </div>
   </div>
-  <!--end of row 4-->
-  <div id='links' class='row'>
-    <div class='front-page-bottom-pics-wrapper'>
+    <div id='links' class='row'>
       <div class='col-sm-12 bottompics'>
       </div>
-     </div> 
-  </div>
+    </div> -->
   <!--end of row 5-->
-
-    <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
-  <div id='contact'>
-    <div class='contact-wrapper'>
-    <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
-
-  <!--Markup for Contact form-->
-    <form action='index.php' method='post' class='contact-format'>
-
-    <div class="form-group row">
-          
-        <div class='fields col-sm-4'>
-            <p>
-                <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
-            </p>
-                <br>
-            <p>
-                <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
-            </p>
-                <br>
-          </div>
-        <div class='col-sm-4 text-submit'>
-              <textarea class='center' cols='53' rows='10' name='message' placeholder="What's on your mind?"></textarea>
-            <p>
-                <input type="hidden" name="token" value="<?php echo $newToken; ?>"></p>
-            <p>
-                <button type="submit" name='submit' class="btn btn-primary button send">Send</button>
-            </p>
-          </div>
-        <div class='col-sm-4 phone-address'>
-              <h4>Phone</h4>
-            <p>
-                USA - (555)-121-5555
-                <br>
-                THA - (555)-121-5555
-                <br>
-                KHB - (555)-121-5555
-            </p>
-              <h4>Location</h4>
-            <p>
-                34509 BassFish Road
-                <br>
-                Topwater Jig, MO
-                <br>
-                44567
-            </p>
-        </div>
-  
-    </div>
-
-  </form>
-    </div>
-  </div>
-  <!--end of row 6-->
 
   <footer id='footer' class="row">
   <ul id="footerContacts" class="flex-box ulgeneral">
@@ -277,6 +271,8 @@ session_start();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--<script src='js/bootstrap.js'></script>-->
 <script src='js/main.js'></script>
+<script src='js/news.js'></script>
+
 
 
 </html>

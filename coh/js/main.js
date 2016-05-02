@@ -29,7 +29,7 @@ var menuOptions = {
 					'about':'<li class="menuItem hvr-fade"'+'><a href="about.php" class="c-menu__link"><h5 class='+'coh' +'>About</h5></a></li>',
 					'projects':'<li class="menuItem hvr-fade"'+'><a href="projects.php" class="c-menu__link"><h5 class='+'coh' +'>Projects</h5></a></li>',
 					'news':'<li class="menuItem hvr-fade"'+'><a href="news.php" class="c-menu__link"><h5 class='+'coh' +'>News</h5></a></li>',
-					'donate':'<li style="border-bottom:none;" class="menuItem hvr-fade"'+'><a href="#COH" class="c-menu__link"><h5 class='+'coh' +'>Donate</h5></a></li>'			
+					'donate':'<li style="border-bottom:none;" class="menuItem hvr-fade"'+'><a href="donate.php" class="c-menu__link"><h5 class='+'coh' +'>Donate</h5></a></li>'			
 };
 var footerOptions = {
 					/*'home':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>Home</h5></a></li>',
