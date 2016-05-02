@@ -87,12 +87,7 @@ session_start();
     }
 
 ?>
-<?php
-//$feed = file_get_contents("https://api.instagram.com/v1/users/self/media/recent/?access_token=1965235043.f3e333b.e898493cfa6143dda4098fa3192302b9");
-//$feed = @json_decode($feed, true);
-//$created_on = $feed['data'][0]['created_time'];
-//echo date('M j, Y', $created_on);
-?>
+
 <!doctype html>
 <html lang='en'>
 <head>
@@ -104,26 +99,25 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COHAbout</title>
+  <title>COHProjects</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
   $newToken = generateFormToken('form1');  
 ?>
 <body id="#body">
-
   <!--container div required by bootstrap-->
   <div class='sitewrapper'>
-    <div id='container' class="container-fluid">
-      
-      <nav id='drawer' class='comeout'>
-      </nav>
+      <div id='container' class="container-fluid">
+        
+        <nav id='drawer' class='comeout'>
+        </nav>
  <div class='header-wrapper'>
       <div id='COH' class='row'>
         
         <div class="col-sm-12">
           <div class='col-sm-6 padding-right-off pull-left'>
-            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope </a></h3>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
             <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
           </div>
   <!--end of 1st col 6 div-->
@@ -154,75 +148,115 @@ session_start();
   </div>  
   <!--end 2nd row-->
   </div>
-  <div id='news' class='row border_news'>
-    <div class='news-wrapper'>
-    <div class='col-sm-12 feed'>
-        <div class='col-sm-8 insta-column'>
-            <h1 class='font-roboto feed-image'>Latest Updates</h1>
-            <div class='post'></div></div>
-        <!-- div closed insta-column -->
-            <div class='col-sm-4 updates'>
-                <h1 class='font-roboto'>Monthly Newsletters</h1>
-                <ul class='monthly-updates-recent'></ul>
-                <p class='archives'><a href='news-archive.php'>Archives . . .</a></p>
-                <hr>
-                  <div id='sidebar-cta'>
-                      <form action='index.php' method='post'>
-                        <div class="row">  
-                          <div class='col-sm-12'>
-                            <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
-                    
-                                  <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
-                                  <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
-                                  <input type="hidden" name="token" value="<?php echo $newToken; ?>">
-                                  <button type="submit" name='submit' class="btn btn-primary button send">SUBSCRIBE</button>
-                          </div>
-                        </div>
-                      </form>
-                  </div>
-            </div>
-    <!-- close the feed div -->
-       </div>
-  <!-- close the news div -->
-  </div>
-  </div>
-  <!--end of row 3-->
+    <!-- End of header wrapper --> 
+    <!--end 2nd row-->
+    <div id='sponsorship-page'>
+    </div>
 
-     <!-- donate section -->
-  <div id='donate-section-news' class='row'>
+
+    <!--end of row 4-->
+         <!-- donate section -->
+  <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
       <div class='donate-wrap'>
-      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+      <button type="button" class="btn btn-primary font-roboto-light btn-donate">SPONSOR</button>
     </div>
     </div>
   </div>
-  <div id='links' class='row'>
-    <div class='col-sm-12 bottompics'>
+    <div id='links' class='row'>
+      <div class='col-sm-12 bottompics'>
+      </div>
     </div>
-  </div>
-  <!--end of row 5-->
-
-  <footer id='footer' class="row">
-  <ul id="footerContacts" class="flex-box ulgeneral">
-      </ul>
-</footer>
-  <!--end of row 7-->
-
+    <!--end of row 5-->
+    <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
+    <div id='contact'>
+      <div class='contact-wrapper'>
+      <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
+      <!--Markup for Contact form-->
+        <form action='index.php' method='post' class='contact-format'>
+          <div class="form-group row">
+            <div class='fields col-sm-4'>
+              <p>
+                  <input type="text" class="form-control input-height" name='name' placeholder="Name" required>
+              </p>
+                  <br>
+              <p>
+                  <input type="email" class="form-control input-height" name='emailaddress' placeholder="Email" required>
+              </p>
+                  <br>
+            </div>
+            <div class='col-sm-4 text-submit'>
+                <textarea class='center' cols='53' rows='10' name='message' placeholder="What's on your mind?"></textarea>
+              <p>
+                  <input type="hidden" name="token" value="<?php echo $newToken; ?>"></p>
+              <p>
+                  <button type="submit" name='submit' class="btn btn-primary button send">Send</button>
+              </p>
+            </div>
+            <div class='col-sm-4 phone-address'>
+                <h4>Phone</h4>
+              <p>
+                  USA - (555)-121-5555
+                  <br>
+                  THA - (555)-121-5555
+                  <br>
+                  KHB - (555)-121-5555
+              </p>
+                <h4>Location</h4>
+              <p>
+                  34509 BassFish Road
+                  <br>
+                  Topwater Jig, MO
+                  <br>
+                  44567
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <!--end container-->
-   <div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+    <!--end of row 6-->
+
+    <footer id='footer' class="row">
+    <ul id="footerContacts" class="flex-box ulgeneral">
+        </ul>
+    </footer>
+    <!--end of row 7-->
+
+      </div>
+      <!--end container-->
+        <div class="modal fade modal-projects" id="sponsorChild" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-parent">
+                  <span><h5>Construction of Hope</h5></span>
+                  <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img class='img-responsive' src="images/lifesong.png">
+                <p></p>
+              </div>
+              <div class="modal-footer">
+                <h4 class="modal-title" id="mi"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+     <div id="c-mask" class="c-mask"></div><!-- /c-mask
     <!--site wrapper close div-->
+  </div>
 </div>
 </body>
 <script src='js/knockout-3.3.0.js'></script>
 <script src='js/jQuery.js'></script>
-<script src='js/bootstrap.min.js'></script>
+<!-- <script src='js/bootstrap.min.js'></script> -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--<script src='js/bootstrap.js'></script>-->
 <script src='js/main.js'></script>
-<script src='js/news.js'></script>
-
+<script src='js/sponsor.js'></script>
 
 
 </html>

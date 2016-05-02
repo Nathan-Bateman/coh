@@ -784,14 +784,19 @@ article section:first-child p {
 #donate-page {
   text-align: center;
 }
+#donate-page p {
+  font-size: 14px;
+}
 #donate-page .row {
   padding-bottom: 25px;
 }
 .donate-heading p {
-  max-width: 500px;
+  max-width: 530px;
   text-align: left;
   margin:0 auto;
   padding-bottom: 10px;
+  padding-left:15px;
+  padding-right: 15px;
 }
 .donate-heading h4 {
   border: 2px solid #003D7A;
@@ -801,6 +806,7 @@ article section:first-child p {
 }
 .donate-heading h4 a:hover {
   text-decoration: none;
+
 }
 .donate-heading h4:hover {
   background-color: rgba(132, 135, 142, 0.6);
@@ -844,6 +850,9 @@ article section:first-child p {
 }
 .donate-recurring-eft li a{
   color: #003D7A;
+}
+.donate-ct-sponsorship {
+  padding-top:15px;
 }
 .donate-ct-sponsorship .donate-ct h3, .donate-sponsorship h3 {
   text-align: left;
@@ -1058,7 +1067,7 @@ textarea {
   .updates hr {
     display: none;
   }
-  .updates h2 {
+  .updates h1 {
     text-align: center;
   }
   .updates .archives {
@@ -1083,6 +1092,9 @@ textarea {
   #big-menu {
     display: none;
   }
+  .donate-ct-sponsorship .donate-ct {
+  border-right: none;
+}
 }
 /*for text over banner photo*/
 @media (max-width: 600px) {
@@ -1146,10 +1158,10 @@ textarea {
 
 }
 @media (min-width: 100px) and (max-width: 375px){
-
+  
   #drawer {
   width: 100%;
-}
+  }
   .content-bg {
     min-width: 75%;
     font-size: 8pt;
@@ -1184,9 +1196,9 @@ textarea {
     font-size: 16px;
     max-width: 140px;
   }
-  .feed h2 {
+  .feed h1 {
   margin: 0;
-  font-size: 16px;
+  font-size: 22px;
   }
   .feed h4 {
     font-size: 14px;
@@ -1194,15 +1206,29 @@ textarea {
   .feed p {
     font-size: 12px;
   }
-  .updates h2 {
+  .updates h1 {
     margin: 10px 0 10px; 
   }
-   #news .insta-column h2 {
+   #news .insta-column h1 {
     margin: 10px 0 10px;
    }
+  #donate-page p {
+  font-size: 8pt;
+  }
+  #donate-page h1 {
+    font-size: 22px;
+  }
+  #donate-page h2 {
+    font-size: 18px;
+  }
+  #donate-page h3 {
+    font-size: 16px;
+  }
+  #donate-page h4 {
+    font-size: 14px;
+  }
 }
 
-}
 @media (min-width: 300px) and (max-width: 322px){
   .copy {
     margin-top:2em;
