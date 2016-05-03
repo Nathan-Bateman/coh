@@ -95,25 +95,40 @@
     };
 var sponsorAChild = function () {
     var children = sponsorship.kids;
-    var $postChildren = $('#sponsorship-page');
-    var openRowCol = '<div class="row"><div class="class=col-sm-12">';
+    var $postDivs = $('#sponsorship-page');
+    //var openRowCol = '<div class="row"><div class="class=col-sm-12">';
     var closeRowCol = '</div></div>';
+                
     var count = 0;
     for (var i = 0; i < children.length; i++) {
             var child = children[i];
+            var childMarkup = '<div class=' + "col-sm-4" + '>';
+                childMarkup += '<span data-toggle=' + "modal" + 'data-target="#sponsorChild" data-title="' + child.name +'"';
+                childMarkup += 'data-img="' + child.image + '"'; 
+                childMarkup += 'data-caption="' + child.story + '"';
+                childMarkup += 'data-hometown="'+ child.hometown + '"';
+                childMarkup += 'data-grade="'+ child.grade + '"';
+                childMarkup += 'data-interests="'+ child.interests + '">';
+                childMarkup += '<img class="img-responsive" src="http://placehold.it/195x250">';
+                childMarkup += '<h4>' + child.name + '</h4>';
+                childMarkup += '</span></div>';
+
                 if (count % 3 === 0 && count !=0) {
-                    $postChildren.append(closeRowCol);
-                    console.log(closeRowCol);
+                    $postDivs.append(closeRowCol);
                 }
                 if (count % 3 === 0) {
-                    $postChildren.append(openRowCol);
-                    console.log(openRowCol);
-                }    
-            console.log(child.name);
-            $postChildren.append(child.name);
+                    var openRowCol = '<div class="row"><div class="col-sm-12' + ' row-'+ count +'">';
+                    var classToString = '.row-' + count.toString();
+                    $postDivs.append(openRowCol);
+                    var $postChildren = $( "div" ).closest( classToString ); 
+                    //var $postChildren = $( openRowCol ).find( classToString );   
+                }  
+
+            //console.log($postChildren);
+            $postChildren.append(childMarkup);
+
                 if (count === children.length - 1) {
-                        $postChildren.append(closeRowCol);
-                        console.log(closeRowCol);
+                        $postDivs.append(closeRowCol);
                     }
             count +=1;
     };

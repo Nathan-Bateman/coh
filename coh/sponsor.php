@@ -150,7 +150,20 @@ session_start();
   </div>
     <!-- End of header wrapper --> 
     <!--end 2nd row-->
-    <div id='sponsorship-page'>
+    <div id='sponsorship-page' class='border_news'>
+      <div class='row'>
+        <div class='col-sm-12'>
+            <h1 class='font-roboto-bold'>Child Sponsorship</h1>
+              <p>Please consider sponsoring a child who is currently living at the church. 
+                 We suggest a sponsorship amount of $20 per month, but you may sponsor at any gift 
+                 level. Your sponsorship will help cover the costs of proper care and nutrition, 
+                 medical care, education and discipleship. All the children listed below were 
+                 rescued from either a construction sites in Bangkok, Thailand or from slum 
+                 communities throughout Cambodia. Now, they have a completely different future 
+                 ahead of them. Click on the child's picture to learn more about them.
+              </p>
+          </div>
+      </div>
     </div>
 
 
@@ -225,7 +238,7 @@ session_start();
 
       </div>
       <!--end container-->
-        <div class="modal fade modal-projects" id="sponsorChild" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
+        <div class="modal fade modal-sponsor" id="sponsorChild" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
