@@ -1019,6 +1019,33 @@ textarea {
     color: #FFF;
     float: left;
 }
+
+/*Sponsor a Child Page Styles*/
+#sponsorship-page .col-sm-4 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+#sponsorship-page .col-sm-4 img {
+  text-align: center;
+  margin:0 auto;
+}
+#sponsorChild .modal-footer .donate-wrap {
+  margin: 15px 0 15px 0;
+  background-color: #2A457A;
+}
+#sponsorChild .modal-footer .donate-wrap button {
+  background-color: #DC7E0F;
+}
+#sponsorChild .modal-body li {
+  list-style-type: none;
+  padding: 5 0;
+}
+#sponsorChild .modal-body li span {
+  font-weight: 600;
+}
+#sponsorChild .modal-body h4{
+  text-align: center;
+}
 /*media breakpoints*/
 
 /*for bottom pics and subtitle 720*/

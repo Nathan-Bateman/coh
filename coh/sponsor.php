@@ -247,12 +247,27 @@ session_start();
                   <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
                 </div>
               </div>
-              <div class="modal-body">
-                <img class='img-responsive' src="images/lifesong.png">
-                <p></p>
+              <div class="row modal-body">
+                <div class='col-sm-12'>
+                  <div class='col-sm-4 modal-name-img'>
+                    <img class='img-responsive modal-img' src="images/lifesong.png">
+                     <h4 class='modal-name'></h4>
+                  </div>
+                  <div class='col-sm-8'>
+                    <ul>
+                      <li class='modal-age'></li>
+                      <li class='modal-hometown'></li>
+                      <li class='modal-story'></li>
+                    </ul>
+
+                  </div>
+                </div>
+                  
               </div>
               <div class="modal-footer">
-                <h4 class="modal-title" id="mi"></h4>
+                <div class='donate-wrap'>
+                <button type="button" class="btn btn-secondary font-roboto-light btn-donate">SPONSOR</button>
+                </div>
               </div>
             </div>
           </div>

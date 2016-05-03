@@ -351,8 +351,8 @@ session_start();
                 </div>
               </div>
               <div class="modal-body">
-                <img class='img-responsive' src="images/lifesong.png">
-                <p></p>
+                <!-- <img class='img-responsive' src="images/lifesong.png">
+                <p></p> -->
               </div>
               <div class="modal-footer">
                 <h4 class="modal-title" id="mi"></h4>

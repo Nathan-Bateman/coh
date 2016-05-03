@@ -1,95 +1,69 @@
-//object with array of news letter objects
+//object with array of children objects
 	var sponsorship = {
     "kids": [
         {
             "name": "Kaang",
-            "age": 9,
-            "image": "http://placehold.it/195x250",
-            "hometown": "Rural village outside of Phnom Penh, Cambodia",
-            "story": "Kaang's parents are both working construction in Thailand. Theavy, the tutor for the children living at the church, is his aunt and has taken him (as well as his sister) in as foster children.",
-            "grade": "Kaang is starting school this year",
-            "interests": "TBA"
-        },
-        {
-            "name": "Mary",
-            "age": 13,
-            "image": "http://placehold.it/195x250",
-            "hometown": "Rural village in Ta Keo Province ",
-            "story": "Mary is Li Hou's cousin, and she was first connected with Pastor Somnang during a visit to Li Hou's distant relatives in her hometown in Ta Keo. Later, Pastor Somnang found Mary sleeping outside in a Phnom Penh slum. With no living mother and an abusive father, Mary was taken in by Pastor Somnang and the church.",
-            "grade": "Mary is currently learning basic literacy skills in preparation to enter formal schooling",
-            "interests": "Mary loves to play with other children and enjoys learning"
-        },
-        {
-            "name": "Li Huah",
-            "age": 8,
-            "image": "http://placehold.it/195x250",
-            "hometown": "Rural village in Ta Keo Province ",
-            "story": "Li Huah was rescued from an abusive home where her stepfather forced her to beg on the streets to support his alcohol and gambling addictions. When she first came to the church, the left side of her face was badly bruised from a recent beating.",
-            "grade": "Li Huah is currently learning basic literacy skills in preparation to enter formal schooling",
-            "interests": "Li Huah loves to swing on the swings at the local park, and sing at church. loves to play with other children and enjoys learning"
-        },
-          {
-            "name": "Piseth",
-            "age": 10,
-            "image": "http://placehold.it/195x250",
-            "hometown": "Rural village outside of Phnom Penh, Cambodia",
-            "story": "Piseth is Pastor Somnang's nephew. The pastor's sister was raising him alone in an impoverished village where he did not have the opportunity to attend school.",
-            "grade": "Piseth is starting school this year.",
-            "interests": "TBA"
-        },
-          {
-            "name": "Gao",
             "age": 11,
             "image": "http://placehold.it/195x250",
             "hometown": "Rural village outside of Phnom Penh, Cambodia",
-            "story": "Gao's parents are both working construction in Thailand. Theavy, the tutor for the children living at the church, is her aunt and has taken her (as well as her brother) in as foster children.",
-            "grade": "Gao is starting school this year.",
-            "interests": "Gao loves to sing and wants to be a banker when she gets older."
+            "story": "Kaang and his sister were both abandoned by their parents, who left indefinitely to work in Thailand. Kaang and his sister have been living in the church since 2014 and are currently going to Salamom school in Phnom Penh. They have both professed faith in Christ and were baptised in December, 2015."
+        },
+          {
+            "name": "Li Hou",
+            "age": 7,
+            "image": "http://placehold.it/195x250",
+            "hometown": "Rural village in Ta Keo Province ",
+            "story": "Li Hou was rescued from an abusive home where her stepfather forced her to beg on the streets to support his alcohol and gambling addictions. Li Hou has been living in the church since 2013 and is thriving in school. She loves to make people laugh and enjoys singing." 
+        },
+          {
+            "name": "Piseth",
+            "age": 11,
+            "image": "http://placehold.it/195x250",
+            "hometown": "Rural village outside of Phnom Penh, Cambodia",
+            "story": "Piseth is Pastor Somnang's nephew. The pastor's sister was raising him alone in an impoverished village where he did not have the opportunity to attend school.Through the partnership of Pastor Somnang and Piseth's mother, Piseth is currently in his second year of school and developing quickly as a leader among the other children in the church. Piseth has professed faith in Christ and was baptised in December, 2015."
+        },
+          {
+            "name": "Gao",
+            "age": 13,
+            "image": "http://placehold.it/195x250",
+            "hometown": "Rural village outside of Phnom Penh, Cambodia",
+            "story": "Gao and her brother were both abandoned by their parents, who left indefinitely to work in Thailand. Gao and her brother have been living in the church since 2014 and are currently going to Salamom school in Phnom Penh. They have both professed faith in Christ and were baptised in December, 2015."
         },
         {
             "name": "Vanna",
             "age": 8,
             "image": "http://placehold.it/195x250",
             "hometown": "Unknown",
-            "story": "Pastor Somnang first met Vanna begging on a sidewalk in Bangkok, while the church was on a mission trip to Thailand.  After stopping to try and help him, Pastor Somnang realized Vanna was from Cambodia. His mother, who was begging near him along with a baby, took Pastor Somnang's information and then two months later came to the church in Phnom Penh to seek a place for Vanna to receive proper care and education.",
-            "grade": "Vanna is currently learning basic literacy skills in preparation to enter formal schooling.",
-            "interests": "Vanna loves to play anything that requires being active and moving around. We are looking forward to learning more about Vanna as he becomes more comfortable in the church and we get to know him better."
+            "story": "Pastor Somnang first met Vanna during a mission trip to Bangkok, where he found Vanna begging on a city sidewalk nearby his mother. After stopping to try and help them, Pastor Somnang realised Vanna and his mother were Cambodian. Offering to assist in any way he could, Pastor Somnang left Vanna and his mother with contact information for the church in Phnom Penh. Two months later, Vanna's mother came to the church seeking Pastor Somnang's help in caring for Vanna. Sadly, the mother has since vanished from Vanna's life. Vanna is now in his second year of living at the church and has started school with the other children. He is hungry to receive and eager to give affection." 
         },
          {
             "name": "Savy",
-            "age": 10,
+            "age": 12,
             "image": "http://placehold.it/195x250",
             "hometown": "Rural village in Battambong, Cambodia",
-            "story": "Savy is learning how to play the guitar, and enjoys playing soccer, and studying Khmer and English at the church. She hopes to be a teacher one day.",
-            "grade": "Savy is currently studying in preparation to enter school in October.",
-            "interests": "Savy is learning how to play the guitar, and enjoys playing soccer, and studying Khmer and English at the church. She hopes to be a teacher one day."
+            "story": "Savy has lived most of her childhood on construction sites in Thailand. Raised by her single mother, Savy's life become even more vulnerable when her mother died of aids. Savy is in her second year of living in the church and doing very well in school. Savy is learning to play the guitar and enjoys playing soccer. She hopes to be a teacher one day. Savy has professed faith in Christ and was baptised in 2015."
         },
         {
             "name": "Yalee",
-            "age": 7,
+            "age": 9,
             "image": "http://placehold.it/195x250",
             "hometown": "Rural village in Battambong, Cambodia",
-            "story": "Yalee spent most of her life on construction sites, and is the newest member of the church family.",
-            "grade": "Yalee will begin studying at the church in anticipation of entering school in October.",
-            "interests": "Yalee hopes to learn how to read and write in Khmer, and to one day become a teacher."
+            "story": "Yalee spent most of her early childhood on construction sites in Thailand, travelling with her father who was raising her alone. We became connected to Yalee in 2014 during a visit to her village. Though our intent was to simply visit another child we were already connected with, Yalee's father heard we were coming and travelled back from Thailand to plead with Pastor Somnang to help provide care for his daughter. Without Pastor Somnang agreeing to take Yalee into the church, Yalee's father would have left her alone in the village while he travelled back to Thailand. Yalee is in her second year of school and hopes to be a doctor one day. She is quick to smile and forms quite the playful tandem with Li Hou."
          },
          {
             "name": "Yrose (Ja)",
             "age": 12,
             "image": "http://placehold.it/195x250",
             "hometown": "Rural village in Siam Reap, Cambodia",
-            "story": "Ja spent most of her childhood on construction sites in Thailand.",
-            "grade": "Ja is currently studying in grade four. Her favorite subject is English, but Ja also just loves learning in general.",
-            "interests": "Although very shy, Ja loves to help people, which is evident in how she helps the younger children at the church in their studies. She hopes to one day be a doctor."
+            "story": "Ja spent most of her childhood on construction sites in Thailand and is one of the children who first ignited the vision for Construction of Hope. We first became connected with Ja in 2013, when Ja and her brother, Jua, were part of a group of children living on a construction site adjacent to International Community School (ICS), in Bangkok. Ja is currently studying with her brother in a public school in Phnom Penh. Her favorite subject is English, and she hopes to be a doctor one day. Ja is soft spoken with a sweet spirit, and she has become a wonderful mentor for the younger children in the church. Ja and her brother have both professed faith in Christ and were both baptised in 2015."
         },
         {
             "name": "Vachana (Jua)",
             "age": 12,
             "image": "http://placehold.it/195x250",
             "hometown": "Rural village in Siam Reap, Cambodia",
-            "story": "Jua spent most of his childhood on construction sites in Thailand.",
-            "grade": "Jua is currently studying in grade four, and his favorite subjects are English and Thai.",
-            "interests": "Jua is learning how to play the drums. When he gets older, Jua wants to be an evangelist in Thailand."
+            "story": "Jua spent most of his childhood on construction sites in Thailand and is one of the children who first ignited the vision for Construction of Hope. We first became connected with Jua in 2013, when Jua and his sister, Ja, were part of a group of children living on a construction site adjacent to International Community School (ICS), in Bangkok. Jua is currently studying with his sister in a public school in Phnom Penh. He is thriving as he grows into a young man and is maturing as a leader in the church. He plays drums as part of the worship team and hopes to be a teacher one day. He and his sister have both professed faith in Christ and were baptised in 2015."
+            
         }]
 
     };
@@ -103,12 +77,12 @@ var sponsorAChild = function () {
     for (var i = 0; i < children.length; i++) {
             var child = children[i];
             var childMarkup = '<div class=' + "col-sm-4" + '>';
-                childMarkup += '<span data-toggle=' + "modal" + 'data-target="#sponsorChild" data-title="' + child.name +'"';
+                childMarkup += '<span data-toggle=' + "modal" + ' data-target="#sponsorChild" data-title="' + child.name +'"';
                 childMarkup += 'data-img="' + child.image + '"'; 
                 childMarkup += 'data-caption="' + child.story + '"';
                 childMarkup += 'data-hometown="'+ child.hometown + '"';
-                childMarkup += 'data-grade="'+ child.grade + '"';
-                childMarkup += 'data-interests="'+ child.interests + '">';
+                // childMarkup += 'data-grade="'+ child.grade + '"';
+                childMarkup += 'data-age="'+ child.age + '">';
                 childMarkup += '<img class="img-responsive" src="http://placehold.it/195x250">';
                 childMarkup += '<h4>' + child.name + '</h4>';
                 childMarkup += '</span></div>';
@@ -139,11 +113,15 @@ var sponsorModal = $('#sponsorChild').on('show.bs.modal', function (event) {
   var imgFiletoLoad = imgClicked.data('img'); // Extract info from data-* attributes
   var captionToLoad = imgClicked.data('caption');
   var titleToLoad = imgClicked.data('title');
+  var hometownToLoad = imgClicked.data('hometown');
+  var ageToLoad = imgClicked.data('age')
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this);
-  modal.find('.modal-title').text(titleToLoad);
-  modal.find('.modal-body p').text(captionToLoad);
-  modal.find('.modal-body img').attr("src",imgFiletoLoad);
+  modal.find('.modal-name').text(titleToLoad);
+  modal.find('.modal-body .modal-name-img img').attr("src",imgFiletoLoad);
+  modal.find('.modal-body .modal-age').html("<span>AGE: </span>" + ageToLoad);
+  modal.find('.modal-body .modal-hometown').html("<span>HOMETOWN: </span>" + hometownToLoad);
+  modal.find('.modal-body .modal-story').html("<span>STORY: </span>" + captionToLoad);
 });
 sponsorAChild();
