@@ -136,9 +136,9 @@ session_start();
   <div class='col-sm-2 padding-right-off pull-left upsome'>
         <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
       </div>
-  <div class='col-sm-10 pull-left padding-left-off upsome'>
-    <img src="images/lifesong.png" class='pull-left img-responsive'>
-  </div>    
+  <div class='col-sm-10 pull-left padding-left-off upsome-archive'>
+          <img src="images/lifesongSharp.png" class='pull-left img-responsive'>
+        </div>    
     </div>
     <!--end col 12 div-->
   </div>  

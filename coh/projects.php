@@ -141,7 +141,7 @@ session_start();
           <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
         </div>
         <div class='col-sm-10 pull-left padding-left-off upsome'>
-          <img src="images/lifesong.png" class='pull-left img-responsive'>
+          <img src="images/lifesongSharp.png" class='pull-left img-responsive'>
         </div>    
       </div>
     <!--end col 12 div-->
@@ -165,30 +165,30 @@ session_start();
         <div id='wrapper' class="col-sm-12 center content-bg">
           <h2 class='text-center font-roboto-bold page-title'>PROJECTS</h2>
           <span class='format-options'>
-            <h3 data-bind="click:changeOne, css:{ formatOptionsToggle: oneActive()}" class='text-center font-roboto' style="cursor:pointer;">Bangkok</h3>
-            <h3 data-bind="click:changeTwo, css:{ formatOptionsToggle: twoActive()}" class='text-center font-roboto' style="cursor:pointer;">Phnom Penh</h3>
-            <h3 data-bind="click:changeThree, css:{ formatOptionsToggle: threeActive()}" class='text-center font-roboto' style="cursor:pointer;">Takeo</h3>
+            <h3 data-bind="click:changeTwo, css:{ formatOptionsToggle: twoActive()}" class='text-center font-roboto' style="cursor:pointer;">Cambodia</h3>
+            <h3 data-bind="click:changeOne, css:{ formatOptionsToggle: oneActive()}" class='text-center font-roboto' style="cursor:pointer;">Thailand</h3>
+            <!-- <h3 data-bind="click:changeThree, css:{ formatOptionsToggle: threeActive()}" class='text-center font-roboto' style="cursor:pointer;">Takeo</h3> -->
           </span>
           <hr>
-     <div data-bind="if: oneActive,fadeVisible: oneActive" class='center'>
+     <div data-bind="if: oneActive,fadeVisible: oneActive" class='center thailand-projects'>
             <div class='row'>
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Locating and Connecting" data-img="http://placehold.it/500x250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Locating and Connecting</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Making Connections" data-img="images/locatingAndConnectingBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Our ministry in Bangkok begins with locating and connecting with children and families in need. While our focus is on helping migrant workers living on construction sites, the ministry has grown to include children and families from other areas as well, including refugees, factory workers and children living in slum communities. Due to trafficking, exploitation, and other issues, migrant workers are usually wary of outsiders, particularly foreigners. Once a relationship is formed, however, we are able to gain inside traction to multiple sites as families move from place to place. Additionally, a primary emphasis with Construction of Hope is to work through indigenous leaders as much as possible, which automatically helps eliminate some of the natural barriers to building relationships. " data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/locatingAndConnectingSmall.jpg">
+                    <h4>Making Connections</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Forming Relationships" data-img="http://placehold.it/500x250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Forming relationships</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Community Education" data-img="images/communityEducationBig.jpg" data-linkone="donate.php" data-linkonetitle="Support Education" data-captionone="In October 2014, Pastor Vino started a learning center at his church for the children of migrant construction workers. Beginning with 4 Cambodian children, the school now includes children from Cambodia, Myanmar, and Pakistan. Currently, an average of 25 children come daily to the church from 8:30-4:30 to learn a variety of subjects including Thai language, Bible, math, physical education and life skills. Every couple of months, the church takes the children on a field trip, such as the beach or the park. On Saturdays, an English class is led by a group of American missionaries and teachers.  A very practical way to support this work is through donations to purchase educational resources. We would love to hear from you if you are interested in partnering with us in this way. Click the below to donate to this cause." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/communityEducationSmall.jpg">
+                    <h4>Community Education</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Developing Partnerships" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Developing Partnerships</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Leadership Training" data-img="images/leadershipTrainingBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="An extension of the school, Pastor Vino has begun a leadership program with a group of the older children to train and disciple them to take initiative and responsibility in helping others. This group of young leaders are given specific responsibilities and opportunities within the church and school, including helping teach the younger children, financial management training, and joining the adult leaders in various outreach ministries and weekend retreats. " data-captiontwo='' data-captionthree=''>
+                    <img class='img-responsive' src="images/leadershipTrainingSmall.jpg">
+                    <h4>Leadership Training</h4>
                   </span>
                 </div>
               </div>
@@ -196,55 +196,50 @@ session_start();
             <div class='row'>
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Showing God's Love" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Showing God's Love</h4>
-                  </span>
-                </div>
-                <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Relocating to Cambodia" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Relocating to Cambodia</h4>
-                  </span>
-                </div>
-                <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Khmer Missionary" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Khmer Missionary</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Indigenous Outreach" data-img="images/indigenousOutreachBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Pastor Vino and his team are involved in a number of outreach activities that serve the families of the children in the school and other adults in the community. Activities include offering Thai language classes on construction sites after working hours, occasional serving meals on construction sites, leading worship services on sites as well as regular worship services and meals held at the church with times that accommodate the majority of the workers. Parents are also welcomed and encouraged to attend the bi-monthly day trips the children take to the beach or park. " data-captiontwo="" data-captionthree=''>
+                    <img class='img-responsive' src="images/indigenousOutreachSmall.jpg">
+                    <h4>Indigenous Outreach</h4>
                   </span>
                 </div>
               </div>
             </div>
           </div>
-     <div data-bind="if: twoActive,fadeVisible: twoActive" class='center'>
+     <div data-bind="if: twoActive,fadeVisible: twoActive" class='center cambodia-projects'>
             <div class='row'>
+              <div class='col-sm-12'>
+                <ul class='sub-menu'>
+                  <li data-bind="click:changeSubOne, css:{ subFormatOptionsToggle: subOneActive() && !subAllActive()}" class='sub-menu-item'><h6>Phnom Penh</h6></li>
+                  <li data-bind="click:changeSubAll, css:{ subFormatOptionsToggle: subAllActive()}" class='sub-menu-item'><h6>All</h6></li>
+                  <li data-bind="click:changeSubTwo, css:{ subFormatOptionsToggle: subTwoActive() && !subAllActive()}" class='sub-menu-item'><h6>Takeo</h6></li>
+                </ul>
+              </div>
+            </div>
+            <div data-bind="fadeVisible: subOneActive" class='row phenom-penh'>
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Children Living at the Church</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Caring for Children" data-img="images/childrenLivingAtTheChurchBig.jpg" data-linkone='sponsor.php' data-linkonetitle='Sponsor a Child' data-linktwo='about.php' data-linktwotitle='COH Vision' data-captionone="Some of the children we come in contact with on construction sites and slum communities have no parents or close relatives to look after them or are victims of neglect or abuse. In certain cases, we believe the most viable solution is to help find a new home for these children. Through partnering with Pastor Somnang and The Fellowship Church of Pochentong in Phnom Penh, Cambodia, Construction of Hope currently helps support eight children who have been adopted into the church as part of the Pastor’s family. Click the link at the bottom to learn more about each child and their story. " data-captiontwo="Our main focus in sponsoring the care of these children is to not only provide for their physical needs of shelter, proper nutrition, clothing, and education but to also emphasize the discipleship of each child to equip them to become leaders that will one day transform their communities through bringing the Gospel message of hope back to their towns and villages. We believe that this hope is the key to breaking the chains of generational bondage that manifests itself in poverty and destructive life choices." data-captionthree="God willing, we hope to expand the foster care and adoption program by soon building additional accommodations – a bigger place in Phnom Penh and a new place in Takeo Province.">
+                    <img class='img-responsive' src="images/childrenLivingAtTheChurchSmall.jpg">
+                    <h4>Caring for Children</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="images/sustainableBusinessBig.jpg" data-linkone='' data-linkonetitle='Emunah Project' data-captionone="The sustainable businesses promoted and established through Construction of Hope are part of an entrepreneurial project called ‘EMUNAH’. Currently, EMUNAH and Construction of Hope have helped establish five small businesses, including a restaurant, second-hand clothing store, sewing shop, private music instruction and a Tuk Tuk rental. Read more about the meaning and vision behind the name ‘EMUNAH’ by following the link at the below." data-captiontwo='' data-captionthree=''>
+                    <img class='img-responsive' src="images/sustainableBusinessSmall.jpg">
                     <h4>Sustainable Business</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Outreach to Local Children</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Local Outreach" data-img="images/outreachToLocalCommunitiesBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Located in the area just behind the church in Phnom Penh is a large slum community filled with children. One of the children living in the church, Li Hou, used to beg on the streets of this neighborhood before being rescued and eventually adopted. The needs of the individual children in this community vary from those similar to Li Hou’s former situation to those who simply undergo a daily struggle through poverty and perceived hopelessness while living with their parents, many of whom struggle to find sustainable employment." data-captiontwo='Construction of Hope partners with Pastor Somnang and The Fellowship Church of Pochentong to help this community in a variety of ways, including providing food vouchers (redeemable at the EMUNAH restaurant) for those most in need, bags of rice for families, school supplies for children, support for some children who are unable to afford school fees, community soccer games and mentoring and discipleship in the church. For many of the children in this community, the church has become a place of refuge and relief. See the latest news about helping these communities by following the link below.' data-captionthree=''>
+                    <img class='img-responsive' src="images/outreachToLocalCommunitiesSmall.jpg">
+                    <h4>Local Outreach</h4>
                   </span>
                 </div>
               </div>
             </div> 
-          </div>
-        <div data-bind="if: threeActive,fadeVisible: threeActive" class='center'>
-            <div class='row'>
+            <div data-bind="fadeVisible: subTwoActive" class='row takeo'>
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-captionone="Well I went to the phone apple makin business bangkok adverbs no wup superficially." data-captiontwo="" data-captionthree="">
                     <img class='img-responsive' src="http://placehold.it/195x250">
                     <h4>Takeo Projects</h4>
                   </span>
@@ -275,7 +270,7 @@ session_start();
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
       <div class='donate-wrap'>
-      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+      <a href="donate.php"><button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button></a>
     </div>
     </div>
   </div>
@@ -351,8 +346,13 @@ session_start();
                 </div>
               </div>
               <div class="modal-body">
-                <!-- <img class='img-responsive' src="images/lifesong.png">
-                <p></p> -->
+                <img class='img-responsive' src="images/lifesong.png"><br>
+                <p class='caption1'></p>
+                <p class='caption2'></p>
+                <p class='caption3'></p>
+                <div class='link-wrapper'>
+                  <a class='link1' href=''><h5></h5></a>
+              </div>
               </div>
               <div class="modal-footer">
                 <h4 class="modal-title" id="mi"></h4>

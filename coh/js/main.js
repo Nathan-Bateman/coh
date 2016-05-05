@@ -39,7 +39,7 @@ var footerOptions = {
 					'news':'<li class='+'footerItem'+'><a href="#COH"><h5 class='+'coh' +'>News</h5></a></li>',*/
 					// 'Ytube':'<li class="footerItem"'+'><a class="footerItem" href="https://www.youtube.com/channel/UC8nhHT1xudHfwUHnRHivSmA"><img class="youtube" src="images/youtube.png" alt="Youtube"></a></li>',
 					// 'Insta':'<li class="footerItem"'+'><a class="footerItem" href="https://www.instagram.com/constructionofhope/"><img class="instagram" src="images/instapiclittle.png" alt="Instagram"></a></li>',
-					'COH':'<li class='+'footerItem'+'><a class="footerItem" href="index.html"><h3 class="font-roboto-light coh"' +'>Construction of Hope <span>&copy 2016</span></h3></a></li>'			
+					'COH':'<li class='+'footerItem'+'><a class="footerItem" href="index.php"><h3 class="font-roboto-light coh"' +'>Construction of Hope <span>&copy 2016</span></h3></a></li>'			
 };
 var bottomPics = {
 				   'about':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="about.php" class="info"><img src="images/about3.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">About</h4>  <p class="text-center"> Mission  |  Folks </p><span></a></div></div>',
@@ -92,21 +92,34 @@ var postBottomPics = function () {
 var projectModal = $('#ministry').on('show.bs.modal', function (event) {
   var imgClicked = $(event.relatedTarget); // Button that triggered the modal
   var imgFiletoLoad = imgClicked.data('img'); // Extract info from data-* attributes
-  var captionToLoad = imgClicked.data('caption');
+  var captionOneToLoad = imgClicked.data('captionone');
+  var captionTwoToLoad = imgClicked.data('captiontwo');
+  var captionThreeToLoad = imgClicked.data('captionthree');
   var titleToLoad = imgClicked.data('title');
+  var linkOneToLoad = imgClicked.data('linkone');
+  var linkOneTitleToLoad = imgClicked.data('linkonetitle');
+  // var linkTwoToLoad = imgClicked.data('linktwo');
+  // var linkTwoTitleToLoad = imgClicked.data('linktwotitle');
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this);
   modal.find('.modal-title').text(titleToLoad);
-  modal.find('.modal-body p').text(captionToLoad);
+  modal.find('.modal-body .caption1').text(captionOneToLoad);
+  modal.find('.modal-body .caption2').text(captionTwoToLoad);
+  modal.find('.modal-body .caption3').text(captionThreeToLoad);
   modal.find('.modal-body img').attr("src",imgFiletoLoad);
+  modal.find('.modal-body .link1').attr("href",linkOneToLoad);
+  modal.find('.modal-body .link1 h5').text(linkOneTitleToLoad);
+  // modal.find('.modal-body .link2').attr("href",linkTwoToLoad);
+  // modal.find('.modal-body .link2 h5').text(linkTwoTitleToLoad);
 });
 
 var randomBanner = function (x) {
-	// var bannerPics = ['images/banner_1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
-	var bannerPics = ['http://placehold.it/1800x650'];
+	// var bannerPics = ['images/banner1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
+	var bannerPics = ['images/banner1.jpg','images/banner2.jpg', 'images/banner3.jpg'];
 	var images = randomfromarray(bannerPics);
-	$( ".banner" ).append( '<img src="' + images +'" class="img-responsive centerImage border stackorder">' );
+	$('.banner').css({'background-image': 'url(' + images + ')'});
+	//$( ".banner" ).append( '<img src="' + images +'" class="img-responsive centerImage border stackorder">' );
 };
 
 menu.addEventListener('click', function(e) {
@@ -129,9 +142,12 @@ var hopeViewModel = function () {
   	self.show = ko.observable(false);
 	self.documentReady = ko.observable(false);
 	self.regscreen = ko.observable(true);
-	self.oneActive = ko.observable(true);
-	self.twoActive = ko.observable(false);
+	self.oneActive = ko.observable(false);
+	self.twoActive = ko.observable(true);
 	self.threeActive = ko.observable(false);
+	self.subOneActive = ko.observable(true);
+	self.subTwoActive = ko.observable(true);
+	self.subAllActive = ko.observable(true);
 
 	self.changeOne = function () {
 		self.oneActive(true);
@@ -148,8 +164,22 @@ var hopeViewModel = function () {
 	self.changeThree = function () {
 		self.oneActive(false);
 		self.twoActive(false);
-		self.threeActive(true);
-		
+		self.threeActive(true);	
+	};
+	self.changeSubOne = function () {
+		self.subOneActive(true);
+		self.subTwoActive(false);
+		self.subAllActive(false);
+	};
+	self.changeSubTwo = function () {
+		self.subOneActive(false);
+		self.subTwoActive(true);
+		self.subAllActive(false);	
+	};
+	self.changeSubAll = function () {
+		self.subOneActive(true);
+		self.subTwoActive(true);
+		self.subAllActive(true);	
 	};
 	ko.bindingHandlers.fadeVisible = {
     init: function(element, valueAccessor) {
@@ -186,8 +216,8 @@ var hopeViewModel = function () {
         console.log( "document loaded" );
         self.documentReady(true);
         if (window.location.pathname === '/index.php') {
-        setTimeout(function(){ self.show(true) }, 1200);
-        setTimeout(function(){document.querySelector('.btn-main-coh').classList.add('glow')}, 2900);
+        setTimeout(function(){ self.show(true) }, 100);
+        setTimeout(function(){document.querySelector('.btn-main-coh').classList.add('glow')}, 2000);
         		} else {
         			self.show(true);
         		};

@@ -141,7 +141,7 @@ session_start();
           <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
         </div>
         <div class='col-sm-10 pull-left padding-left-off upsome'>
-          <img src="images/lifesong.png" class='pull-left img-responsive'>
+          <img src="images/lifesongSharp.png" class='pull-left img-responsive'>
         </div>    
       </div>
     <!--end col 12 div-->
@@ -191,7 +191,7 @@ session_start();
   <div id='donate-section' class='row'>
     <div class='col-sm-12'>
       <div class='donate-wrap'>
-      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+      <a href="donate.php"><button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button></a>
       </div>
     </div>
   </div>

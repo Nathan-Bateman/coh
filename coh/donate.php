@@ -147,7 +147,7 @@ session_start();
           <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
         </div>
         <div class='col-sm-10 pull-left padding-left-off upsome'>
-          <img src="images/lifesong.png" class='pull-left img-responsive'>
+          <img src="images/lifesongSharp.png" class='pull-left img-responsive'>
         </div>    
       </div>
     <!--end col 12 div-->
@@ -176,22 +176,22 @@ session_start();
       <div class='col-sm-12 sponsor-wrap donate-cta'>
             <h2 class='font-roboto-bold'>One-time Gifts</h2>
             <div class='sponsor-wrap'>
-            <button type="button" class="btn btn-primary font-roboto-light btn-donate">Give Online</button>
-            <p>*Select Cambodia-Construction of Hope under “Orphan Care Gift Preference: Country”</p>
+            <a href="https://www.lifesongfororphans.org/give/donate/one-time/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">Give Online</button></a>
+            <p class='note'>*Select Cambodia-Construction of Hope under “Orphan Care Gift Preference: Country”</p>
             </div>
           <h3 class='font-roboto-bold'>Send a Check to:</h3>
           <p>Lifesong For Orphans<br>
              PO Box 40<br>
              Gridley, IL 61744
           </p>
-          <p>*Make sure to include Lifesong Cambodia or Construction of Hope in the Memo.
+          <p class='note'>*Make sure to include Lifesong Cambodia or Construction of Hope in the Memo.
           </p>
       </div>
     </div><div class='row donate-recurring'>
       <div class='col-sm-12 donate-recurring-online'>
         <h2 class='font-roboto-bold'>Recurring Gifts</h2>
         <div class='sponsor-wrap'>
-          <button type="button" class="btn btn-primary font-roboto-light btn-donate">Monthly Gift Online</button>
+          <a href="https://www.lifesongfororphans.org/give/donate/recurring-donation/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">Monthly Gift Online</button></a>
         </div>
       </div>
       <div class='col-sm-12 donate-recurring-eft'>
@@ -229,7 +229,7 @@ session_start();
              Thus, all gifts going towards child sponsorship must be specified as such through the lifesong giving process. 
              Simply insert the name of the child you would like to sponsor in the memo field and your gift will be used to 
              support that child. Follow the link below to learn more</p>
-            <h4><a href='#sponsor'>
+            <h4><a href='sponsor.php'>
               Sponsor a Child</a></h4>
         </div>
       </div>

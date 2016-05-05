@@ -141,7 +141,7 @@ session_start();
           <h6 class='text-right ipwith font-roboto-light-heading'>IN PARTNERSHIP WITH</h6>
         </div>
         <div class='col-sm-10 pull-left padding-left-off upsome'>
-          <img src="images/lifesong.png" class='pull-left img-responsive'>
+          <img src="images/lifesongSharp.png" class='pull-left img-responsive'>
         </div>    
       </div>
     <!--end col 12 div-->
@@ -149,21 +149,22 @@ session_start();
   <!--end 2nd row-->
   </div>
     <!-- End of header wrapper --> 
+    <div class='row sponsorship-header border_news'>
+      <div class='col-sm-12'>
+          <h1 class='font-roboto-bold'>Child Sponsorship</h1>
+            <p>Please consider sponsoring a child who is currently living at the church. 
+               We suggest a sponsorship amount of $20 per month, but you may sponsor at any gift 
+               level. Your sponsorship will help cover the costs of proper care and nutrition, 
+               medical care, education and discipleship. All the children listed below were 
+               rescued from either a construction sites in Bangkok, Thailand or from slum 
+               communities throughout Cambodia. Now, they have a completely different future 
+               ahead of them. Click on the child's picture to learn more about them.
+            </p>
+        </div>
+    </div>
     <!--end 2nd row-->
-    <div id='sponsorship-page' class='border_news'>
-      <div class='row'>
-        <div class='col-sm-12'>
-            <h1 class='font-roboto-bold'>Child Sponsorship</h1>
-              <p>Please consider sponsoring a child who is currently living at the church. 
-                 We suggest a sponsorship amount of $20 per month, but you may sponsor at any gift 
-                 level. Your sponsorship will help cover the costs of proper care and nutrition, 
-                 medical care, education and discipleship. All the children listed below were 
-                 rescued from either a construction sites in Bangkok, Thailand or from slum 
-                 communities throughout Cambodia. Now, they have a completely different future 
-                 ahead of them. Click on the child's picture to learn more about them.
-              </p>
-          </div>
-      </div>
+    <div id='sponsorship-page'>
+
     </div>
 
 
@@ -266,7 +267,7 @@ session_start();
               </div>
               <div class="modal-footer">
                 <div class='donate-wrap'>
-                <button type="button" class="btn btn-secondary font-roboto-light btn-donate">SPONSOR</button>
+                <a href="https://www.lifesongfororphans.org/give/donate/one-time/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">SPONSOR</button></a>
                 </div>
               </div>
             </div>
