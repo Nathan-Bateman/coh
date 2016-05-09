@@ -195,7 +195,7 @@ session_start();
         </div>
         <div class='row'>
           <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
+            <img class='img-responsive' src="images/vino.jpg">
             <h4>Pastor Vino <a href="mailto:pastorv@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Indigenous Pastor - Thailand
             </h5>

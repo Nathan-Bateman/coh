@@ -3,7 +3,7 @@ session_start();
 
     $data = array();
     $errors = array(); 
-    //echo '<link rel="stylesheet" type="text/css" href="css/bootstrap.min.form.css"></head>';
+    echo '<link rel="stylesheet" type="text/css" href="css/bootstrap.min.form.css"></head>';
     function generateFormToken($form) {
     
         // generate a token from an unique value, took from microtime, you can also use salt-values, other crypting methods...
@@ -99,7 +99,7 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COH</title>
+  <title>COHAbout</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -108,16 +108,16 @@ session_start();
 <body id="#body">
   <!--container div required by bootstrap-->
   <div class='sitewrapper'>
-    <div id='container' class="container-fluid">
-      
-      <nav id='drawer' class='comeout'>
-      </nav>
+      <div id='container' class="container-fluid">
+        
+        <nav id='drawer' class='comeout'>
+        </nav>
  <div class='header-wrapper'>
       <div id='COH' class='row'>
         
         <div class="col-sm-12">
           <div class='col-sm-6 padding-right-off pull-left'>
-            <h3 data-bind="if: regscreen" class='text-left cohfont'>Construction of Hope </h3>
+            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
             <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
           </div>
   <!--end of 1st col 6 div-->
@@ -148,65 +148,95 @@ session_start();
   </div>  
   <!--end 2nd row-->
   </div>
-    <!-- End of header wrapper -->
-  <div id='bannerplace' class='row'>
-    <div class='col-sm-12 banner'>
-      <div data-bind="if: documentReady, visible: show" class='center-fly'>
-        <h2><span class="font-roboto-light"> That the</span><span> Forgotten</span><span class="font-roboto-light"> Be</span><span> Found </span><a href='news.php'><button type="button" class="btn btn-primary font-roboto-light btn-main-coh">See the Work</button></a></span></h2>
-      </div>
-      <div class='after border'>
-      </div>
+    <div id='emunah-wrapper'>
+            <div class='row sponsorship-header border_news'>
+              <div class='col-sm-12'>
+                  <h1 class='font-roboto-bold'>Emunah - Entrepreneurial Project</h1>
+                    <p>Lorem ipsum dolor sit amet, quodsi percipit at nec, his dicant consulatu 
+                        et, et mei velit albucius. Te qui audiam qualisque voluptatibus, legere 
+                        fabulas vix id, at mel alia gubergren honestatis. Mea ne probo commune, an 
+                        omittantur comprehensam nec. Eos malis possit interpretaris ad, sumo essent his 
+                        an, eos ex minimum accusata intellegat. Mel labore reformidans te, mel te deserunt 
+                        salutatus efficiantur. Pri velit ludus at, nisl error ubique est no, sanctus invidunt 
+                        euripidis in vis. Putent dicunt eirmod in nam, his impedit similique appellantur in.
+                    </p>
+                </div>
+            </div>
+          <!--end of row 3-->
+            <div id='emunah' class='row border_news'>
+              <div class='col-sm-12 first'>
+                    <!-- <div class='col-sm-4'> -->
+                    <div class='emunah-section-wrapper'>
+                      <h2 class='font-roboto'>Restaurant</h2>
+                        <img class='img-responsive' src="images/emunah.png">
+                        <p class='font-roboto'>This text is two sentences describing 
+                                                the restaurant.
+                        </p>
+                    </div>
+                   <!--  </div> -->
+                    <!-- <div class='col-sm-8'> -->
+                   <!--    <p></p> -->
+                   <!--  </div> -->
+              </div>
+            </div>
+          <!--end of row 4-->
+        <div id='emunah' class='row'>
+              <div class='col-sm-12 first'>
+                <div class='emunah-section-wrapper'>
+                      <h2 class='font-roboto'>Tuk Tuk</h2>
+                        <img class='img-responsive' src="images/emunah.png">
+                        <p class='font-roboto'>This text is two sentences describing the tuk tuk business.</p>
+                </div>
+              </div>
+            </div>
+          <!--end of row 5-->
+          <div id='emunah' class='row'>
+              <div class='col-sm-12 first'>
+                    <div class='emunah-section-wrapper'>
+                      <h2 class='font-roboto'>Clothing Store</h2>
+                        <img class='img-responsive' src="images/emunah.png">
+                        <p class='font-roboto'>This text is two sentences describing the clothing store.</p>
+                    </div>
+              </div>
+            </div>
+          <!--end of row 6-->
+          <div id='emunah' class='row'>
+              <div class='col-sm-12 first'>
+                    <div class='emunah-section-wrapper'>
+                      <h2 class='font-roboto'>Music Lessons</h2>
+                        <img class='img-responsive' src="images/emunah.png">
+                        <p class='font-roboto'>This text is two sentences describing the music lessons.</p>
+                    </div>
+              </div>
+            </div>
+          <!--end of row 7-->
+            <div id='emunah' class='row'>
+              <div class='col-sm-12 first'>
+                    <div class='emunah-section-wrapper'>
+                      <h2 class='font-roboto'>Sewing Shop</h2>
+                        <img class='img-responsive' src="images/emunah.png">
+                        <p class='font-roboto'>This text is two sentences describing the sewing shop.</p>
+                    </div>
+              </div>
+            </div>
+          <!--end of row 8-->
     </div>
-  </div>
-  <!--end of row 3-->
-  
-    <div id='mission' class='row'>
-      <div class='mission-wrapper'>
-      <div id='wrapper' class="table-responsive col-sm-12 center-table table-bg">
-        <h2 class='text-center font-roboto-bold page-title'>OUR MISSION</h2>
-        <h4 class='text-center font-roboto-bold'>Equipping disadvantaged families to succeed through:</h4>
-          <table class="table center-table">
-          <tr>
-            <td class='table-text-left-left font-roboto-light'>Biblical Evangelism</td>
-            <td class='table-text-left-right font-roboto-light'>Indigenous Leadership</td>
-          </tr>
-          <tr>
-            <td class='table-text-left-left font-roboto-light'>Messiah's Love</td>
-            <td class='table-text-left-right font-roboto-light'>Discipleship</td>
-          </tr>
-          <tr>
-            <td class='table-text-left-left font-roboto-light'>Christian Education</td>
-            <td class='table-text-left-right font-roboto-light'>Sustainable Business</td>
-          </tr>
-          </table>
-          <!-- <div class='sponsor-wrap'>
-            <button type="button" class="btn btn-primary font-roboto-light btn-donate">Sponsor a Child</button>
-          </div> -->
-      </div>
-        <h2 class="text-center scripture"><span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
-        </h2>
-     </div>   
-    </div>
-      <!-- donate section -->
+
+     <!-- donate section -->
   <div id='donate-section' class='row'>
-    <div class='col-sm-12'>
-      <div class='donate-wrap'>
-      <a href="donate.php"><button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button></a>
-      </div>
+    <div class='col-sm-12 donate-wrap'>
+      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
     </div>
   </div>
-  <!--end of row 4-->
   <div id='links' class='row'>
-    <div class='front-page-bottom-pics-wrapper'>
-      <div class='col-sm-12 bottompics'>
-      </div>
-     </div> 
+    <div class='col-sm-12 bottompics'>
+    </div>
   </div>
   <!--end of row 5-->
 
-    <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
+  <!--Inspiration and some markup for contact form modified from Light Up the Dark LLC Belton, MO-->
   <div id='contact'>
-    <div class='contact-wrapper'>
+
     <h3 class='text-left font-roboto-bold contact-format'>Let's Connect</h3>
 
   <!--Markup for Contact form-->
@@ -254,7 +284,6 @@ session_start();
     </div>
 
   </form>
-    </div>
   </div>
   <!--end of row 6-->
 
@@ -277,6 +306,8 @@ session_start();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--<script src='js/bootstrap.js'></script>-->
 <script src='js/main.js'></script>
+<script src='js/news.js'></script>
+
 
 
 </html>

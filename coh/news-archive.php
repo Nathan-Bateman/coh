@@ -144,7 +144,7 @@ session_start();
   </div>  
   <!--end 2nd row-->
   <div id='news' class='row border_news'>
-      <div class='col-sm-12 insta-column'>
+      <div class='col-sm-12 archives-log'>
           <h2 class='font-roboto feed-image'>Monthly-Updates Archive</h2>
           <p><a href='news.php'>Back to news</a></p>
           <div>

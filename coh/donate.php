@@ -203,7 +203,7 @@ session_start();
         </ul>
       </div>
     </div> 
-    <div class='row'>
+    <div class='row donate-ct-sponsorship-row'>
       <div class='col-sm-12 donate-ct-sponsorship'>
         <div class='col-sm-6 donate-ct'>
           <h2 class='font-roboto-bold'>Cambodia/Thailand Gifts</h2>

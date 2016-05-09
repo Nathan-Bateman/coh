@@ -174,19 +174,19 @@ session_start();
             <div class='row'>
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Making Connections" data-img="images/locatingAndConnectingBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Our ministry in Bangkok begins with locating and connecting with children and families in need. While our focus is on helping migrant workers living on construction sites, the ministry has grown to include children and families from other areas as well, including refugees, factory workers and children living in slum communities. Due to trafficking, exploitation, and other issues, migrant workers are usually wary of outsiders, particularly foreigners. Once a relationship is formed, however, we are able to gain inside traction to multiple sites as families move from place to place. Additionally, a primary emphasis with Construction of Hope is to work through indigenous leaders as much as possible, which automatically helps eliminate some of the natural barriers to building relationships. " data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="images/locatingAndConnectingSmall.jpg">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Making Connections" data-img="images/makingConnectionsBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Our ministry in Bangkok begins with locating and connecting with children and families in need. While our focus is on helping migrant workers living on construction sites, the ministry has grown to include children and families from other areas as well, including refugees, factory workers and children living in slum communities. Due to trafficking, exploitation, and other issues, migrant workers are usually wary of outsiders, particularly foreigners. Once a relationship is formed, however, we are able to gain inside traction to multiple sites as families move from place to place. Additionally, a primary emphasis with Construction of Hope is to work through indigenous leaders as much as possible, which automatically helps eliminate some of the natural barriers to building relationships." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/makingConnectionsSmall.jpg">
                     <h4>Making Connections</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Community Education" data-img="images/communityEducationBig.jpg" data-linkone="donate.php" data-linkonetitle="Support Education" data-captionone="In October 2014, Pastor Vino started a learning center at his church for the children of migrant construction workers. Beginning with 4 Cambodian children, the school now includes children from Cambodia, Myanmar, and Pakistan. Currently, an average of 25 children come daily to the church from 8:30-4:30 to learn a variety of subjects including Thai language, Bible, math, physical education and life skills. Every couple of months, the church takes the children on a field trip, such as the beach or the park. On Saturdays, an English class is led by a group of American missionaries and teachers.  A very practical way to support this work is through donations to purchase educational resources. We would love to hear from you if you are interested in partnering with us in this way. Click the below to donate to this cause." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="images/communityEducationSmall.jpg">
-                    <h4>Community Education</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Community Education" data-img="images/learningCenterBig.jpg" data-linkone="donate.php" data-linkonetitle="Support Education" data-captionone="In October 2014, Pastor Vino started a learning center at his church for the children of migrant construction workers. Beginning with 4 Cambodian children, the school now includes children from Cambodia, Myanmar, and Pakistan. Currently, an average of 25 children come daily to the church from 8:30-4:30 to learn a variety of subjects including Thai language, Bible, math, physical education and life skills. The children are provided with two meals a day, fresh fruit, and vitamins. Every couple of months, the church takes the children on a field trip, such as the beach or the park. On Saturdays, an English class is led by a group of American missionaries and teachers. A very practical way to support this work is through donations to purchase educational resources. We would love to hear from you if you are interested in partnering with us in this way. Click the below to donate to this cause." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/learningCenterSmall.jpg">
+                    <h4>Learning Center</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Leadership Training" data-img="images/leadershipTrainingBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="An extension of the school, Pastor Vino has begun a leadership program with a group of the older children to train and disciple them to take initiative and responsibility in helping others. This group of young leaders are given specific responsibilities and opportunities within the church and school, including helping teach the younger children, financial management training, and joining the adult leaders in various outreach ministries and weekend retreats. " data-captiontwo='' data-captionthree=''>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Leadership Training" data-img="images/leadershipTrainingBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="An extension of the school, Pastor Vino has begun a leadership program with a group of the older children to train and disciple them to take initiative and responsibility in helping others. This group of young leaders are given specific responsibilities and opportunities within the church and school, including helping teach the younger children, financial management training, and joining the adult leaders in various outreach ministries and weekend retreats. The vision and goals for this ministry is to raise up key leaders who will help break generational strongholds with the power of the Gospel." data-captiontwo='' data-captionthree=''>
                     <img class='img-responsive' src="images/leadershipTrainingSmall.jpg">
                     <h4>Leadership Training</h4>
                   </span>
@@ -196,7 +196,7 @@ session_start();
             <div class='row'>
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Indigenous Outreach" data-img="images/indigenousOutreachBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Pastor Vino and his team are involved in a number of outreach activities that serve the families of the children in the school and other adults in the community. Activities include offering Thai language classes on construction sites after working hours, occasional serving meals on construction sites, leading worship services on sites as well as regular worship services and meals held at the church with times that accommodate the majority of the workers. Parents are also welcomed and encouraged to attend the bi-monthly day trips the children take to the beach or park. " data-captiontwo="" data-captionthree=''>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Indigenous Outreach" data-img="images/indigenousOutreachBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Pastor Vino and his team are involved in a number of outreach activities that serve the families of the children in the school and other adults in the community, particularly those on construction sites. Activities include offering Thai language classes on construction sites after working hours, occasionally serving meals on construction sites, leading worship services on sites as well as regular worship services and meals held at the church with times that accommodate the majority of the workers. Parents are also welcomed and encouraged to attend the bi-monthly day trips the children take to the beach or park." data-captiontwo="" data-captionthree=''>
                     <img class='img-responsive' src="images/indigenousOutreachSmall.jpg">
                     <h4>Indigenous Outreach</h4>
                   </span>
@@ -217,19 +217,19 @@ session_start();
             <div data-bind="fadeVisible: subOneActive" class='row phenom-penh'>
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Caring for Children" data-img="images/childrenLivingAtTheChurchBig.jpg" data-linkone='sponsor.php' data-linkonetitle='Sponsor a Child' data-linktwo='about.php' data-linktwotitle='COH Vision' data-captionone="Some of the children we come in contact with on construction sites and slum communities have no parents or close relatives to look after them or are victims of neglect or abuse. In certain cases, we believe the most viable solution is to help find a new home for these children. Through partnering with Pastor Somnang and The Fellowship Church of Pochentong in Phnom Penh, Cambodia, Construction of Hope currently helps support eight children who have been adopted into the church as part of the Pastor’s family. Click the link at the bottom to learn more about each child and their story. " data-captiontwo="Our main focus in sponsoring the care of these children is to not only provide for their physical needs of shelter, proper nutrition, clothing, and education but to also emphasize the discipleship of each child to equip them to become leaders that will one day transform their communities through bringing the Gospel message of hope back to their towns and villages. We believe that this hope is the key to breaking the chains of generational bondage that manifests itself in poverty and destructive life choices." data-captionthree="God willing, we hope to expand the foster care and adoption program by soon building additional accommodations – a bigger place in Phnom Penh and a new place in Takeo Province.">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Fostering Family" data-img="images/childrenLivingAtTheChurchBig.jpg" data-linkone='sponsor.php' data-linkonetitle='Sponsor a Child' data-linktwo='about.php' data-linktwotitle='COH Vision' data-captionone="Some of the children we come in contact with on construction sites and slum communities have no parents or close relatives to look after them or are victims of neglect or abuse. In certain cases, we believe the most viable solution is to help find a new home for these children. Through partnering with Pastor Somnang and The Fellowship Church of Pochentong in Phnom Penh, Cambodia, Construction of Hope currently helps support eight children who have been adopted into the church as part of the Pastor’s family. Click the link at the bottom to learn more about each child and their story. " data-captiontwo="Our main focus in sponsoring the care of these children is to not only provide for their physical needs of shelter, proper nutrition, clothing, and education but to also emphasize the discipleship of each child to equip them to become leaders that will one day transform their communities through bringing the Gospel message of hope back to their towns and villages. We believe that this hope is the key to breaking the chains of generational bondage that manifests itself in poverty and destructive life choices." data-captionthree="">
                     <img class='img-responsive' src="images/childrenLivingAtTheChurchSmall.jpg">
-                    <h4>Caring for Children</h4>
+                    <h4>Fostering Family</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="images/sustainableBusinessBig.jpg" data-linkone='' data-linkonetitle='Emunah Project' data-captionone="The sustainable businesses promoted and established through Construction of Hope are part of an entrepreneurial project called ‘EMUNAH’. Currently, EMUNAH and Construction of Hope have helped establish five small businesses, including a restaurant, second-hand clothing store, sewing shop, private music instruction and a Tuk Tuk rental. Read more about the meaning and vision behind the name ‘EMUNAH’ by following the link at the below." data-captiontwo='' data-captionthree=''>
+                  <span data-toggle="modal" data-target="#sustainable" data-title="Sustainable Business" data-img="images/sustainableBusinessBig.jpg" data-linkone='' data-linkonetitle='Emunah Project' data-captionone="The sustainable businesses promoted and established through Construction of Hope are part of an entrepreneurial project called ‘EMUNAH’. Currently, EMUNAH and Construction of Hope have helped establish five small businesses, including a restaurant, second-hand clothing store, sewing shop, private music instruction and a Tuk Tuk rental. Read more about the meaning and vision behind the name ‘EMUNAH’ by following the link at the below." data-captiontwo='The objectives of these businesses are tri-fold:' data-captionthree=''>
                     <img class='img-responsive' src="images/sustainableBusinessSmall.jpg">
                     <h4>Sustainable Business</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Local Outreach" data-img="images/outreachToLocalCommunitiesBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Located in the area just behind the church in Phnom Penh is a large slum community filled with children. One of the children living in the church, Li Hou, used to beg on the streets of this neighborhood before being rescued and eventually adopted. The needs of the individual children in this community vary from those similar to Li Hou’s former situation to those who simply undergo a daily struggle through poverty and perceived hopelessness while living with their parents, many of whom struggle to find sustainable employment." data-captiontwo='Construction of Hope partners with Pastor Somnang and The Fellowship Church of Pochentong to help this community in a variety of ways, including providing food vouchers (redeemable at the EMUNAH restaurant) for those most in need, bags of rice for families, school supplies for children, support for some children who are unable to afford school fees, community soccer games and mentoring and discipleship in the church. For many of the children in this community, the church has become a place of refuge and relief. See the latest news about helping these communities by following the link below.' data-captionthree=''>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Local Outreach" data-img="images/outreachToLocalCommunitiesBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Located in the area just behind the church in Phnom Penh is a large slum community. One of the children living in the church, Li Hou, used to beg on the streets of this neighborhood before being rescued and eventually adopted. The needs of the individual children in this community vary from those similar to Li Hou’s former situation to those who simply undergo a daily struggle through poverty and perceived hopelessness while living with their parents, many of whom struggle to find sustainable employment." data-captiontwo='Construction of Hope partners with Pastor Somnang and The Fellowship Church of Pochentong to help this community in a variety of ways, including providing food vouchers (redeemable at the EMUNAH restaurant – ) for those most in need, bags of rice for families, school supplies for children, support for some children who are unable to afford school fees, community soccer games and mentoring and discipleship in the church. For many of the children in this community, the church has become a place of refuge and relief.' data-captionthree=''>
                     <img class='img-responsive' src="images/outreachToLocalCommunitiesSmall.jpg">
                     <h4>Local Outreach</h4>
                   </span>
@@ -239,21 +239,21 @@ session_start();
             <div data-bind="fadeVisible: subTwoActive" class='row takeo'>
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-captionone="Well I went to the phone apple makin business bangkok adverbs no wup superficially." data-captiontwo="" data-captionthree="">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="As in many rural villages across Cambodia, Takeo Province consists of numerous places where large groups of children struggle to survive with little adult presence. While some of the children in these villages are true orphans whose parents have died, many of the children have simply been abandoned by parents who seek an escape from poverty by obtaining work in Phnom Penh, about 80 kilometers away from Takeo. The poverty and struggle inside these villages combined with a lack of hope also creates a ripe environment for potential trafficking. For parents who remain in the village, a large amount of money offered in exchange for a child may seem like the only plausible way to escape. Children who are left alone in the village are exposed and vulnerable. Through local leaders, we seek to advocate and care for these children." data-captiontwo="" data-captionthree="">
                     <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Takeo Projects</h4>
+                    <h4>About Takeo</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="images/leadershipTrainingBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
                     <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Takeo Projects</h4>
+                    <h4>Equipping Leaders</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-caption="Well I went to the phone apple makin business bangkok adverbs no wup superficially.">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="CoH partners with Pastor Muny to provide for the holistic needs of the children, including food, water, housing, education and spiritual discipleship. In addition to providing English tutoring, Pastor Muny helps support education for the children in the villages by directing resources to pay for school fees and supplies, as well as providing Christian resources for receptive public schools. As some of the children live very far from the nearest school, Pastor Muny works with local leaders to provide housing accommodations to allow children to be close enough to travel daily back and forth. CoH is also partnerning with Pastor Muny to plan the construction of a new school building." data-captiontwo="" data-captionthree="">
                     <img class='img-responsive' src="http://placehold.it/195x250">
-                    <h4>Takeo Projects</h4>
+                    <h4>Education and Food</h4>
                   </span>
                 </div>
               </div>
@@ -360,18 +360,64 @@ session_start();
             </div>
           </div>
         </div>
+        <div class="modal fade modal-projects-sustainable" id="sustainable" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-parent">
+                  <span><h5>Construction of Hope</h5></span>
+                  <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img class='img-responsive' src="images/sustainableBusinessBig.jpg"><br>
+                <p>The sustainable businesses promoted and established 
+                                    through Construction of Hope are part of an entrepreneurial 
+                                    project called ‘EMUNAH’. The name EMUNAH in Hebrew means faith 
+                                    which is the foundation for all of our sustainable business 
+                                    projects. Currently, EMUNAH and Construction of Hope have helped 
+                                    establish five small businesses, including a restaurant, 
+                                    second-hand clothing store, sewing shop, private music instruction 
+                                    and a Tuk Tuk rental.</p>
+                <p>The objectives of these businesses are tri-fold:</p>
+                <ul>
+                  <li>To provide sustainable opportunities 
+                      of employment inside a struggling economy 
+                      for young entrepreneurs and to provide positive options for 
+                      vulnerable young women
+                  </li>
+                  <li>To aid in and promote sustainability within the ministry projects 
+                       of the church and Construction of Hope
+                  </li>
+                  <li>To promote business principles of integrity that 
+                      serve as a platform for the Gospel message of redemption 
+                      and renewal</li>
+                </ul>
+                <div class='link-wrapper'>
+                  <a class='link1' href='Emunah.php'><h5>Emunah</h5></a>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <h4 class="modal-title" id="mi">Sustainable Business</h4>
+              </div>
+            </div>
+          </div>
+        </div>
      <div id="c-mask" class="c-mask"></div><!-- /c-mask
     <!--site wrapper close div-->
   </div>
 </div>
 </body>
 <script src='js/knockout-3.3.0.js'></script>
+<script src='js/bootstrap.min.js'></script>
 <script src='js/jQuery.js'></script>
-<!-- <script src='js/bootstrap.min.js'></script> -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<!--<script src='js/bootstrap.js'></script>-->
 <script src='js/main.js'></script>
+
+
+<!-- <script src='js/final.min.js'></script> -->
+
 
 
 </html>

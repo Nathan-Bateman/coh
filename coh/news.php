@@ -51,7 +51,7 @@ session_start();
 
         $data['success'] = true;
         $data['message'] = 'Success!';
-        mail($ForwardTo,"Construction of Hope Contact",$details,"From:$email");
+        mail($ForwardTo,"Sign Me Up for the Newsletters!",$details,"From:$email");
         
     } else {
     
@@ -66,10 +66,10 @@ session_start();
   <div class="modal-dialog">
     <div class="modal-content" style="top:4em">
       <div class="modal-header">
-        <h4 class="modal-title" style="border-top:none; border-bottom:none; Color:#003D7A">Thanks for writing in!</h4>
+        <h4 class="modal-title" style="border-top:none; border-bottom:none; Color:#003D7A">You will now be getting the COH monthly news letters!</h4>
       </div>
       <div class="modal-body">
-        <p>Someone will get back to you within 24 hrs.<br><br> Blessings!<br><br>Construction of Hope Team </p>
+        <p>We look forward to staying in touch and laboring with you.<br>May the forgotten be found.<br> Blessings!<br><br>Construction of Hope Team </p>
       </div>
       <div class="modal-footer">
 <form action="index.php" style="text-align:left">
@@ -167,7 +167,7 @@ session_start();
                 <p class='archives'><a href='news-archive.php'>Archives . . .</a></p>
                 <hr>
                   <div id='sidebar-cta'>
-                      <form action='index.php' method='post'>
+                      <form action='news.php' method='post'>
                         <div class="row">  
                           <div class='col-sm-12'>
                             <h3 class='text-left font-roboto-bold'>Subscribe to Updates</h3>
@@ -192,7 +192,7 @@ session_start();
   <div id='donate-section-news' class='row'>
     <div class='col-sm-12 donate-wrap'>
       <div class='donate-wrap'>
-      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+      <a href="donate.php"><button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button></a>
     </div>
     </div>
   </div>
