@@ -178,6 +178,11 @@ session_start();
             <p class='center-content'>
               <span style="font-weight:bold;">Mission: </span>Empowered by Christ’s love, we partner with indigenous leaders in Thailand and Cambodia to share the Gospel, disciple, and develop sustainable opportunities for disadvantaged men, women, and children.
             </p>
+            <br>
+            <br>
+            <p class='center-content'>
+              <span style="font-weight:bold;">Vision: </span>To continue in expanding current projects through additional facilities to accommodate more children in need, to see young leaders discipled and sent out from current projects to new areas, and to continuously support and build a network of indigenous leaders. 
+            </p>
 
       </div>
       <div data-bind="if: oneActive,fadeVisible: oneActive" class='center folks-wrapper'>
@@ -196,12 +201,12 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="images/vino.jpg">
-            <h4>Pastor Vino <a href="mailto:pastorv@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
+            <h4>Jatupong (Vino) Srikhao <a href="mailto:pastorv@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Indigenous Pastor - Thailand
             </h5>
             </div>
             <div class='col-sm-6'>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <p>Pastor Vino became a Christian in 2005 and has been a pastor since 2012 when he planted what is now In Christ Church International. He has a vision and heart for the poor and migrant workers in Thailand. He believes in the guidance and power of the Holy Spirit in all aspects of his ministry. Pastor Vino also has a burden for Thai people who are living overseas. Pastor Vino and his wife, Vicky, live in Bangpli, just outside of Bangkok.
             </p>
           </div>
         </div>

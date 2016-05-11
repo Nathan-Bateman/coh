@@ -227,12 +227,11 @@ var hopeViewModel = function () {
 	var instagram = function () {
 		var $post = $('.post');
 		$.ajax({
-		  type: "POST",
-		  url: 'scripts/instacall.php',
-          dataType : 'json',
+          url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1965235043.f3e333b.e898493cfa6143dda4098fa3192302b9',
+          dataType: 'jsonp',
           success: function (response) {
 	          	var insta = response.data;
-	          	 console.log(response);
+	          	// console.log(insta.length);
 	          	for (var i = 0; i < insta.length; i++) {
 	          		var rawDate = new Date(insta[i].created_time * 1000);
 	          		var rawMonth = rawDate.getMonth();
@@ -293,6 +292,8 @@ console.log (insta);
 		});
 
 	};
+
+
 	instagram();
 	resize();
 	onloadAnimation();

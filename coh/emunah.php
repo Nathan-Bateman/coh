@@ -152,14 +152,20 @@ session_start();
             <div class='row sponsorship-header border_news'>
               <div class='col-sm-12'>
                   <h1 class='font-roboto-bold'>Emunah - Entrepreneurial Project</h1>
-                    <p>Lorem ipsum dolor sit amet, quodsi percipit at nec, his dicant consulatu 
-                        et, et mei velit albucius. Te qui audiam qualisque voluptatibus, legere 
-                        fabulas vix id, at mel alia gubergren honestatis. Mea ne probo commune, an 
-                        omittantur comprehensam nec. Eos malis possit interpretaris ad, sumo essent his 
-                        an, eos ex minimum accusata intellegat. Mel labore reformidans te, mel te deserunt 
-                        salutatus efficiantur. Pri velit ludus at, nisl error ubique est no, sanctus invidunt 
-                        euripidis in vis. Putent dicunt eirmod in nam, his impedit similique appellantur in.
-                    </p>
+                    <p>The objectives of the below businesses are tri-fold:</p>
+                          <ul>
+                            <li>To provide sustainable opportunities 
+                                of employment inside a struggling economy 
+                                for young entrepreneurs and to provide positive options for 
+                                vulnerable young women
+                            </li>
+                            <li>To aid in and promote sustainability within the ministry projects 
+                                 of the church and Construction of Hope
+                            </li>
+                            <li>To promote business principles of integrity that 
+                                serve as a platform for the Gospel message of redemption 
+                                and renewal</li>
+                          </ul>
                 </div>
             </div>
           <!--end of row 3-->
@@ -167,10 +173,15 @@ session_start();
               <div class='col-sm-12 first'>
                     <!-- <div class='col-sm-4'> -->
                     <div class='emunah-section-wrapper'>
-                      <h2 class='font-roboto'>Restaurant</h2>
+                      <h2 class='font-roboto'>Tuk Tuk</h2>
                         <img class='img-responsive' src="images/emunah.png">
-                        <p class='font-roboto'>This text is two sentences describing 
-                                                the restaurant.
+                        <p class='font-roboto'>In 2014,  Construction of Hope purchased 
+                                                a tuk tuk as a means of transportation to 
+                                                take the children living in the church to and 
+                                                from school. When not in use for this purpose or 
+                                                other ministry needs, the tuk tuk is available for 
+                                                rental with all proceeds going towards helping support 
+                                                the ministry. 
                         </p>
                     </div>
                    <!--  </div> -->
@@ -181,41 +192,57 @@ session_start();
             </div>
           <!--end of row 4-->
         <div id='emunah' class='row'>
-              <div class='col-sm-12 first'>
+              <div class='col-sm-12 second'>
                 <div class='emunah-section-wrapper'>
-                      <h2 class='font-roboto'>Tuk Tuk</h2>
+                      <h2 class='font-roboto'>Restaurant</h2>
                         <img class='img-responsive' src="images/emunah.png">
-                        <p class='font-roboto'>This text is two sentences describing the tuk tuk business.</p>
+                        <p class='font-roboto'>In 2015, Pastor Somnang and members of 
+                                                The Fellowship Church of Pochentong collaborated 
+                                                to begin a food shop serving Khmer favorites and more 
+                                                recently, delicious desserts. In addition to providing 
+                                                income for its employees, the restaurant provides practical 
+                                                ways to serve the community through providing food vouchers 
+                                                for those in need. </p>
                 </div>
               </div>
             </div>
           <!--end of row 5-->
           <div id='emunah' class='row'>
-              <div class='col-sm-12 first'>
+              <div class='col-sm-12 third'>
                     <div class='emunah-section-wrapper'>
-                      <h2 class='font-roboto'>Clothing Store</h2>
+                      <h2 class='font-roboto'>Music Lessons</h2>
                         <img class='img-responsive' src="images/emunah.png">
-                        <p class='font-roboto'>This text is two sentences describing the clothing store.</p>
+                        <p class='font-roboto'>This business was initiated by several young musicians 
+                                               that Pastor Somnang has been discipling and training since 
+                                               their childhood. In addition to offering music lessons, the 
+                                               group also regularly plays live music near the restaurant as 
+                                               a means of sharing the Gospel through songs.</p>
                     </div>
               </div>
             </div>
           <!--end of row 6-->
           <div id='emunah' class='row'>
-              <div class='col-sm-12 first'>
+              <div class='col-sm-12 fourth'>
                     <div class='emunah-section-wrapper'>
-                      <h2 class='font-roboto'>Music Lessons</h2>
+                      <h2 class='font-roboto'>Clothing Store</h2>
                         <img class='img-responsive' src="images/emunah.png">
-                        <p class='font-roboto'>This text is two sentences describing the music lessons.</p>
+                        <p class='font-roboto'>Located directly adjacent to the restaurant, 
+                                               the clothing store consists of second-hand clothes 
+                                               obtained from various sources and custom-made clothes 
+                                               produced in the sewing shop.</p>
                     </div>
               </div>
             </div>
           <!--end of row 7-->
             <div id='emunah' class='row'>
-              <div class='col-sm-12 first'>
+              <div class='col-sm-12 fifth'>
                     <div class='emunah-section-wrapper'>
                       <h2 class='font-roboto'>Sewing Shop</h2>
                         <img class='img-responsive' src="images/emunah.png">
-                        <p class='font-roboto'>This text is two sentences describing the sewing shop.</p>
+                        <p class='font-roboto'>The sewing shop works in conjunction with 
+                                               the clothing store to produce custom-made 
+                                               products as well as repair and mend second-hand 
+                                               pieces</p>
                     </div>
               </div>
             </div>

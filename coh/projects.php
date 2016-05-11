@@ -239,20 +239,20 @@ session_start();
             <div data-bind="fadeVisible: subTwoActive" class='row takeo'>
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Children Living at the Church" data-img="http://placehold.it/500X250" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="As in many rural villages across Cambodia, Takeo Province consists of numerous places where large groups of children struggle to survive with little adult presence. While some of the children in these villages are true orphans whose parents have died, many of the children have simply been abandoned by parents who seek an escape from poverty by obtaining work in Phnom Penh, about 80 kilometers away from Takeo. The poverty and struggle inside these villages combined with a lack of hope also creates a ripe environment for potential trafficking. For parents who remain in the village, a large amount of money offered in exchange for a child may seem like the only plausible way to escape. Children who are left alone in the village are exposed and vulnerable. Through local leaders, we seek to advocate and care for these children." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
+                  <span data-toggle="modal" data-target="#ministry" data-title="About Takeo" data-img="images/aboutTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="As in many rural villages across Cambodia, Takeo Province consists of numerous places where large groups of children struggle to survive with little adult presence. While some of the children in these villages are true orphans whose parents have died, many of the children have simply been abandoned by parents who seek an escape from poverty by obtaining work in Phnom Penh, about 80 kilometers away from Takeo. The poverty and struggle inside these villages combined with a lack of hope also creates a ripe environment for potential trafficking. For parents who remain in the village, a large amount of money offered in exchange for a child may seem like the only plausible way to escape. Children who are left alone in the village are exposed and vulnerable. Through local leaders, we seek to advocate and care for these children." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/aboutTakeoSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D.">
                     <h4>About Takeo</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Sustainable Business" data-img="images/leadershipTrainingBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Equipping Leaders" data-img="images/leadershipTrainingBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/equippingLeadersSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D.">
                     <h4>Equipping Leaders</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Outreach to Local Children" data-img="http://placehold.it/500X250" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="CoH partners with Pastor Muny to provide for the holistic needs of the children, including food, water, housing, education and spiritual discipleship. In addition to providing English tutoring, Pastor Muny helps support education for the children in the villages by directing resources to pay for school fees and supplies, as well as providing Christian resources for receptive public schools. As some of the children live very far from the nearest school, Pastor Muny works with local leaders to provide housing accommodations to allow children to be close enough to travel daily back and forth. CoH is also partnerning with Pastor Muny to plan the construction of a new school building." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="http://placehold.it/195x250">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Education and Food" data-img="images/educationAndFoodBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="CoH partners with Pastor Muny to provide for the holistic needs of the children, including food, water, housing, education and spiritual discipleship. In addition to providing English tutoring, Pastor Muny helps support education for the children in the villages by directing resources to pay for school fees and supplies, as well as providing Christian resources for receptive public schools. As some of the children live very far from the nearest school, Pastor Muny works with local leaders to provide housing accommodations to allow children to be close enough to travel daily back and forth. CoH is also partnerning with Pastor Muny to plan the construction of a new school building." data-captiontwo="" data-captionthree="">
+                    <div class='hide-watermark'><img class='img-responsive' src="images/educationAndFood2.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D."></div>
                     <h4>Education and Food</h4>
                   </span>
                 </div>
@@ -379,22 +379,9 @@ session_start();
                                     establish five small businesses, including a restaurant, 
                                     second-hand clothing store, sewing shop, private music instruction 
                                     and a Tuk Tuk rental.</p>
-                <p>The objectives of these businesses are tri-fold:</p>
-                <ul>
-                  <li>To provide sustainable opportunities 
-                      of employment inside a struggling economy 
-                      for young entrepreneurs and to provide positive options for 
-                      vulnerable young women
-                  </li>
-                  <li>To aid in and promote sustainability within the ministry projects 
-                       of the church and Construction of Hope
-                  </li>
-                  <li>To promote business principles of integrity that 
-                      serve as a platform for the Gospel message of redemption 
-                      and renewal</li>
-                </ul>
+                
                 <div class='link-wrapper'>
-                  <a class='link1' href='Emunah.php'><h5>Emunah</h5></a>
+                  <a class='link1' href='emunah.php'><h5>Emunah</h5></a>
               </div>
               </div>
               <div class="modal-footer">
