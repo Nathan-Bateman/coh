@@ -196,22 +196,31 @@ session_start();
             </p>
           </div>
         <div class='col-sm-4 phone-address'>
-              <h4>Phone</h4>
+<!--               <h4>Email</h4>
             <p>
-                USA - (555)-121-5555
+                English - <a href="mailto:jasong@constructionofhope.org">jasong@constructionofhope.org</a>
                 <br>
-                THA - (555)-121-5555
                 <br>
-                KHB - (555)-121-5555
-            </p>
+                Thai - <a href="mailto:vinoisblessed@gmail.com">vinoisblessed@gmail.com</a>
+                <br>
+                <br>
+                Khmer - <a href="mailto:somnangs@constructionofhope.org">somnangs@constructionofhope.org</a>
+            </p> -->
               <h4>Location</h4>
-            <p>
-                34509 BassFish Road
-                <br>
-                Topwater Jig, MO
-                <br>
-                44567
-            </p>
+            <ul>
+                <li> Fellowship Church of Pochentong<br>
+                     Sangkat Kakab, Khan Dangkor<br>
+                     Phnom Penh, Cambodia<br>
+               </li>
+               <li> Lifesong For Orphans<br>
+                    PO Box 40<br>
+                    Gridley, IL 61744<br>
+               </li>
+               <li> In Christ Church International<br>
+                    Samut Prakan, Thailand 
+               </li>
+                
+            </ul>
         </div>
   
     </div>

@@ -963,7 +963,16 @@ h3.contact-format {
   padding:10px;
 }
 .phone-address {
-  padding: 10px;
+  /*padding: 10px;*/
+}
+.phone-address ul {
+  margin: 0;
+  padding: 0;
+}
+.phone-address ul li{
+  /*display: inline-block;*/
+  padding-top: 10px;
+  list-style-type: none;
 }
 textarea {
   -webkit-box-sizing: border-box;
@@ -1004,7 +1013,6 @@ textarea {
   text-align: center;
 }
 .hide-watermark {
-  max-height: 271px;
   overflow: hidden;
 }
 .images-pp h4, .images-bkk h4 {
@@ -1112,6 +1120,26 @@ textarea {
 .thailand-projects img, .cambodia-projects img {
   max-width: 200px;
 }
+.thailand-projects .sub-menu {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+  letter-spacing: 2px;
+}
+.thailand-projects .sub-menu-item {
+  border: 1px solid #999;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 10px;
+  width: 100%;
+  background-color: #DC7E0F;
+  color:#FFF; 
+}
+.thailand-projects .sub-menu li:nth-child(odd) {
+  background-color: #FFF;
+}
 /*Emunah Page*/
 #emunah-wrapper {
   max-width: 1300px;
@@ -1135,9 +1163,16 @@ textarea {
 }
 #emunah p {
   color: #003D7A;
-  padding:15px;
+  max-width: 550px;
+  /*padding:15px;*/
 }
-
+#emunah .col-sm-12 .after {
+  position:absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, .6);
+}
 #emunah .first {
   background-image: url("img/emunahTuktuk.jpg");
   background-size: cover;
@@ -1174,7 +1209,7 @@ textarea {
 #emunah .fifth {
   background-image: url("img/emunahSew.jpg");
   background-size: cover;
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
   height: 400px;
   margin-bottom: 30px;
@@ -1187,11 +1222,9 @@ textarea {
   max-width: 400px;
   min-width: 220px;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   height: 100%;
 }
-.emunah-section-wrapper :before {
+/*.emunah-section-wrapper :before {
   content: '';
   position: absolute;
   top: 0;
@@ -1200,7 +1233,7 @@ textarea {
   bottom: 0;
   border: 4px solid #FFF ;
   z-index: -1;
-}
+}*/
 
 #emunah-wrapper #emunah:nth-child(odd) .emunah-section-wrapper {
   float: right;
@@ -1298,7 +1331,15 @@ textarea {
     width:100%;
   }
 }
+/*spcifically for watermark hiding*/
+@media (min-width: 300px) and (max-width: 767px){
+    .hide-watermark {
+      max-height: 270.5px !important;
+      overflow: hidden;
+  }
+}
 
+/*767 breakpoint*/
 @media (max-width: 767px){
   .phone-address {
     text-align: center;
@@ -1354,6 +1395,16 @@ textarea {
   .cambodia-projects .sub-menu {
     display: block;
   }
+    .emunah-section-wrapper {
+    width: 100%;
+    max-width: none;
+    /*top:0;*/
+  }
+  #emunah-wrapper #emunah:nth-child(odd) .emunah-section-wrapper {
+    background-color: rgba(240,240,238,.85);
+    /*top:0;*/
+  }
+
 }
 /*for text over banner photo*/
 @media (max-width: 600px) {
@@ -1383,8 +1434,8 @@ textarea {
   .sponsor-wrap button {
     padding: 5px;
     font-size: 13px;
-
   }
+
 }
 /*for subtitle under COH in header 860*/
 @media (max-width: 864px) {
@@ -1393,7 +1444,13 @@ textarea {
       padding-left: 2px;
     }
 }
-
+/*for watermark*/
+@media (min-width: 871px) {
+    .hide-watermark {
+      max-height: 270.5px !important;
+      overflow: hidden;
+    }
+}
 /*for COH in header 460*/
 @media (max-width: 320px) {
   h3.cohfont {
@@ -1432,12 +1489,18 @@ textarea {
   .copy {
     margin-top:0;
   }
+  .bottomview h4 {
+    font-size: 14px;
+  }
+  .bottomview p {
+    font-size: 8pt;
+  }
   .center-fly {
     padding-left: 5px;
     max-width: 300px
   }
   .center-fly h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .center-fly button {
     width: 20%;
@@ -1452,8 +1515,8 @@ textarea {
     padding-left: 5px;
   }
   .center-fly-other h2 {
-    font-size: 16px;
-    max-width: 140px;
+    font-size: 18px;
+    max-width: 160px;
   }
   .feed h1 {
   margin: 0;
@@ -1463,7 +1526,7 @@ textarea {
     font-size: 14px;
   }
   .feed p {
-    font-size: 12px;
+    font-size: 8pt;
   }
   .updates h1 {
     margin: 10px 0 10px; 
@@ -1484,6 +1547,30 @@ textarea {
     font-size: 16px;
   }
   #donate-page h4 {
+    font-size: 14px;
+  }
+  #emunah-wrapper h1 {
+    font-size: 22px;
+  }
+  #emunah-wrapper h2 {
+    font-size: 18px;
+  }
+  #emunah-wrapper p {
+    font-size: 8pt;
+  }
+  #emunah-wrapper ul {
+    font-size: 8pt;
+  }
+  .sponsorship-header h1 {
+    font-size: 22px;
+  }
+  .sponsorship-header p {
+    font-size: 8pt;
+  }
+  #sponsorship-page h4 {
+    font-size: 14px;
+  }
+  .images-pp h4, .images-bkk h4{
     font-size: 14px;
   }
 }
@@ -1558,9 +1645,7 @@ textarea {
   .format-options h3 {
     font-size: 14pt;
   }
-  .images-pp h4, .images-bkk h4{
-    font-size: 12pt;
-  }
+  
   .folks h4 {
     font-size: 11pt;
   }
@@ -1589,6 +1674,7 @@ textarea {
   #footerContacts h3 {
     font-size: 14pt;
   }
+
 }
   
 

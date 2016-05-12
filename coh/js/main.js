@@ -205,11 +205,39 @@ var hopeViewModel = function () {
 	var resize = function () { $(document).ready(function(){
 		var winWidth = $(window).width();
   		 checkSize(winWidth);
-	}); $(window).resize(function() {
+		}); $(window).resize(function() {
   		var winWidth = $(window).width();
   		 checkSize(winWidth);
 		});
+	};
+	var hideWaterMark = function (floor, ceiling, rate, pixelheight) {
+		var winWidthInit = $(window).width();
+		var benchMarkView = floor;
+		var heightDifference = (winWidthInit - benchMarkView);
+		var benchMarkHeight = pixelheight;
+		var changeIncrement = rate;
+		var maxHeightCalc = benchMarkHeight + (heightDifference * changeIncrement);
+		
+		//set dynamic max-height based on viewport width
+		$(window).resize(function() {
+			if ($(window).width() >= ceiling || $(window).width() <floor) {
+					$('.hide-watermark').css({"max-height": '271px'});
+				} else {
+					var winWidthChange = $(window).width() - winWidthInit;
+					var maxHeightAdjust = winWidthChange * changeIncrement;
+					var maxHeightCalcResize = maxHeightCalc + maxHeightAdjust;
+					var maxHeightResize = maxHeightCalcResize.toString() + 'px';
+					var setWaterMarkDynamic = $('.hide-watermark').css({"max-height": maxHeightResize});
+				}
+		});
+//set initial height
+		if (winWidthInit <= ceiling && winWidthInit >= floor) {
+			var maxHeight = maxHeightCalc.toString() + "px";
+			var selectWaterMark = $('.hide-watermark').css({"max-height": maxHeight});
+
 		};
+	};
+
 
 //delays the timing of the initial animation on the page
   	var onloadAnimation = function() { $( document ).ready(function() {
@@ -300,6 +328,8 @@ console.log (insta);
 	postFooter();
 	postBottomPics();
 	randomBanner();
+	hideWaterMark(768,870,0.37,232.5);
+	// hideWaterMark(220,300,1,189.5);
 	
 	
 

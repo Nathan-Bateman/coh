@@ -171,12 +171,21 @@ session_start();
           </span>
           <hr>
      <div data-bind="if: oneActive,fadeVisible: oneActive" class='center thailand-projects'>
+      <div class='row'>
+              <div class='col-sm-12'>
+                <ul class='sub-menu'>
+                  <li class='sub-menu-item'><h6></h6></li>
+                  <li class='sub-menu-item'><h6>Bang Pli</h6></li>
+                  <li class='sub-menu-item'><h6></h6></li>
+                </ul>
+              </div>
+            </div>
             <div class='row'>
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Making Connections" data-img="images/makingConnectionsBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Our ministry in Bangkok begins with locating and connecting with children and families in need. While our focus is on helping migrant workers living on construction sites, the ministry has grown to include children and families from other areas as well, including refugees, factory workers and children living in slum communities. Due to trafficking, exploitation, and other issues, migrant workers are usually wary of outsiders, particularly foreigners. Once a relationship is formed, however, we are able to gain inside traction to multiple sites as families move from place to place. Additionally, a primary emphasis with Construction of Hope is to work through indigenous leaders as much as possible, which automatically helps eliminate some of the natural barriers to building relationships." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="images/makingConnectionsSmall.jpg">
-                    <h4>Making Connections</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Indigenous Outreach" data-img="images/indigenousOutreachBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Pastor Vino and his team are involved in a number of outreach activities that serve the families of the children in the school and other adults in the community, particularly those on construction sites. Activities include offering Thai language classes on construction sites after working hours, occasionally serving meals on construction sites, leading worship services on sites as well as regular worship services and meals held at the church with times that accommodate the majority of the workers. Parents are also welcomed and encouraged to attend the bi-monthly day trips the children take to the beach or park." data-captiontwo="" data-captionthree=''>
+                    <img class='img-responsive' src="images/indigenousOutreachSmall.jpg">
+                    <h4>Indigenous Outreach</h4>
                   </span>
                 </div>
                 <div class='col-sm-4'>
@@ -193,16 +202,16 @@ session_start();
                 </div>
               </div>
             </div>
-            <div class='row'>
+<!--             <div class='row'>
               <div class='col-sm-12 images-bkk'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Indigenous Outreach" data-img="images/indigenousOutreachBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Pastor Vino and his team are involved in a number of outreach activities that serve the families of the children in the school and other adults in the community, particularly those on construction sites. Activities include offering Thai language classes on construction sites after working hours, occasionally serving meals on construction sites, leading worship services on sites as well as regular worship services and meals held at the church with times that accommodate the majority of the workers. Parents are also welcomed and encouraged to attend the bi-monthly day trips the children take to the beach or park." data-captiontwo="" data-captionthree=''>
-                    <img class='img-responsive' src="images/indigenousOutreachSmall.jpg">
-                    <h4>Indigenous Outreach</h4>
+                  <span data-toggle="modal" data-target="#ministry" data-title="Making Connections" data-img="images/makingConnectionsBig.jpg" data-linkone="news.php" data-linkonetitle="Latest News" data-captionone="Our ministry in Bangkok begins with locating and connecting with children and families in need. While our focus is on helping migrant workers living on construction sites, the ministry has grown to include children and families from other areas as well, including refugees, factory workers and children living in slum communities. Due to trafficking, exploitation, and other issues, migrant workers are usually wary of outsiders, particularly foreigners. Once a relationship is formed, however, we are able to gain inside traction to multiple sites as families move from place to place. Additionally, a primary emphasis with Construction of Hope is to work through indigenous leaders as much as possible, which automatically helps eliminate some of the natural barriers to building relationships." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/makingConnectionsSmall.jpg">
+                    <h4>Making Connections</h4>
                   </span>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
      <div data-bind="if: twoActive,fadeVisible: twoActive" class='center cambodia-projects'>
             <div class='row'>
@@ -304,24 +313,33 @@ session_start();
                   <button type="submit" name='submit' class="btn btn-primary button send">Send</button>
               </p>
             </div>
-            <div class='col-sm-4 phone-address'>
-                <h4>Phone</h4>
-              <p>
-                  USA - (555)-121-5555
-                  <br>
-                  THA - (555)-121-5555
-                  <br>
-                  KHB - (555)-121-5555
-              </p>
-                <h4>Location</h4>
-              <p>
-                  34509 BassFish Road
-                  <br>
-                  Topwater Jig, MO
-                  <br>
-                  44567
-              </p>
-            </div>
+        <div class='col-sm-4 phone-address'>
+<!--               <h4>Email</h4>
+            <p>
+                English - <a href="mailto:jasong@constructionofhope.org">jasong@constructionofhope.org</a>
+                <br>
+                <br>
+                Thai - <a href="mailto:vinoisblessed@gmail.com">vinoisblessed@gmail.com</a>
+                <br>
+                <br>
+                Khmer - <a href="mailto:somnangs@constructionofhope.org">somnangs@constructionofhope.org</a>
+            </p> -->
+              <h4>Location</h4>
+            <ul>
+                <li> Fellowship Church of Pochentong<br>
+                     Sangkat Kakab, Khan Dangkor<br>
+                     Phnom Penh, Cambodia<br>
+               </li>
+               <li> Lifesong For Orphans<br>
+                    PO Box 40<br>
+                    Gridley, IL 61744<br>
+               </li>
+               <li> In Christ Church International<br>
+                    Samut Prakan, Thailand 
+               </li>
+                
+            </ul>
+        </div>
           </div>
         </form>
       </div>

@@ -188,7 +188,7 @@ session_start();
       <div data-bind="if: oneActive,fadeVisible: oneActive" class='center folks-wrapper'>
         <div class='row'>
           <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
+            <img class='img-responsive' src="images/somnang.jpg">
             <h4>Sin Somnang <a href="mailto:somnangs@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Indigenous Pastor - Cambodia
             </h5>
@@ -201,7 +201,7 @@ session_start();
         <div class='row'>
           <div class='col-sm-6 folks'>
             <img class='img-responsive' src="images/vino.jpg">
-            <h4>Jatupong (Vino) Srikhao <a href="mailto:pastorv@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
+            <h4>Jatupong (Vino) Srikhao <a href="mailto:vinoisblessed@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Indigenous Pastor - Thailand
             </h5>
             </div>
@@ -296,22 +296,31 @@ session_start();
             </p>
           </div>
         <div class='col-sm-4 phone-address'>
-              <h4>Phone</h4>
+<!--               <h4>Email</h4>
             <p>
-                USA - (555)-121-5555
+                English - <a href="mailto:jasong@constructionofhope.org">jasong@constructionofhope.org</a>
                 <br>
-                THA - (555)-121-5555
                 <br>
-                KHB - (555)-121-5555
-            </p>
+                Thai - <a href="mailto:vinoisblessed@gmail.com">vinoisblessed@gmail.com</a>
+                <br>
+                <br>
+                Khmer - <a href="mailto:somnangs@constructionofhope.org">somnangs@constructionofhope.org</a>
+            </p> -->
               <h4>Location</h4>
-            <p>
-                34509 BassFish Road
-                <br>
-                Topwater Jig, MO
-                <br>
-                44567
-            </p>
+            <ul>
+                <li> Fellowship Church of Pochentong<br>
+                     Sangkat Kakab, Khan Dangkor<br>
+                     Phnom Penh, Cambodia<br>
+               </li>
+               <li> Lifesong For Orphans<br>
+                    PO Box 40<br>
+                    Gridley, IL 61744<br>
+               </li>
+               <li> In Christ Church International<br>
+                    Samut Prakan, Thailand 
+               </li>
+                
+            </ul>
         </div>
   
     </div>

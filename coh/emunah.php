@@ -173,7 +173,7 @@ session_start();
               <div class='col-sm-12 first'>
                     <!-- <div class='col-sm-4'> -->
                     <div class='emunah-section-wrapper'>
-                      <h2 class='font-roboto'>Tuk Tuk</h2>
+                      <h2 class='font-roboto'>Tuk Tuk Service</h2>
                         <img class='img-responsive' src="images/emunah.png">
                         <p class='font-roboto'>In 2014,  Construction of Hope purchased 
                                                 a tuk tuk as a means of transportation to 
@@ -196,13 +196,13 @@ session_start();
                 <div class='emunah-section-wrapper'>
                       <h2 class='font-roboto'>Restaurant</h2>
                         <img class='img-responsive' src="images/emunah.png">
-                        <p class='font-roboto'>In 2015, Pastor Somnang and members of 
-                                                The Fellowship Church of Pochentong collaborated 
-                                                to begin a food shop serving Khmer favorites and more 
-                                                recently, delicious desserts. In addition to providing 
-                                                income for its employees, the restaurant provides practical 
-                                                ways to serve the community through providing food vouchers 
-                                                for those in need. </p>
+                        <p class='font-roboto'> In 2015, Pastor Somnang and members of 
+                                                The Fellowship Church of Pochentong began a food 
+                                                shop serving signature Khmer entrees and desserts. 
+                                                In addition to providing income for its employees, 
+                                                the restaurant provides practical ways to serve the 
+                                                community through providing food vouchers for those in need. 
+                                              </p>
                 </div>
               </div>
             </div>
@@ -290,22 +290,31 @@ session_start();
             </p>
           </div>
         <div class='col-sm-4 phone-address'>
-              <h4>Phone</h4>
+<!--               <h4>Email</h4>
             <p>
-                USA - (555)-121-5555
+                English - <a href="mailto:jasong@constructionofhope.org">jasong@constructionofhope.org</a>
                 <br>
-                THA - (555)-121-5555
                 <br>
-                KHB - (555)-121-5555
-            </p>
+                Thai - <a href="mailto:vinoisblessed@gmail.com">vinoisblessed@gmail.com</a>
+                <br>
+                <br>
+                Khmer - <a href="mailto:somnangs@constructionofhope.org">somnangs@constructionofhope.org</a>
+            </p> -->
               <h4>Location</h4>
-            <p>
-                34509 BassFish Road
-                <br>
-                Topwater Jig, MO
-                <br>
-                44567
-            </p>
+            <ul>
+                <li> Fellowship Church of Pochentong<br>
+                     Sangkat Kakab, Khan Dangkor<br>
+                     Phnom Penh, Cambodia<br>
+               </li>
+               <li> Lifesong For Orphans<br>
+                    PO Box 40<br>
+                    Gridley, IL 61744<br>
+               </li>
+               <li> In Christ Church International<br>
+                    Samut Prakan, Thailand 
+               </li>
+                
+            </ul>
         </div>
   
     </div>
