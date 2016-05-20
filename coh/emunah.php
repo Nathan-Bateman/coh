@@ -95,11 +95,11 @@ session_start();
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
   <!-- Latest compiled and minified CSS -->
-  <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COHAbout</title>
+  <title>Emunah</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -252,7 +252,7 @@ session_start();
      <!-- donate section -->
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
-      <button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button>
+      <a href="donate.php"><button type="button" class="btn btn-primary font-roboto-light btn-donate">DONATE</button></a>
     </div>
   </div>
   <div id='links' class='row'>

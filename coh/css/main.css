@@ -812,6 +812,7 @@ article section:first-child p {
   margin: 0 auto;
 }
 .donate-heading h4 a:hover {
+  color: #003D7A;
   text-decoration: none;
 
 }
@@ -1292,6 +1293,12 @@ textarea {
 }
 #sponsorChild .modal-footer .donate-wrap button {
   background-color: #DC7E0F;
+  outline: none;
+  border: none;
+}
+#sponsorChild .modal-footer .donate-wrap button:hover {
+  color:#5D3608;
+  outline: none;;
 }
 #sponsorChild .modal-body ul {
   padding-left:0;
@@ -1404,6 +1411,10 @@ textarea {
     background-color: rgba(240,240,238,.85);
     /*top:0;*/
   }
+  #sponsorChild .modal-body img{
+  width: 100%;  
+  max-width: 220px;
+}
 
 }
 /*for text over banner photo*/

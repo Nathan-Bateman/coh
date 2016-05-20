@@ -95,11 +95,11 @@ session_start();
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
   <!-- Latest compiled and minified CSS -->
-  <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COHAbout</title>
+  <title>About</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -212,7 +212,7 @@ session_start();
         </div>
         <div class='row'>
           <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
+            <img class='img-responsive' src="images/jasong.jpg">
             <h4>Jason Glass <a href="mailto:jasong@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Country Director
             </h5>
@@ -224,7 +224,7 @@ session_start();
         </div>
         <div class='row'>
           <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
+            <img class='img-responsive' src="images/tony.jpg">
             <h4>Tony Randall <a href="mailto:tonyr@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>North American Liason
             </h5>
@@ -236,13 +236,13 @@ session_start();
         </div>
         <div class='row'>
           <div class='col-sm-6 folks'>
-            <img class='img-responsive' src="http://placehold.it/195x250">
+            <img class='img-responsive' src="images/jasons.jpg">
             <h4>Jason Son <a href="mailto:jasons@constructionofhope.org"><span class="glyphicon glyphicon-envelope"></span></a></h4>
             <h5>Board Member
             </h5>
             </div>
             <div class='col-sm-6'>
-            <p>Jason Son fully committed his life to Christ while studying at the University of Calgary. He completed a degree in Mathematics and went on to get another degree in teaching. Over a series of mission trips to Thailand, Jason felt the Lord prompting him to reside there full-time. In July of 2011 he moved to Bangkok to work as a High School Math teacher at International Community School.
+            <p>Jason Son fully committed his life to the Lord while attending the University of Calgary in Calgary, Alberta, Canada. He received a degree in Mathematics as well as one in Education and during the course of a few mission trips to Thailand, he felt the Lord prompting him to move there permanently. Jason has been working in Thailand since 2011, but in July of 2016 will be moving to Seoul, South Korea with his fiance, Joanne Benjathikul.
             </p>
           </div>
         </div>

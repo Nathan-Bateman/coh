@@ -47,9 +47,12 @@ var bottomPics = {
 				   'news':'<div class="col-sm-4 space"><div class=' + '"bottomview"><a href="news.php" class="info"><img src="images/news2.jpg" class="img-responsive fader center"><span class="border-box darken center"><h4 class="bottom-title text-center">News</h4>  <p class="text-center"> Updates  |  Media </p><span></a></div></div>'
 };
 
-var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p><p>- Li Huah -</p></div>',
+var quotes = ['<div class="center-content text-center"><p>"I was once close to starvation, almost ready to die waiting on food from morning till midnight, but now I have no fear"<p></p><p>- Li Hou -</p></div>',
 				'<div class="center-content text-center"><p>"If I fear to hold another to the highest goal because it is so much easier to avoid doing so, then I know nothing of Calvary love"<p></p><p>- Amy Carmichael -</p></div>',
-				'<div class="center-content text-center"><p>"Are the things of God, the honor of his name, the welfare of his church, the conversion of sinners, and the profit of your own soul, your chief aim?"<p></p><p>- George Muller -</p></div>'
+				'<div class="center-content text-center"><p>"Are the things of God, the honor of his name, the welfare of his church, the conversion of sinners, and the profit of your own soul, your chief aim?"<p></p><p>- George Muller -</p></div>',
+				'<div class="center-content text-center"><p>"You may speak but a word to a child, and in that child there may be slumbering a noble heart which shall stir the Christian Church in years to come."<p></p><p>- Charles Spurgeon -</p></div>',
+				'<div class="center-content text-center"><p>"Rest in this - it is His business to lead, command, impel, send, call... It is your business to obey, follow, move, respond..."<p></p><p>- Jim Elliot -</p></div>'
+
 
 				]
 
@@ -79,13 +82,13 @@ var postFooter = function () {
 var postBottomPics = function () {
 	var quote = randomfromarray(quotes);
 	
-	if($title === 'COH') {
-		for (item in bottomPics) {
-			var pic = bottomPics[item];
-			$bottomSection.append(pic);
-		}
+	if($title != 'Home') {
+		$bottomSection.append(quote);
 	}else {
-		 $bottomSection.append(quote);
+			 for (item in bottomPics) {
+				var pic = bottomPics[item];
+				$bottomSection.append(pic);
+			 }
 	}
 };
 
@@ -287,7 +290,7 @@ var hopeViewModel = function () {
 	          		var titleMarkup = '<section><h4><a href="' + instaLink + '">' +'#' + instaTitle + '</a></h4>' + dateMarkup;
 	          		
 	          		var instaImage = insta[i].images.standard_resolution.url;
-	          		var imageMarkup = '<img src="' + instaImage + '" class="img-responsive"></section>';
+	          		var imageMarkup = '<div><img src="' + instaImage + '" class="img-responsive"></div></section>';
 	          		
 	          		var instaCaptionRaw = insta[i].caption.text;
 	          		var reEx = /(?:^|[ ])#([a-zA-Z]+)/gm;

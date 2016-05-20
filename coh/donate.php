@@ -100,11 +100,11 @@ session_start();
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
   <!-- Latest compiled and minified CSS -->
-  <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COHAbout</title>
+  <title>Donate</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -168,7 +168,7 @@ session_start();
            The only fees taken are the processing fees charged by Paypal and any bank related fees for the international transfer. 
            Click the link below to see the monthly expense/project reports for the ministry.
         </p>
-        <h4><a href='https://drive.google.com/folderview?id=0B8CCkvdFSll6UkcyckNIcDJ3aVU&usp=sharing'>
+        <h4><a href='https://drive.google.com/folderview?id=0B8hPTOpaYgZBTTRuczc5THBuSUU&usp=sharing'>
               Financial Reports</a></h4>
       </div>
     </div>

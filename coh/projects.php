@@ -95,11 +95,11 @@ session_start();
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
   <!-- Latest compiled and minified CSS -->
-  <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
-  <title>COHProjects</title>
+  <title>Projects</title>
 </head>
 <?php
    // generate a new token for the $_SESSION superglobal and put them in a hidden field
@@ -254,7 +254,7 @@ session_start();
                   </span>
                 </div>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Equipping Leaders" data-img="images/leadershipTrainingBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
+                  <span data-toggle="modal" data-target="#ministry" data-title="Equipping Leaders" data-img="images/leadersTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
                     <img class='img-responsive' src="images/equippingLeadersSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D.">
                     <h4>Equipping Leaders</h4>
                   </span>
