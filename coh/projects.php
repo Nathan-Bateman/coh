@@ -46,7 +46,7 @@ session_start();
       $name = check_input($_POST["name"]);
         $email = check_input($_POST["emailaddress"]);
         $message = check_input($_POST["message"]);
-        $ForwardTo = 'nathan.bateman.jr@gmail.com';
+        $ForwardTo = 'tonyr@constructionofhope.org';
         $details='Name: '.$name."\n".'Email: '.$email."\n".'Message: '.$message."\n";
 
         $data['success'] = true;
@@ -96,8 +96,7 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
   <!-- Latest compiled and minified CSS -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/final.min.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
   <title>Projects</title>
 </head>
@@ -213,7 +212,7 @@ session_start();
               </div>
             </div> -->
           </div>
-     <div data-bind="if: twoActive,fadeVisible: twoActive" class='center cambodia-projects'>
+        <div data-bind="if: twoActive,fadeVisible: twoActive" class='center cambodia-projects'>
             <div class='row'>
               <div class='col-sm-12'>
                 <ul class='sub-menu'>
@@ -245,29 +244,44 @@ session_start();
                 </div>
               </div>
             </div> 
-            <div data-bind="fadeVisible: subTwoActive" class='row takeo'>
+            <div data-bind="fadeVisible: subTwoActive" class='takeo'>
+                  <div class ='row'>
+                    <div class='col-sm-12 images-pp'>
+                      <!-- project1 -->
+                      <div class='col-sm-4'>
+                        <span data-toggle="modal" data-target="#ministry" data-title="About Takeo" data-img="images/aboutTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="As in many rural villages across Cambodia, Takeo Province consists of numerous places where large groups of children struggle to survive with little adult presence. While some of the children in these villages are true orphans whose parents have died, many of the children have simply been abandoned by parents who seek an escape from poverty by obtaining work in Phnom Penh, about 80 kilometers away from Takeo. The poverty and struggle inside these villages combined with a lack of hope also creates a ripe environment for potential trafficking. For parents who remain in the village, a large amount of money offered in exchange for a child may seem like the only plausible way to escape. Children who are left alone in the village are exposed and vulnerable. Through local leaders, we seek to advocate and care for these children." data-captiontwo="" data-captionthree="">
+                          <div class='hide-watermark'><img class='img-responsive' src="images/aboutTakeoSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D."></div>
+                          <h4>About Takeo</h4>
+                        </span>
+                      </div>
+                      <!-- project2 -->
+                      <div class='col-sm-4'>
+                        <span data-toggle="modal" data-target="#ministry" data-title="Equipping Leaders" data-img="images/leadersTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
+                          <div class='hide-watermark'><img class='img-responsive' src="images/equippingLeadersSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D."></div>
+                          <h4>Equipping Leaders</h4>
+                        </span>
+                      </div>
+                      <!-- project3 -->
+                      <div class='col-sm-4'>
+                        <span data-toggle="modal" data-target="#ministry" data-title="Education and Food" data-img="images/educationAndFoodBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="CoH partners with Pastor Muny to provide for the holistic needs of the children, including food, water, housing, education and spiritual discipleship. In addition to providing English tutoring, Pastor Muny helps support education for the children in the villages by directing resources to pay for school fees and supplies, as well as providing Christian resources for receptive public schools. As some of the children live very far from the nearest school, Pastor Muny works with local leaders to provide housing accommodations to allow children to be close enough to travel daily back and forth. CoH is also partnerning with Pastor Muny to plan the construction of a new school building." data-captiontwo="" data-captionthree="">
+                          <div class='hide-watermark'><img class='img-responsive' src="images/educationAndFood2.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D."></div>
+                          <h4>Education and Food</h4>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+            <div class='row'>
               <div class='col-sm-12 images-pp'>
                 <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="About Takeo" data-img="images/aboutTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="As in many rural villages across Cambodia, Takeo Province consists of numerous places where large groups of children struggle to survive with little adult presence. While some of the children in these villages are true orphans whose parents have died, many of the children have simply been abandoned by parents who seek an escape from poverty by obtaining work in Phnom Penh, about 80 kilometers away from Takeo. The poverty and struggle inside these villages combined with a lack of hope also creates a ripe environment for potential trafficking. For parents who remain in the village, a large amount of money offered in exchange for a child may seem like the only plausible way to escape. Children who are left alone in the village are exposed and vulnerable. Through local leaders, we seek to advocate and care for these children." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="images/aboutTakeoSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D.">
-                    <h4>About Takeo</h4>
-                  </span>
-                </div>
-                <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Equipping Leaders" data-img="images/leadersTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="Pastor Sovan Muny begins his work in Takeo’s rural villages by evangelizing and securing local leadership. Once a group of believers are established, Pastor Sovan Muny helps plant a church and disciples selected leaders to oversee and steward the provision and care for the children served through CoH. Through mp3 players and a partnership with Pastor Somnang in Phnom Penh, believers in these villages have access to a discipleship program and other Christian resources. CoH also partners with Pastor Muny to help provide housing for the local leaders which are often multi-purpose buildings also used for worship services, housing for orphans, and a community center for other children." data-captiontwo="" data-captionthree="">
-                    <img class='img-responsive' src="images/equippingLeadersSmall.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D.">
-                    <h4>Equipping Leaders</h4>
-                  </span>
-                </div>
-                <div class='col-sm-4'>
-                  <span data-toggle="modal" data-target="#ministry" data-title="Education and Food" data-img="images/educationAndFoodBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="CoH partners with Pastor Muny to provide for the holistic needs of the children, including food, water, housing, education and spiritual discipleship. In addition to providing English tutoring, Pastor Muny helps support education for the children in the villages by directing resources to pay for school fees and supplies, as well as providing Christian resources for receptive public schools. As some of the children live very far from the nearest school, Pastor Muny works with local leaders to provide housing accommodations to allow children to be close enough to travel daily back and forth. CoH is also partnerning with Pastor Muny to plan the construction of a new school building." data-captiontwo="" data-captionthree="">
-                    <div class='hide-watermark'><img class='img-responsive' src="images/educationAndFood2.jpg" alt="photo copyright Jill Kimberly Hartwell Geoffrion, Ph.D."></div>
-                    <h4>Education and Food</h4>
+                  <span data-toggle="modal" data-target="#vision" data-title="Takeo Vision" data-img="images/visionTakeoBig.jpg" data-linkone='news.php' data-linkonetitle='Latest News' data-captionone="As in many rural villages across Cambodia, Takeo Province consists of numerous places where large groups of children struggle to survive with little adult presence. While some of the children in these villages are true orphans whose parents have died, many of the children have simply been abandoned by parents who seek an escape from poverty by obtaining work in Phnom Penh, about 80 kilometers away from Takeo. The poverty and struggle inside these villages combined with a lack of hope also creates a ripe environment for potential trafficking. For parents who remain in the village, a large amount of money offered in exchange for a child may seem like the only plausible way to escape. Children who are left alone in the village are exposed and vulnerable. Through local leaders, we seek to advocate and care for these children." data-captiontwo="" data-captionthree="">
+                    <img class='img-responsive' src="images/visionTakeoSmall.jpg">
+                    <h4>Takeo Vision</h4>
                   </span>
                 </div>
               </div>
-            </div> 
-          </div>
+            </div>
+          </div> 
+        </div>
       </div>
         <h2 class="text-center scripture">
           <span class='text'>To loose the bonds of injustice...to let the oppressed go free<span> <br><span class='isaiah'>-Isaiah 58:6-</span>
@@ -378,6 +392,47 @@ session_start();
             </div>
           </div>
         </div>
+        <div class="modal fade modal-projects" id="vision" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-parent">
+                  <span><h5>Construction of Hope</h5></span>
+                  <span><a id='close' class="modal-close glyphicon glyphicon-remove pull-right" data-dismiss="modal"></a></span>
+                </div>
+              </div>
+              <div class="modal-body">
+                <img class='img-responsive' src="images/visionTakeoBig.jpg"><br>
+                <p>Among the villages we are connected with in Takeo, Garaline is located in the center. In 2011, 
+                    Pastor Sovan Muny lead the construction of a building in this village that currently doubles as a 
+                    church and a house for four widows who provide care for a group of orphaned girls. 
+                    Our vision is to build on what is already established in this village through the following:</p>
+                <h4 style='text-align:center'>Learning and Community Center </h4>
+                <p>Use the land ajacent to the church to construct a place where children and others in the community
+                    can come to learn and build relationships. </p>
+                <h4 style='text-align:center'>Purchase Land</h4>
+                <ul>
+                  <li>Use this land to build a 
+                    children’s home for the orphaned children 
+                    in Takeo and for Cambodian children coming from 
+                    Thailand in need of rehabilitation and foster 
+                    care.</li>
+                  <li>Build a discipleship training center for 
+                      local leaders to cultivate mission expansion 
+                      across Cambodia and Thailand. </li>
+                  <li>Promote sustainability and potential 
+                    business ventures through agriculture development.</li>
+                </ul>
+                <div class='link-wrapper'>
+                  <a class='link1' href='donate.php'><h5>Donate</h5></a>
+              </div>
+              </div>
+              <div class="modal-footer">
+                <h4 class="modal-title" id="mi">Takeo Vision</h4>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="modal fade modal-projects-sustainable" id="sustainable" tabindex="-1" role="dialog" aria-labelledby="mi" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -413,12 +468,7 @@ session_start();
   </div>
 </div>
 </body>
-<script src='js/knockout-3.3.0.js'></script>
-<script src='js/bootstrap.min.js'></script>
-<script src='js/jQuery.js'></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src='js/main.js'></script>
+<script src="js/final.min.js"></script>
 
 
 <!-- <script src='js/final.min.js'></script> -->

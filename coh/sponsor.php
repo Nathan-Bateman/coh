@@ -46,7 +46,7 @@ session_start();
       $name = check_input($_POST["name"]);
         $email = check_input($_POST["emailaddress"]);
         $message = check_input($_POST["message"]);
-        $ForwardTo = 'nathan.bateman.jr@gmail.com';
+        $ForwardTo = 'tonyr@constructionofhope.org';
         $details='Name: '.$name."\n".'Email: '.$email."\n".'Message: '.$message."\n";
 
         $data['success'] = true;
@@ -96,8 +96,8 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
   <!-- Latest compiled and minified CSS -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/final.min.css">
   <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
   <title>Sponsor a Child</title>
 </head>
@@ -160,6 +160,7 @@ session_start();
                communities throughout Cambodia. Now, they have a completely different future 
                ahead of them. Click on the child's picture to learn more about them.
             </p>
+            <p>*Be sure to type the child's name into the memo field when sponsoring.</p>
         </div>
     </div>
     <!--end 2nd row-->
@@ -173,7 +174,7 @@ session_start();
   <div id='donate-section' class='row'>
     <div class='col-sm-12 donate-wrap'>
       <div class='donate-wrap'>
-      <a href="https://www.lifesongfororphans.org/give/donate/one-time/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">SPONSOR</button></a>
+      <a href="https://www.lifesongfororphans.org/give/donate/recurring-donation/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">SPONSOR</button></a>
     </div>
     </div>
   </div>
@@ -276,7 +277,7 @@ session_start();
               </div>
               <div class="modal-footer">
                 <div class='donate-wrap'>
-                <a href="https://www.lifesongfororphans.org/give/donate/one-time/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">SPONSOR</button></a>
+                <a href="https://www.lifesongfororphans.org/give/donate/recurring-donation/?giftchoice=Orphan%20Care%20Countries"><button type="button" class="btn btn-primary font-roboto-light btn-donate">SPONSOR</button></a>
                 </div>
               </div>
             </div>
@@ -287,14 +288,7 @@ session_start();
   </div>
 </div>
 </body>
-<script src='js/knockout-3.3.0.js'></script>
-<script src='js/jQuery.js'></script>
-<!-- <script src='js/bootstrap.min.js'></script> -->
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<!--<script src='js/bootstrap.js'></script>-->
-<script src='js/main.js'></script>
-<script src='js/sponsor.js'></script>
+<script src="js/final.min.js"></script>
 
 
 </html>

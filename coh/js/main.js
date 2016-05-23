@@ -290,7 +290,7 @@ var hopeViewModel = function () {
 	          		var titleMarkup = '<section><h4><a href="' + instaLink + '">' +'#' + instaTitle + '</a></h4>' + dateMarkup;
 	          		
 	          		var instaImage = insta[i].images.standard_resolution.url;
-	          		var imageMarkup = '<div><img src="' + instaImage + '" class="img-responsive"></div></section>';
+	          		var imageMarkup = '<img src="' + instaImage + '" class="img-responsive"></section>';
 	          		
 	          		var instaCaptionRaw = insta[i].caption.text;
 	          		var reEx = /(?:^|[ ])#([a-zA-Z]+)/gm;
