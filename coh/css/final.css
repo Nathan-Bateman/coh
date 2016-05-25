@@ -707,6 +707,12 @@ button:focus {
   font-size: 18pt;
 
 }
+.header-abbr {
+  display: none;
+}
+.header-full {
+  display: block
+}
 h3.cohfont a, a:active, a:visited {
   color:#003D7A;
   text-decoration: none;
@@ -2147,6 +2153,15 @@ textarea {
     width:100%;
   }
 
+}
+@media (max-width: 315px) {
+  .header-abbr {
+    display:block;
+    margin-top: 30px;
+  }
+  .header-full {
+    display: none;
+  }
 }
 @media (min-width: 100px) and (max-width: 375px){
   

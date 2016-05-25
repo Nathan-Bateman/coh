@@ -11384,13 +11384,13 @@ var projectModal = $('#ministry').on('show.bs.modal', function (event) {
   // modal.find('.modal-body .link2 h5').text(linkTwoTitleToLoad);
 });
 
-var randomBanner = function (x) {
-	// var bannerPics = ['images/banner1.jpg','images/banner_2.png', 'images/banner_3.jpg','images/banner_4.jpg'];
-	var bannerPics = ['images/banner1.jpg','images/banner2.jpg', 'images/banner3.jpg'];
-	var images = randomfromarray(bannerPics);
-	$('.banner').css({'background-image': 'url(' + images + ')'});
-	//$( ".banner" ).append( '<img src="' + images +'" class="img-responsive centerImage border stackorder">' );
-};
+// var randomBanner = function (x) {
+	
+// 	var bannerPics = ['images/banner1.jpg','images/banner2.jpg', 'images/banner3.jpg'];
+// 	var images = randomfromarray(bannerPics);
+// 	$('.banner').css({'background-image': 'url(' + images + ')'});
+	
+// };
 
 menu.addEventListener('click', function(e) {
         drawer.classList.add('open');
@@ -11592,12 +11592,12 @@ console.log (insta);
 
 	};
 	instagram();
-	resize();
+	// resize();
 	onloadAnimation();
 	postMenu();
 	postFooter();
 	postBottomPics();
-	randomBanner();
+	// randomBanner();
 	hideWaterMark(768,870,0.37,232.5);
 	// hideWaterMark(220,300,1,189.5);
 	

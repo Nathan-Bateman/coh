@@ -116,8 +116,8 @@ session_start();
         
         <div class="col-sm-12">
           <div class='col-sm-6 padding-right-off pull-left'>
-            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
-            <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+            <h3 class='text-left cohfont header-full'><a href="index.php">Construction of Hope</a></h3>
+            <h3 class='text-left cohfont-abbr header-abbr'>COH </h3>
           </div>
   <!--end of 1st col 6 div-->
           <div id='hammy' class='col-sm-2 pull-right'>
@@ -342,6 +342,16 @@ session_start();
 </div>
 </body>
 <script src="js/final.min.js"></script>
-
+  <script type="text/javascript" async>
+      var randomBanner = function (x) {
+        var randomfromarray = function (array){
+          return array[Math.floor(Math.random() * array.length)]
+          };
+      var bannerPics = ['images/banner1.jpg','images/banner2.jpg', 'images/banner3.jpg'];
+      var images = randomfromarray(bannerPics);
+      $('.banner').css({'background-image': 'url(' + images + ')'});
+      };
+      randomBanner();
+  </script>
 
 </html>

@@ -116,8 +116,8 @@ session_start();
         
         <div class="col-sm-12">
           <div class='col-sm-6 padding-right-off pull-left'>
-            <h3 data-bind="if: regscreen" class='text-left cohfont'><a href="index.php">Construction of Hope</a> </h3>
-            <h3 data-bind="ifnot: regscreen" class='text-left cohfont-abbr'>COH </h3>
+            <h3 class='text-left cohfont header-full'><a href="index.php">Construction of Hope</a></h3>
+            <h3 class='text-left cohfont-abbr header-abbr'>COH </h3>
           </div>
   <!--end of 1st col 6 div-->
           <div id='hammy' class='col-sm-2 pull-right'>
